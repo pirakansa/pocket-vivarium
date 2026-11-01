@@ -16,8 +16,8 @@ setImmediate(()=>{
  assert.equal(value('minute'),0);assert.equal(elements.seek.disabled,false);
  frame(0);frame(10000);assert.equal(value('minute'),5);
  elements.play.onclick();frame(20000);frame(30000);assert.equal(value('minute'),5);
- elements.seek.value='70';elements.seek.oninput();assert.equal(value('state.people[1].action'),'レンと話す');
- elements.back.onclick();assert.equal(value('minute'),65);assert(!value('state.logs.some(x=>x.includes("景色について"))'));
+ elements.seek.value='70';elements.seek.oninput();assert.equal(value('state.people[1].action'),data.frames[14].state.people[1].action);
+ elements.back.onclick();assert.equal(value('minute'),65);assert.equal(value('state'),data.frames[13].state);
  elements.seek.value='120';elements.seek.oninput();assert.equal(value('running'),false);assert.equal(elements.status.textContent,'再生終了');
  elements.play.onclick();assert.equal(value('minute'),0);assert.equal(value('running'),true);
  sandbox.document.hidden=true;visibility();frame(900000);sandbox.document.hidden=false;visibility();frame(910000);assert.equal(value('minute'),0);

@@ -1,34 +1,66 @@
-name: Deploy to GitHub Pages
+name: Update village and deploy Pages
 
 on:
   push:
     branches: [main]
+  schedule:
+    # Every two hours at :17 UTC (01:17, 03:17, ... 23:17 JST).
+    - cron: '17 */2 * * *'
   workflow_dispatch:
+    inputs:
+      update_state:
+        description: 'Advance the village to the current two-hour execution slot'
+        type: boolean
+        default: false
 
 permissions:
   contents: read
 
+# Keep generation, persistence and publication in order.
 concurrency:
   group: github-pages
   cancel-in-progress: false
 
 jobs:
   build:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      contents: write
     steps:
-      - name: Checkout
+      - name: Checkout latest main
         uses: actions/checkout@v6
         with:
-          persist-credentials: false
+          ref: main
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22'
 
+      - name: Test state generator
+        run: node tests/update-state.cjs
+
+      - name: Generate next village records
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.update_state)
+        run: node scripts/update-state.cjs
+
       - name: Test playback
         run: node tests/player.cjs
+
+      - name: Commit generated records
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.update_state)
+        run: |
+          git add dist/state.json data/history
+          if git diff --cached --quiet; then
+            echo 'This execution slot has already been generated.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore: update village state records'
+          git push origin HEAD:main
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
