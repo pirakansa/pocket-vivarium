@@ -42,6 +42,12 @@ jobs:
       - name: Migrate resident identities
         run: node scripts/migrate-identities.cjs
 
+      - name: Migrate MEHS vocabulary
+        run: node scripts/migrate-mehs.cjs
+
+      - name: Test MEHS migration
+        run: node tests/mehs.cjs
+
       - name: Test resident identities
         run: node tests/identities.cjs
 

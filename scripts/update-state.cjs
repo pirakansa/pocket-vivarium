@@ -1,6 +1,7 @@
 const fs=require('node:fs'),path=require('node:path');
 const {VillagePlayer}=require('../dist/player.js');
 const {migrateTimeline}=require('./identities.cjs');
+const {translate,convertTimeline}=require('../dist/mehs.js');
 const clone=x=>JSON.parse(JSON.stringify(x));
 const clamp=x=>Math.max(0,Math.min(100,x));
 const SLOT_MS=2*60*60*1000,KEEP=168;
@@ -19,18 +20,18 @@ function step(previous){
    {a:3,s:p.social*(p.care||1)*.65,to:'square',why:'広場で仲間の様子を見て、話をしたい。'},
    {a:4,s:p.curiosity*(p.adventure||1)*.45-tired*.5-(s.rain?35:0),to:'hill',why:'丘の向こうを歩いて、新しい景色を探そう。'}
   ].sort((a,b)=>b.s-a.s);
-  const c=choices[0];p.scores=choices;p.activityArea=c.to;p.action=['食べる','休む','採集する','交流する','探検する'][c.a];p.reason=c.why;p.remainingSteps=c.a===1?2:1;
+  const c=choices[0];for(const choice of choices)choice.why=translate(choice.why);p.scores=choices;p.activityArea=c.to;p.action=['充電する','整備する','資源を回収する','通信する','探索する'][c.a];p.reason=translate(c.why);p.remainingSteps=c.a===1?2:1;
   if(c.a===0){s.food--;p.hunger=clamp(p.hunger-55);}
   if(c.a===1)p.energy=clamp(p.energy+18);
   if(c.a===2){s.food+=s.rain?1:2;p.energy=clamp(p.energy-4);p.success++;}
   if(c.a===3){p.social=clamp(p.social-45);p.kindness++;}
   if(c.a===4){p.curiosity=clamp(p.curiosity-55);p.energy=clamp(p.energy-6);p.discoveries++;if(p.discoveries%3===0)s.food+=3;}
-  note(s,`住人 #${p.id}：${p.action}。`);
+  note(s,`MEHS #${p.id}：${p.action}。`);
  }
  return s;
 }
 function makeBatch(previous,slot){
- previous=migrateTimeline(previous);
+ previous=convertTimeline(migrateTimeline(previous));
  const anchor=slot*SLOT_MS,start=anchor-SLOT_MS,end=anchor+2*SLOT_MS;
  let frames=[],state,time,origin;
  if(previous.schemaVersion===3){

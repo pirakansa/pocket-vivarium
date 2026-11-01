@@ -8,7 +8,7 @@ function migrateTimeline(input){
  for(const p of existing)if(p.name){const known=mapping.get(p.name);if(known!==undefined&&known!==p.id)throw Error('Conflicting legacy identity');mapping.set(p.name,p.id);}
  let next=Math.max(4,...existing.map(p=>p.id+1),...states.map(s=>s.nextResidentId||1));
  for(const s of states)for(const p of s.people||[]){if(p.id===undefined){if(typeof p.name!=='string')throw Error('Resident has neither ID nor legacy name');if(!mapping.has(p.name))mapping.set(p.name,next++);p.id=mapping.get(p.name);}delete p.name;}
- const replace=text=>{for(const [name,id]of mapping)text=text.split(name).join(`住人 #${id}`);return text;};
+ const replace=text=>{for(const [name,id]of mapping)text=text.split(name).join(`MEHS #${id}`);return text;};
  for(const s of states){
   const ids=(s.people||[]).map(p=>p.id);if(new Set(ids).size!==ids.length)throw Error('Duplicate resident ID');
   s.nextResidentId=Math.max(s.nextResidentId||1,4,...ids.map(id=>id+1));

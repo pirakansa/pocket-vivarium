@@ -28,5 +28,5 @@ const dayResult=step(daytime),nightResult=step(nighttime);
 assert.deepEqual(nightResult.people,dayResult.people,'Night must not alter decisions or rest priority');
 const exhausted=JSON.parse(JSON.stringify(nighttime));exhausted.food=9;
 for(const p of exhausted.people)Object.assign(p,{energy:0,hunger:0,social:0,curiosity:0,success:0});
-assert(step(exhausted).people.every(p=>p.action==='休む'),'Fatigued residents still rest');
+assert(step(exhausted).people.every(p=>p.action==='整備する'),'Fatigued residents still rest');
 console.log('PASS: identical day/night decisions; rest remains available when exhausted');
