@@ -16,7 +16,6 @@
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 25,
@@ -31,10 +30,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 40,
@@ -49,10 +48,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 20,
@@ -67,9 +66,11 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "hill"
+            "activityArea": "hill",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -83,7 +84,6 @@
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 26.25,
@@ -98,10 +98,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 41.25,
@@ -116,10 +116,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 21.25,
@@ -134,9 +134,11 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "hill"
+            "activityArea": "hill",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -150,7 +152,6 @@
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 27.5,
@@ -165,10 +166,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 42.5,
@@ -183,10 +184,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 22.5,
@@ -201,9 +202,11 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "hill"
+            "activityArea": "hill",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -213,12 +216,11 @@
         "food": 9,
         "rain": 0,
         "logs": [
-          "08:15　ハルが食料を集めに森へ出かけた。",
+          "08:15　住人 #1が食料を集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 28.75,
@@ -233,10 +235,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "forest"
+            "activityArea": "forest",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 43.75,
@@ -251,10 +253,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 23.75,
@@ -269,9 +271,11 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "hill"
+            "activityArea": "hill",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -281,12 +285,11 @@
         "food": 9,
         "rain": 0,
         "logs": [
-          "08:15　ハルが食料を集めに森へ出かけた。",
+          "08:15　住人 #1が食料を集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 30,
@@ -301,10 +304,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "forest"
+            "activityArea": "forest",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 45,
@@ -315,14 +318,14 @@
             "safe": 1,
             "adventure": 1,
             "action": "家の様子を見に行く",
-            "reason": "ハルはもう出かけたかな。",
+            "reason": "住人 #1はもう出かけたかな。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 25,
@@ -337,9 +340,11 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "hill"
+            "activityArea": "hill",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -349,12 +354,11 @@
         "food": 9,
         "rain": 0,
         "logs": [
-          "08:15　ハルが食料を集めに森へ出かけた。",
+          "08:15　住人 #1が食料を集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 31.25,
@@ -369,10 +373,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "forest"
+            "activityArea": "forest",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 46.25,
@@ -383,14 +387,14 @@
             "safe": 1,
             "adventure": 1,
             "action": "家の様子を見に行く",
-            "reason": "ハルはもう出かけたかな。",
+            "reason": "住人 #1はもう出かけたかな。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 26.25,
@@ -405,9 +409,11 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "hill"
+            "activityArea": "hill",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -417,12 +423,11 @@
         "food": 9,
         "rain": 0,
         "logs": [
-          "08:15　ハルが食料を集めに森へ出かけた。",
+          "08:15　住人 #1が食料を集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 32.5,
@@ -437,10 +442,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "forest"
+            "activityArea": "forest",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 47.5,
@@ -451,14 +456,14 @@
             "safe": 1,
             "adventure": 1,
             "action": "家の様子を見に行く",
-            "reason": "ハルはもう出かけたかな。",
+            "reason": "住人 #1はもう出かけたかな。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 27.5,
@@ -473,9 +478,11 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "hill"
+            "activityArea": "hill",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -485,12 +492,11 @@
         "food": 9,
         "rain": 0,
         "logs": [
-          "08:15　ハルが食料を集めに森へ出かけた。",
+          "08:15　住人 #1が食料を集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 33.75,
@@ -505,10 +511,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "forest"
+            "activityArea": "forest",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 48.75,
@@ -519,14 +525,14 @@
             "safe": 1,
             "adventure": 1,
             "action": "家の様子を見に行く",
-            "reason": "ハルはもう出かけたかな。",
+            "reason": "住人 #1はもう出かけたかな。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 28.75,
@@ -541,9 +547,11 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "hill"
+            "activityArea": "hill",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -553,13 +561,12 @@
         "food": 9,
         "rain": 0,
         "logs": [
-          "08:40　ユイが広場を整えている。",
-          "08:15　ハルが食料を集めに森へ出かけた。",
+          "08:40　住人 #2が広場を整えている。",
+          "08:15　住人 #1が食料を集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 35,
@@ -574,10 +581,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "forest"
+            "activityArea": "forest",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 50,
@@ -592,10 +599,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 30,
@@ -610,9 +617,11 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "hill"
+            "activityArea": "hill",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -622,13 +631,12 @@
         "food": 9,
         "rain": 0,
         "logs": [
-          "08:40　ユイが広場を整えている。",
-          "08:15　ハルが食料を集めに森へ出かけた。",
+          "08:40　住人 #2が広場を整えている。",
+          "08:15　住人 #1が食料を集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 36.25,
@@ -643,10 +651,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "forest"
+            "activityArea": "forest",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 51.25,
@@ -661,10 +669,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 31.25,
@@ -679,9 +687,11 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "hill"
+            "activityArea": "hill",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -691,13 +701,12 @@
         "food": 9,
         "rain": 0,
         "logs": [
-          "08:40　ユイが広場を整えている。",
-          "08:15　ハルが食料を集めに森へ出かけた。",
+          "08:40　住人 #2が広場を整えている。",
+          "08:15　住人 #1が食料を集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 37.5,
@@ -712,10 +721,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "forest"
+            "activityArea": "forest",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 52.5,
@@ -730,10 +739,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 32.5,
@@ -748,9 +757,11 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "hill"
+            "activityArea": "hill",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -760,14 +771,13 @@
         "food": 9,
         "rain": 0,
         "logs": [
-          "08:55　レンが丘でお気に入りの景色を見つけた。",
-          "08:40　ユイが広場を整えている。",
-          "08:15　ハルが食料を集めに森へ出かけた。",
+          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
+          "08:40　住人 #2が広場を整えている。",
+          "08:15　住人 #1が食料を集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 38.75,
@@ -782,10 +792,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "forest"
+            "activityArea": "forest",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 53.75,
@@ -800,10 +810,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 33.75,
@@ -818,9 +828,11 @@
             "success": 0,
             "discoveries": 1,
             "kindness": 0,
-            "activityArea": "hill"
+            "activityArea": "hill",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -830,14 +842,13 @@
         "food": 9,
         "rain": 0,
         "logs": [
-          "08:55　レンが丘でお気に入りの景色を見つけた。",
-          "08:40　ユイが広場を整えている。",
-          "08:15　ハルが食料を集めに森へ出かけた。",
+          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
+          "08:40　住人 #2が広場を整えている。",
+          "08:15　住人 #1が食料を集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 40,
@@ -852,10 +863,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "forest"
+            "activityArea": "forest",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 55,
@@ -870,10 +881,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 35,
@@ -888,9 +899,11 @@
             "success": 0,
             "discoveries": 1,
             "kindness": 0,
-            "activityArea": "hill"
+            "activityArea": "hill",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -900,15 +913,14 @@
         "food": 13,
         "rain": 0,
         "logs": [
-          "09:05　ハルが木の実を持ち帰った。食料 +4",
-          "08:55　レンが丘でお気に入りの景色を見つけた。",
-          "08:40　ユイが広場を整えている。",
-          "08:15　ハルが食料を集めに森へ出かけた。",
+          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
+          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
+          "08:40　住人 #2が広場を整えている。",
+          "08:15　住人 #1が食料を集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 41.25,
@@ -923,10 +935,10 @@
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 56.25,
@@ -941,10 +953,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 36.25,
@@ -959,9 +971,11 @@
             "success": 0,
             "discoveries": 1,
             "kindness": 0,
-            "activityArea": "hill"
+            "activityArea": "hill",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -971,16 +985,15 @@
         "food": 13,
         "rain": 0,
         "logs": [
-          "09:10　ユイとレンが丘の景色について話した。",
-          "09:05　ハルが木の実を持ち帰った。食料 +4",
-          "08:55　レンが丘でお気に入りの景色を見つけた。",
-          "08:40　ユイが広場を整えている。",
-          "08:15　ハルが食料を集めに森へ出かけた。",
+          "09:10　住人 #2と住人 #3が丘の景色について話した。",
+          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
+          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
+          "08:40　住人 #2が広場を整えている。",
+          "08:15　住人 #1が食料を集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 42.5,
@@ -995,10 +1008,10 @@
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 57.5,
@@ -1013,10 +1026,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 1,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 37.5,
@@ -1027,13 +1040,15 @@
             "safe": 0.8,
             "adventure": 3,
             "action": "ユイに発見を話す",
-            "reason": "丘で見た景色を、ユイにも教えたい。",
+            "reason": "丘で見た景色を、住人 #2にも教えたい。",
             "success": 0,
             "discoveries": 1,
             "kindness": 1,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -1043,16 +1058,15 @@
         "food": 13,
         "rain": 0,
         "logs": [
-          "09:10　ユイとレンが丘の景色について話した。",
-          "09:05　ハルが木の実を持ち帰った。食料 +4",
-          "08:55　レンが丘でお気に入りの景色を見つけた。",
-          "08:40　ユイが広場を整えている。",
-          "08:15　ハルが食料を集めに森へ出かけた。",
+          "09:10　住人 #2と住人 #3が丘の景色について話した。",
+          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
+          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
+          "08:40　住人 #2が広場を整えている。",
+          "08:15　住人 #1が食料を集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 43.75,
@@ -1067,10 +1081,10 @@
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 58.75,
@@ -1085,10 +1099,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 1,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 38.75,
@@ -1099,13 +1113,15 @@
             "safe": 0.8,
             "adventure": 3,
             "action": "ユイに発見を話す",
-            "reason": "丘で見た景色を、ユイにも教えたい。",
+            "reason": "丘で見た景色を、住人 #2にも教えたい。",
             "success": 0,
             "discoveries": 1,
             "kindness": 1,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -1115,17 +1131,16 @@
         "food": 12,
         "rain": 0,
         "logs": [
-          "09:20　ハルが朝食を食べた。食料 −1",
-          "09:10　ユイとレンが丘の景色について話した。",
-          "09:05　ハルが木の実を持ち帰った。食料 +4",
-          "08:55　レンが丘でお気に入りの景色を見つけた。",
-          "08:40　ユイが広場を整えている。",
-          "08:15　ハルが食料を集めに森へ出かけた。",
+          "09:20　住人 #1が朝食を食べた。食料 −1",
+          "09:10　住人 #2と住人 #3が丘の景色について話した。",
+          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
+          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
+          "08:40　住人 #2が広場を整えている。",
+          "08:15　住人 #1が食料を集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 0,
@@ -1140,10 +1155,10 @@
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 60,
@@ -1158,10 +1173,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 1,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 40,
@@ -1172,13 +1187,15 @@
             "safe": 0.8,
             "adventure": 3,
             "action": "ユイに発見を話す",
-            "reason": "丘で見た景色を、ユイにも教えたい。",
+            "reason": "丘で見た景色を、住人 #2にも教えたい。",
             "success": 0,
             "discoveries": 1,
             "kindness": 1,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -1188,17 +1205,16 @@
         "food": 12,
         "rain": 0,
         "logs": [
-          "09:20　ハルが朝食を食べた。食料 −1",
-          "09:10　ユイとレンが丘の景色について話した。",
-          "09:05　ハルが木の実を持ち帰った。食料 +4",
-          "08:55　レンが丘でお気に入りの景色を見つけた。",
-          "08:40　ユイが広場を整えている。",
-          "08:15　ハルが食料を集めに森へ出かけた。",
+          "09:20　住人 #1が朝食を食べた。食料 −1",
+          "09:10　住人 #2と住人 #3が丘の景色について話した。",
+          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
+          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
+          "08:40　住人 #2が広場を整えている。",
+          "08:15　住人 #1が食料を集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 1.25,
@@ -1213,10 +1229,10 @@
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 61.25,
@@ -1231,10 +1247,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 1,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 41.25,
@@ -1245,13 +1261,15 @@
             "safe": 0.8,
             "adventure": 3,
             "action": "ユイに発見を話す",
-            "reason": "丘で見た景色を、ユイにも教えたい。",
+            "reason": "丘で見た景色を、住人 #2にも教えたい。",
             "success": 0,
             "discoveries": 1,
             "kindness": 1,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -1261,18 +1279,17 @@
         "food": 11,
         "rain": 0,
         "logs": [
-          "09:30　レンが食事に戻った。食料 −1",
-          "09:20　ハルが朝食を食べた。食料 −1",
-          "09:10　ユイとレンが丘の景色について話した。",
-          "09:05　ハルが木の実を持ち帰った。食料 +4",
-          "08:55　レンが丘でお気に入りの景色を見つけた。",
-          "08:40　ユイが広場を整えている。",
-          "08:15　ハルが食料を集めに森へ出かけた。",
+          "09:30　住人 #3が食事に戻った。食料 −1",
+          "09:20　住人 #1が朝食を食べた。食料 −1",
+          "09:10　住人 #2と住人 #3が丘の景色について話した。",
+          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
+          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
+          "08:40　住人 #2が広場を整えている。",
+          "08:15　住人 #1が食料を集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 2.5,
@@ -1287,10 +1304,10 @@
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 62.5,
@@ -1305,10 +1322,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 1,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 0,
@@ -1323,9 +1340,11 @@
             "success": 0,
             "discoveries": 1,
             "kindness": 1,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -1335,18 +1354,17 @@
         "food": 11,
         "rain": 0,
         "logs": [
-          "09:30　レンが食事に戻った。食料 −1",
-          "09:20　ハルが朝食を食べた。食料 −1",
-          "09:10　ユイとレンが丘の景色について話した。",
-          "09:05　ハルが木の実を持ち帰った。食料 +4",
-          "08:55　レンが丘でお気に入りの景色を見つけた。",
-          "08:40　ユイが広場を整えている。",
-          "08:15　ハルが食料を集めに森へ出かけた。",
+          "09:30　住人 #3が食事に戻った。食料 −1",
+          "09:20　住人 #1が朝食を食べた。食料 −1",
+          "09:10　住人 #2と住人 #3が丘の景色について話した。",
+          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
+          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
+          "08:40　住人 #2が広場を整えている。",
+          "08:15　住人 #1が食料を集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 3.75,
@@ -1361,10 +1379,10 @@
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 63.75,
@@ -1379,10 +1397,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 1,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 0,
@@ -1397,9 +1415,11 @@
             "success": 0,
             "discoveries": 1,
             "kindness": 1,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -1409,18 +1429,17 @@
         "food": 11,
         "rain": 0,
         "logs": [
-          "09:30　レンが食事に戻った。食料 −1",
-          "09:20　ハルが朝食を食べた。食料 −1",
-          "09:10　ユイとレンが丘の景色について話した。",
-          "09:05　ハルが木の実を持ち帰った。食料 +4",
-          "08:55　レンが丘でお気に入りの景色を見つけた。",
-          "08:40　ユイが広場を整えている。",
-          "08:15　ハルが食料を集めに森へ出かけた。",
+          "09:30　住人 #3が食事に戻った。食料 −1",
+          "09:20　住人 #1が朝食を食べた。食料 −1",
+          "09:10　住人 #2と住人 #3が丘の景色について話した。",
+          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
+          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
+          "08:40　住人 #2が広場を整えている。",
+          "08:15　住人 #1が食料を集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 5,
@@ -1435,10 +1454,10 @@
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 65,
@@ -1453,10 +1472,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 1,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 0,
@@ -1471,9 +1490,11 @@
             "success": 0,
             "discoveries": 1,
             "kindness": 1,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -1483,18 +1504,17 @@
         "food": 11,
         "rain": 0,
         "logs": [
-          "09:30　レンが食事に戻った。食料 −1",
-          "09:20　ハルが朝食を食べた。食料 −1",
-          "09:10　ユイとレンが丘の景色について話した。",
-          "09:05　ハルが木の実を持ち帰った。食料 +4",
-          "08:55　レンが丘でお気に入りの景色を見つけた。",
-          "08:40　ユイが広場を整えている。",
-          "08:15　ハルが食料を集めに森へ出かけた。",
+          "09:30　住人 #3が食事に戻った。食料 −1",
+          "09:20　住人 #1が朝食を食べた。食料 −1",
+          "09:10　住人 #2と住人 #3が丘の景色について話した。",
+          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
+          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
+          "08:40　住人 #2が広場を整えている。",
+          "08:15　住人 #1が食料を集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 6.25,
@@ -1509,10 +1529,10 @@
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 66.25,
@@ -1527,10 +1547,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 1,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 1.25,
@@ -1545,9 +1565,11 @@
             "success": 0,
             "discoveries": 1,
             "kindness": 1,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -1557,19 +1579,18 @@
         "food": 11,
         "rain": 0,
         "logs": [
-          "09:50　レンが家で休み始めた。",
-          "09:30　レンが食事に戻った。食料 −1",
-          "09:20　ハルが朝食を食べた。食料 −1",
-          "09:10　ユイとレンが丘の景色について話した。",
-          "09:05　ハルが木の実を持ち帰った。食料 +4",
-          "08:55　レンが丘でお気に入りの景色を見つけた。",
-          "08:40　ユイが広場を整えている。",
-          "08:15　ハルが食料を集めに森へ出かけた。",
+          "09:50　住人 #3が家で休み始めた。",
+          "09:30　住人 #3が食事に戻った。食料 −1",
+          "09:20　住人 #1が朝食を食べた。食料 −1",
+          "09:10　住人 #2と住人 #3が丘の景色について話した。",
+          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
+          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
+          "08:40　住人 #2が広場を整えている。",
+          "08:15　住人 #1が食料を集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 7.5,
@@ -1584,10 +1605,10 @@
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 67.5,
@@ -1602,10 +1623,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 1,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 2.5,
@@ -1620,9 +1641,11 @@
             "success": 0,
             "discoveries": 1,
             "kindness": 1,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     },
     {
@@ -1632,19 +1655,18 @@
         "food": 11,
         "rain": 0,
         "logs": [
-          "09:50　レンが家で休み始めた。",
-          "09:30　レンが食事に戻った。食料 −1",
-          "09:20　ハルが朝食を食べた。食料 −1",
-          "09:10　ユイとレンが丘の景色について話した。",
-          "09:05　ハルが木の実を持ち帰った。食料 +4",
-          "08:55　レンが丘でお気に入りの景色を見つけた。",
-          "08:40　ユイが広場を整えている。",
-          "08:15　ハルが食料を集めに森へ出かけた。",
+          "09:50　住人 #3が家で休み始めた。",
+          "09:30　住人 #3が食事に戻った。食料 −1",
+          "09:20　住人 #1が朝食を食べた。食料 −1",
+          "09:10　住人 #2と住人 #3が丘の景色について話した。",
+          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
+          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
+          "08:40　住人 #2が広場を整えている。",
+          "08:15　住人 #1が食料を集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
           {
-            "name": "ハル",
             "trait": "慎重で備え好き",
             "color": "#c38450",
             "hunger": 8.75,
@@ -1659,10 +1681,10 @@
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
-            "activityArea": "square"
+            "activityArea": "square",
+            "id": 1
           },
           {
-            "name": "ユイ",
             "trait": "仲間を気にかける",
             "color": "#b76a79",
             "hunger": 68.75,
@@ -1677,10 +1699,10 @@
             "success": 0,
             "discoveries": 0,
             "kindness": 1,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 2
           },
           {
-            "name": "レン",
             "trait": "知らない場所が好き",
             "color": "#597eab",
             "hunger": 3.75,
@@ -1695,9 +1717,11 @@
             "success": 0,
             "discoveries": 1,
             "kindness": 1,
-            "activityArea": "home"
+            "activityArea": "home",
+            "id": 3
           }
-        ]
+        ],
+        "nextResidentId": 4
       }
     }
   ],
@@ -1706,19 +1730,18 @@
     "food": 11,
     "rain": 0,
     "logs": [
-      "09:50　レンが家で休み始めた。",
-      "09:30　レンが食事に戻った。食料 −1",
-      "09:20　ハルが朝食を食べた。食料 −1",
-      "09:10　ユイとレンが丘の景色について話した。",
-      "09:05　ハルが木の実を持ち帰った。食料 +4",
-      "08:55　レンが丘でお気に入りの景色を見つけた。",
-      "08:40　ユイが広場を整えている。",
-      "08:15　ハルが食料を集めに森へ出かけた。",
+      "09:50　住人 #3が家で休み始めた。",
+      "09:30　住人 #3が食事に戻った。食料 −1",
+      "09:20　住人 #1が朝食を食べた。食料 −1",
+      "09:10　住人 #2と住人 #3が丘の景色について話した。",
+      "09:05　住人 #1が木の実を持ち帰った。食料 +4",
+      "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
+      "08:40　住人 #2が広場を整えている。",
+      "08:15　住人 #1が食料を集めに森へ出かけた。",
       "08:00　3人の朝が始まりました。"
     ],
     "people": [
       {
-        "name": "ハル",
         "trait": "慎重で備え好き",
         "color": "#c38450",
         "hunger": 10,
@@ -1733,10 +1756,10 @@
         "success": 1,
         "discoveries": 0,
         "kindness": 0,
-        "activityArea": "square"
+        "activityArea": "square",
+        "id": 1
       },
       {
-        "name": "ユイ",
         "trait": "仲間を気にかける",
         "color": "#b76a79",
         "hunger": 70,
@@ -1751,10 +1774,10 @@
         "success": 0,
         "discoveries": 0,
         "kindness": 1,
-        "activityArea": "home"
+        "activityArea": "home",
+        "id": 2
       },
       {
-        "name": "レン",
         "trait": "知らない場所が好き",
         "color": "#597eab",
         "hunger": 5,
@@ -1769,8 +1792,10 @@
         "success": 0,
         "discoveries": 1,
         "kindness": 1,
-        "activityArea": "home"
+        "activityArea": "home",
+        "id": 3
       }
-    ]
+    ],
+    "nextResidentId": 4
   }
 }
