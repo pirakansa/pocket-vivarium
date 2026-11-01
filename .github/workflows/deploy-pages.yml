@@ -67,6 +67,9 @@ jobs:
       - name: Test executable programs
         run: node tests/programs.cjs
 
+      - name: Test changing daily event contracts
+        run: node tests/event-contract.cjs
+
       - name: Load disposable external plugin
         env:
           GH_TOKEN: ${{ github.token }}

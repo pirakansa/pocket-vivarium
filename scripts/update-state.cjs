@@ -12,7 +12,7 @@ function note(state,text){const m=Math.round(state.hour*60);state.logs.unshift(`
 function step(previous,context={}){
  const s=lifecycle.initialize(clone(previous));weather.addExposure(s,1/12);s.hour=Math.round((s.hour+1/12)*12)/12;
  weather.advance(s,note);
- if(context.plugin)external.apply(s,context.time,context.plugin,note);
+ if(context.plugin)external.apply(s,context.time+300000,context.plugin,note);
  for(const p of s.people){
   p.hunger=clamp(p.hunger+.9);p.energy=clamp(p.energy-.35);p.social=clamp(p.social+.8);p.curiosity=clamp(p.curiosity+.7);
   if(s.assembly?.builderId===p.id&&s.hour<s.assembly.readyHour)continue;

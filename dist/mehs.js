@@ -5,7 +5,7 @@
  function convertTimeline(input){
   const data=JSON.parse(JSON.stringify(input));
   const states=[...(data.frames||[]).map(f=>f.state),data.endState].filter(Boolean);
-  for(const s of states){s.logs=(s.logs||[]).map(translate);for(const p of s.people||[]){p.kind='mehs';for(const k of ['trait','action','reason'])if(typeof p[k]==='string')p[k]=translate(p[k]);for(const c of p.scores||[])if(typeof c.why==='string')c.why=translate(c.why);}}
+  for(const s of states){if((s.people||[]).every(p=>p.kind==='mehs'))continue;s.logs=(s.logs||[]).map(translate);for(const p of s.people||[]){p.kind='mehs';for(const k of ['trait','action','reason'])if(typeof p[k]==='string')p[k]=translate(p[k]);for(const c of p.scores||[])if(typeof c.why==='string')c.why=translate(c.why);}}
   return data;
  }
  const api={translate,convertTimeline};if(typeof module==='object')module.exports=api;else root.Mehs=api;

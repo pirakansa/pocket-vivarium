@@ -2,6 +2,7 @@ const clone=x=>JSON.parse(JSON.stringify(x));
 const LEGACY=new Map([['ハル',1],['ユイ',2],['レン',3]]);
 function migrateTimeline(input){
  const data=clone(input),states=[...(data.frames||[]).map(f=>f.state),data.endState].filter(Boolean);
+ const legacyStates=new Set(states.filter(s=>(s.people||[]).some(p=>typeof p.name==='string')));
  const existing=states.flatMap(s=>s.people||[]).filter(p=>p.id!==undefined);
  for(const p of existing)if(!Number.isSafeInteger(p.id)||p.id<1)throw Error('Invalid resident ID');
  const mapping=new Map(LEGACY);
@@ -11,7 +12,8 @@ function migrateTimeline(input){
  const replace=text=>{for(const [name,id]of mapping)text=text.split(name).join(`MEHS #${id}`);return text;};
  for(const s of states){
   const ids=(s.people||[]).map(p=>p.id);if(new Set(ids).size!==ids.length)throw Error('Duplicate resident ID');
-  s.nextResidentId=Math.max(s.nextResidentId||1,4,...ids.map(id=>id+1));
+  s.nextResidentId=Math.max(s.nextResidentId||1,legacyStates.has(s)?4:1,...ids.map(id=>id+1));
+  if(!legacyStates.has(s))continue;
   s.logs=(s.logs||[]).map(replace);
   for(const p of s.people||[]){if(typeof p.reason==='string')p.reason=replace(p.reason);for(const c of p.scores||[])if(typeof c.why==='string')c.why=replace(c.why);}
  }
