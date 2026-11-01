@@ -3,14 +3,14 @@ const {VillagePlayer}=require('../dist/player.js');
 const {migrateTimeline}=require('./identities.cjs');
 const {translate,convertTimeline}=require('../dist/mehs.js');
 const lifecycle=require('./lifecycle.cjs');
-const R=require('./random.cjs'),discoveries=require('./discoveries.cjs');
+const R=require('./random.cjs'),discoveries=require('./discoveries.cjs'),weather=require('./weather.cjs');
 const clone=x=>JSON.parse(JSON.stringify(x));
 const clamp=x=>Math.max(0,Math.min(100,x));
 const SLOT_MS=2*60*60*1000,KEEP=168;
 function note(state,text){const m=Math.round(state.hour*60);state.logs.unshift(`第${Math.floor(m/1440)+1}日 ${String(Math.floor(m/60)%24).padStart(2,'0')}:${String(m%60).padStart(2,'0')}　${text}`);state.logs=state.logs.slice(0,35);}
 function step(previous){
- const s=lifecycle.initialize(clone(previous));s.hour=Math.round((s.hour+1/12)*12)/12;
- if(s.rain>0)s.rain=Math.max(0,s.rain-1);
+ const s=lifecycle.initialize(clone(previous));weather.addExposure(s,1/12);s.hour=Math.round((s.hour+1/12)*12)/12;
+ weather.advance(s,note);
  for(const p of s.people){
   p.hunger=clamp(p.hunger+.9);p.energy=clamp(p.energy-.35);p.social=clamp(p.social+.8);p.curiosity=clamp(p.curiosity+.7);
   if(s.assembly?.builderId===p.id&&s.hour<s.assembly.readyHour)continue;
