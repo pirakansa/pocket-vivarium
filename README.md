@@ -50,3 +50,17 @@ node tests/player.cjs
 https://little-village-observatory.pirakansa.chatgpt.site
 
 GitHubへの保存とSites公開は別の操作です。
+
+## GitHub Pagesへの公開
+
+`.github/workflows/deploy-pages.yml` が `main` へのpushと手動実行（Actions → Deploy to GitHub Pages → Run workflow）で動きます。Node.js 22で既存の再生テストを実行し、成功した場合だけ `dist/` を公開します。ビルドは不要です。
+
+初回はリポジトリの **Settings → Pages → Build and deployment → Source** を **GitHub Actions** に設定してください。その後、Actionsから手動実行するかmainへpushします。公開先URLは成功したデプロイのEnvironmentに表示されます。
+
+非公開リポジトリのPages利用には、対応するGitHubプランが必要です。通常の個人リポジトリのPagesは、ソースが非公開でもサイトは公開されます。`dist/` のHTML・JS・JSONが公開対象です。
+
+このワークフローは公開専用で、2時間ごとのスケジュールや状態JSONの生成はまだ含めません。将来、自動生成したJSONを `GITHUB_TOKEN` でコミットする場合、そのpushでは別ワークフローが起動しないため、生成と公開を同じワークフローに組み込む等の接続が必要です。
+
+既存のSitesには変更を加えません。PagesとSitesは別の公開先です。
+
+公式手順: https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
