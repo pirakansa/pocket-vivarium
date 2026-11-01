@@ -15,5 +15,6 @@ setImmediate(async()=>{
  elements.live.onclick();assert.equal(v('selectedAt'),null);assert.equal(v('displayAt'),now);
  now=Date.parse(responseData.windowEnd)+3600000;v('refresh()');assert(elements.status.textContent.includes('更新待ち'));assert.equal(v('state'),responseData.endState);
  fail=true;await v('loadState()');assert.equal(v('state'),responseData.endState);assert(elements.status.textContent.includes('取得に失敗'));
+ fail=false;responseData=JSON.parse(JSON.stringify(responseData));for(const f of [...responseData.frames,{state:responseData.endState}]){f.state.people=[];f.state.logs=['継承設備が自動復旧を開始'];f.state.assembly={id:99,source:'station',parentIds:[1],generation:2,startedHour:f.state.hour,readyHour:f.state.hour+4};f.state.nextResidentId=100;}await v('loadState()');assert(elements.detail.textContent.includes('0機'));assert(elements.population.innerHTML.includes('自動復旧'));assert(elements.log.innerHTML.includes('自動復旧'));
  frame(0);frame(1000);assert.equal(JSON.stringify(data),original);console.log('PASS: live time, rewind, absolute position across refresh, no future selection, stale/error fallback, immutable source');
 });
