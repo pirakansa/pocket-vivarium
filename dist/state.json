@@ -44,7 +44,12 @@
             "kindness": 0,
             "activityArea": "square",
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -63,7 +68,12 @@
             "kindness": 1,
             "activityArea": "home",
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -82,10 +92,62 @@
             "kindness": 1,
             "activityArea": "home",
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -159,7 +221,12 @@
             ],
             "remainingSteps": 2,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -211,7 +278,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -263,10 +335,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -340,7 +464,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -392,7 +521,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -444,10 +578,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -523,7 +709,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -575,7 +766,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -627,10 +823,62 @@
             ],
             "remainingSteps": 2,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -707,7 +955,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -759,7 +1012,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -811,10 +1069,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -892,7 +1202,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -944,7 +1259,12 @@
             ],
             "remainingSteps": 2,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -996,10 +1316,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -1079,7 +1451,12 @@
             ],
             "remainingSteps": 2,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -1131,7 +1508,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -1183,10 +1565,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -1266,7 +1700,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -1318,7 +1757,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -1370,10 +1814,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -1455,7 +1951,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -1507,7 +2008,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -1559,10 +2065,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -1645,7 +2203,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -1697,7 +2260,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -1749,10 +2317,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -1837,7 +2457,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -1889,7 +2514,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -1941,10 +2571,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -2030,7 +2712,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -2082,7 +2769,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -2134,10 +2826,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -2225,7 +2969,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -2277,7 +3026,12 @@
             ],
             "remainingSteps": 2,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -2329,10 +3083,62 @@
             ],
             "remainingSteps": 2,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -2421,7 +3227,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -2473,7 +3284,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -2525,10 +3341,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -2617,7 +3485,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -2669,7 +3542,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -2721,10 +3599,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -2816,7 +3746,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -2868,7 +3803,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -2920,10 +3860,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -3015,7 +4007,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -3067,7 +4064,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -3119,10 +4121,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -3217,7 +4271,12 @@
             ],
             "remainingSteps": 2,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -3269,7 +4328,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -3321,10 +4385,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -3419,7 +4535,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -3471,7 +4592,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -3523,10 +4649,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -3623,7 +4801,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -3675,7 +4858,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -3727,10 +4915,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -3827,7 +5067,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -3879,7 +5124,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -3931,10 +5181,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -4031,7 +5333,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -4083,7 +5390,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -4135,10 +5447,62 @@
             ],
             "remainingSteps": 2,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -4235,7 +5599,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -4287,7 +5656,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -4339,10 +5713,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -4439,7 +5865,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -4491,7 +5922,12 @@
             ],
             "remainingSteps": 2,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -4543,10 +5979,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -4643,7 +6131,12 @@
             ],
             "remainingSteps": 2,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -4695,7 +6188,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -4747,10 +6245,62 @@
             ],
             "remainingSteps": 2,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -4847,7 +6397,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -4899,7 +6454,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -4951,10 +6511,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -5051,7 +6663,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -5103,7 +6720,12 @@
             ],
             "remainingSteps": 2,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -5155,10 +6777,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -5255,7 +6929,12 @@
             ],
             "remainingSteps": 2,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -5307,7 +6986,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -5359,10 +7043,62 @@
             ],
             "remainingSteps": 2,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -5459,7 +7195,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -5511,7 +7252,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -5563,10 +7309,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -5663,7 +7461,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -5715,7 +7518,12 @@
             ],
             "remainingSteps": 2,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -5767,10 +7575,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -5867,7 +7727,12 @@
             ],
             "remainingSteps": 2,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -5919,7 +7784,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -5971,10 +7841,62 @@
             ],
             "remainingSteps": 2,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -6071,7 +7993,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -6123,7 +8050,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -6175,10 +8107,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -6275,7 +8259,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -6327,7 +8316,12 @@
             ],
             "remainingSteps": 2,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -6379,10 +8373,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -6479,7 +8525,12 @@
             ],
             "remainingSteps": 2,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -6531,7 +8582,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -6583,10 +8639,62 @@
             ],
             "remainingSteps": 2,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -6683,7 +8791,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -6735,7 +8848,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -6787,10 +8905,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -6887,7 +9057,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -6939,7 +9114,12 @@
             ],
             "remainingSteps": 2,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -6991,10 +9171,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -7091,7 +9323,12 @@
             ],
             "remainingSteps": 2,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -7143,7 +9380,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -7195,10 +9437,62 @@
             ],
             "remainingSteps": 2,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -7295,7 +9589,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -7347,7 +9646,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -7399,10 +9703,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -7499,7 +9855,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -7551,7 +9912,12 @@
             ],
             "remainingSteps": 2,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -7603,10 +9969,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -7703,7 +10121,12 @@
             ],
             "remainingSteps": 2,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -7755,7 +10178,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -7807,10 +10235,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -7907,7 +10387,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -7959,7 +10444,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -8011,10 +10501,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -8111,7 +10653,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -8163,7 +10710,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -8215,10 +10767,62 @@
             ],
             "remainingSteps": 2,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -8315,7 +10919,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -8367,7 +10976,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -8419,10 +11033,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -8519,7 +11185,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -8571,7 +11242,12 @@
             ],
             "remainingSteps": 2,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -8623,10 +11299,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -8723,7 +11451,12 @@
             ],
             "remainingSteps": 2,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -8775,7 +11508,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -8827,10 +11565,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -8927,7 +11717,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -8979,7 +11774,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -9031,10 +11831,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -9131,7 +11983,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -9183,7 +12040,12 @@
             ],
             "remainingSteps": 2,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -9235,10 +12097,62 @@
             ],
             "remainingSteps": 2,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -9335,7 +12249,12 @@
             ],
             "remainingSteps": 2,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -9387,7 +12306,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -9439,10 +12363,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -9539,7 +12515,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -9591,7 +12572,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -9643,10 +12629,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -9743,7 +12781,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -9795,7 +12838,12 @@
             ],
             "remainingSteps": 2,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -9847,10 +12895,62 @@
             ],
             "remainingSteps": 2,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -9947,7 +13047,12 @@
             ],
             "remainingSteps": 2,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -9999,7 +13104,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -10051,10 +13161,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -10151,7 +13313,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -10203,7 +13370,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -10255,10 +13427,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -10355,7 +13579,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -10407,7 +13636,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -10459,10 +13693,62 @@
             ],
             "remainingSteps": 2,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -10559,7 +13845,12 @@
             ],
             "remainingSteps": 2,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -10611,7 +13902,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -10663,10 +13959,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -10763,7 +14111,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -10815,7 +14168,12 @@
             ],
             "remainingSteps": 2,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -10867,10 +14225,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -10967,7 +14377,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -11019,7 +14434,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -11071,10 +14491,62 @@
             ],
             "remainingSteps": 2,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -11171,7 +14643,12 @@
             ],
             "remainingSteps": 2,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -11223,7 +14700,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -11275,10 +14757,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -11375,7 +14909,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -11427,7 +14966,12 @@
             ],
             "remainingSteps": 2,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -11479,10 +15023,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -11579,7 +15175,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -11631,7 +15232,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -11683,10 +15289,62 @@
             ],
             "remainingSteps": 2,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -11783,7 +15441,12 @@
             ],
             "remainingSteps": 2,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -11835,7 +15498,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -11887,10 +15555,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -11987,7 +15707,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -12039,7 +15764,12 @@
             ],
             "remainingSteps": 2,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -12091,10 +15821,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -12191,7 +15973,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -12243,7 +16030,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -12295,10 +16087,62 @@
             ],
             "remainingSteps": 2,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -12395,7 +16239,12 @@
             ],
             "remainingSteps": 2,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -12447,7 +16296,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -12499,10 +16353,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -12599,7 +16505,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -12651,7 +16562,12 @@
             ],
             "remainingSteps": 2,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -12703,10 +16619,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -12803,7 +16771,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -12855,7 +16828,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -12907,10 +16885,62 @@
             ],
             "remainingSteps": 2,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -13007,7 +17037,12 @@
             ],
             "remainingSteps": 2,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -13059,7 +17094,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -13111,10 +17151,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -13211,7 +17303,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -13263,7 +17360,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -13315,10 +17417,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -13415,7 +17569,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -13467,7 +17626,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -13519,10 +17683,62 @@
             ],
             "remainingSteps": 2,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -13619,7 +17835,12 @@
             ],
             "remainingSteps": 2,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -13671,7 +17892,12 @@
             ],
             "remainingSteps": 2,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -13723,10 +17949,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -13823,7 +18101,12 @@
             ],
             "remainingSteps": 1,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -13875,7 +18158,12 @@
             ],
             "remainingSteps": 1,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -13927,10 +18215,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -14027,7 +18367,12 @@
             ],
             "remainingSteps": 0,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -14079,7 +18424,12 @@
             ],
             "remainingSteps": 0,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -14131,10 +18481,62 @@
             ],
             "remainingSteps": 1,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     },
     {
@@ -14231,7 +18633,12 @@
             ],
             "remainingSteps": 2,
             "id": 1,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -14283,7 +18690,12 @@
             ],
             "remainingSteps": 2,
             "id": 2,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           },
           {
             "trait": "知らない場所が好き",
@@ -14335,10 +18747,62 @@
             ],
             "remainingSteps": 0,
             "id": 3,
-            "kind": "mehs"
+            "kind": "mehs",
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "parentIds": [],
+            "generation": 1,
+            "durability": 100
           }
         ],
-        "nextResidentId": 4
+        "nextResidentId": 4,
+        "nextAssemblyHour": 25,
+        "lifecycleVersion": 1,
+        "resources": {
+          "parts": 24
+        },
+        "lineage": {
+          "1": {
+            "id": 1,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 1,
+              "safe": 3,
+              "adventure": 0.7,
+              "color": "#c38450"
+            }
+          },
+          "2": {
+            "id": 2,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 528,
+            "design": {
+              "care": 3,
+              "safe": 1,
+              "adventure": 1,
+              "color": "#b76a79"
+            }
+          },
+          "3": {
+            "id": 3,
+            "generation": 1,
+            "parentIds": [],
+            "activatedHour": 19,
+            "serviceLifeHours": 552,
+            "design": {
+              "care": 0.8,
+              "safe": 0.8,
+              "adventure": 3,
+              "color": "#597eab"
+            }
+          }
+        },
+        "assembly": null
       }
     }
   ],
@@ -14434,7 +18898,12 @@
         ],
         "remainingSteps": 1,
         "id": 1,
-        "kind": "mehs"
+        "kind": "mehs",
+        "activatedHour": 19,
+        "serviceLifeHours": 528,
+        "parentIds": [],
+        "generation": 1,
+        "durability": 100
       },
       {
         "trait": "ほかの機体を気にかける",
@@ -14486,7 +18955,12 @@
         ],
         "remainingSteps": 1,
         "id": 2,
-        "kind": "mehs"
+        "kind": "mehs",
+        "activatedHour": 19,
+        "serviceLifeHours": 528,
+        "parentIds": [],
+        "generation": 1,
+        "durability": 100
       },
       {
         "trait": "知らない場所が好き",
@@ -14538,9 +19012,61 @@
         ],
         "remainingSteps": 2,
         "id": 3,
-        "kind": "mehs"
+        "kind": "mehs",
+        "activatedHour": 19,
+        "serviceLifeHours": 552,
+        "parentIds": [],
+        "generation": 1,
+        "durability": 100
       }
     ],
-    "nextResidentId": 4
+    "nextResidentId": 4,
+    "nextAssemblyHour": 25,
+    "lifecycleVersion": 1,
+    "resources": {
+      "parts": 24
+    },
+    "lineage": {
+      "1": {
+        "id": 1,
+        "generation": 1,
+        "parentIds": [],
+        "activatedHour": 19,
+        "serviceLifeHours": 528,
+        "design": {
+          "care": 1,
+          "safe": 3,
+          "adventure": 0.7,
+          "color": "#c38450"
+        }
+      },
+      "2": {
+        "id": 2,
+        "generation": 1,
+        "parentIds": [],
+        "activatedHour": 19,
+        "serviceLifeHours": 528,
+        "design": {
+          "care": 3,
+          "safe": 1,
+          "adventure": 1,
+          "color": "#b76a79"
+        }
+      },
+      "3": {
+        "id": 3,
+        "generation": 1,
+        "parentIds": [],
+        "activatedHour": 19,
+        "serviceLifeHours": 552,
+        "design": {
+          "care": 0.8,
+          "safe": 0.8,
+          "adventure": 3,
+          "color": "#597eab"
+        }
+      }
+    },
+    "assembly": null
   }
 }
