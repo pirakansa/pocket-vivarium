@@ -29,28 +29,36 @@ function step(previous){
  return s;
 }
 function makeBatch(previous,slot){
- let state=clone(previous.endState);const frames=[];
- for(let minute=0;minute<120;minute+=5){frames.push({minute,state:clone(state)});state=step(state);}
- return VillagePlayer.validate({schemaVersion:2,mode:'relative',title:'こもれびの村・2時間の記録',durationMinutes:120,stepMinutes:5,generatedSlot:slot,generatedAt:new Date(slot*SLOT_MS).toISOString(),frames,endState:state});
+ const anchor=slot*SLOT_MS,start=anchor-SLOT_MS,end=anchor+2*SLOT_MS;
+ let frames=[],state,time,origin;
+ if(previous.schemaVersion===3){
+  VillagePlayer.validate(previous);
+  if(anchor<Date.parse(previous.anchorAt))throw Error('Clock moved backwards');
+  if(anchor===Date.parse(previous.anchorAt))return clone(previous);
+  frames=clone(previous.frames);state=clone(previous.endState);time=Date.parse(previous.windowEnd);origin=previous.worldOrigin;
+ }else{
+  if(!previous.endState||!Array.isArray(previous.endState.people))throw Error('Missing migration state');
+  state=clone(previous.endState);time=start;
+  origin=new Date(Math.floor((start+9*3600000)/86400000)*86400000-9*3600000).toISOString();
+  state.hour=(start-Date.parse(origin))/3600000;
+ }
+ if((end-time)/300000>105120)throw Error('More than one year of catch-up requires manual review');
+ while(time<end){frames.push({at:new Date(time).toISOString(),state:clone(state)});state=step(state);time+=300000;}
+ frames=frames.filter(f=>Date.parse(f.at)>=start&&Date.parse(f.at)<end);
+ return VillagePlayer.validate({schemaVersion:3,mode:'realtime',title:'こもれびの村・6時間の記録',stepMinutes:5,windowStart:new Date(start).toISOString(),anchorAt:new Date(anchor).toISOString(),windowEnd:new Date(end).toISOString(),worldOrigin:origin,generatedAt:new Date().toISOString(),frames,endState:state});
 }
 function update(root,now=new Date()){
- const file=path.join(root,'dist/state.json');let batch=VillagePlayer.validate(JSON.parse(fs.readFileSync(file,'utf8')));
- const target=Math.floor(now.getTime()/SLOT_MS);if(!Number.isFinite(target))throw Error('Invalid execution time');
- const last=batch.generatedSlot;
- if(last!==undefined&&!Number.isSafeInteger(last))throw Error('Invalid generatedSlot');
- if(last!==undefined&&target<=last)return {updated:0,remaining:0};
- const first=last===undefined?target:last+1;
- // Bound work per run after a long pause; subsequent runs continue from this slot.
- const stop=Math.min(target,first+83),history=path.join(root,'data/history');fs.mkdirSync(history,{recursive:true});
- for(let slot=first;slot<=stop;slot++){
-  const start=Math.round(batch.frames[0].state.hour*60);
-  fs.writeFileSync(path.join(history,`${String(start).padStart(12,'0')}.json`),JSON.stringify(batch,null,2)+'\n');
-  batch=makeBatch(batch,slot);
- }
- const files=fs.readdirSync(history).filter(n=>/^\d{12}\.json$/.test(n)).sort();
+ const file=path.join(root,'dist/state.json'),previous=JSON.parse(fs.readFileSync(file,'utf8'));
+ const target=Math.floor(now.getTime()/SLOT_MS);if(!Number.isSafeInteger(target))throw Error('Invalid execution time');
+ const history=path.join(root,'data/history');fs.mkdirSync(history,{recursive:true});
+ if(previous.schemaVersion===3&&target*SLOT_MS<=Date.parse(previous.anchorAt)){VillagePlayer.validate(previous);return {updated:0};}
+ const batch=makeBatch(previous,target);
+ const key=previous.schemaVersion===3?String(Date.parse(previous.anchorAt)):String(Math.round(previous.frames[0].state.hour*60));
+ fs.writeFileSync(path.join(history,key.padStart(13,'0')+'.json'),JSON.stringify(previous,null,2)+'\n');
+ const files=fs.readdirSync(history).filter(n=>/^\d{12,13}\.json$/.test(n)).sort();
  for(const name of files.slice(0,Math.max(0,files.length-KEEP)))fs.unlinkSync(path.join(history,name));
- fs.writeFileSync(file,JSON.stringify(batch,null,2)+'\n');
- return {updated:stop-first+1,remaining:target-stop};
+ const temp=file+'.tmp';fs.writeFileSync(temp,JSON.stringify(batch,null,2)+'\n');fs.renameSync(temp,file);
+ return {updated:1,windowStart:batch.windowStart,windowEnd:batch.windowEnd};
 }
-if(require.main===module){const result=update(path.resolve(__dirname,'..'));console.log(JSON.stringify(result));}
+if(require.main===module)console.log(JSON.stringify(update(path.resolve(__dirname,'..'))));
 module.exports={step,makeBatch,update,SLOT_MS};

@@ -1,39 +1,39 @@
 <!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>こもれびの村</title><style>
 *{box-sizing:border-box}body{margin:0;background:#f3f1e8;color:#293e35;font:15px system-ui,sans-serif}header,main{max-width:1280px;margin:auto;padding:24px}header{display:flex;justify-content:space-between;align-items:center}h1{font-size:26px;margin:5px 0}small,.muted{color:#708078}button{font:inherit;border:1px solid #c9d2c6;background:#fffdf5;color:#344e40;border-radius:9px;padding:10px 15px;cursor:pointer}button:hover{background:#e1ecdc}button.active{background:#345b47;color:white}nav{display:flex;gap:8px;flex-wrap:wrap}main{padding-top:0}.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:18px}.scene{background:#dce8c8;border-radius:20px;overflow:hidden;border:1px solid #c6d2b9;position:relative}canvas{display:block;width:100%;aspect-ratio:1.5;cursor:pointer}.caption{position:absolute;top:18px;left:20px;font-size:13px;background:#fffdf0d9;border-radius:30px;padding:8px 14px}.panel{background:#fffdf7;border:1px solid #dedfd1;border-radius:16px;padding:20px}h2{font-size:17px;margin:0 0 15px}.controls{margin-top:14px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.people{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}.person{text-align:left;padding:15px}.person strong{display:block;font-size:17px;margin-bottom:5px}.bar{height:5px;background:#e8e8de;border-radius:4px;margin:6px 0 12px;overflow:hidden}.bar i{display:block;height:100%;background:#8baf79}.reason{line-height:1.8;font-size:14px}.scores{display:flex;justify-content:space-between;font-size:12px;margin-top:10px}.log{max-height:230px;overflow:auto}.log p{font-size:13px;line-height:1.6;padding:9px 0;border-bottom:1px solid #eeeee4;margin:0}.footer{font-size:12px;color:#7b8378;line-height:1.8;margin-top:14px}.tag{display:inline-block;background:#edf1e5;border-radius:6px;padding:4px 8px;font-size:12px;margin:8px 0}@media(max-width:850px){.layout{grid-template-columns:1fr}header{align-items:start;padding:18px}main{padding:0 14px 20px}.people{gap:6px}.person{padding:10px;font-size:12px}canvas{aspect-ratio:1.15}h1{font-size:22px}}
 button:disabled{opacity:.45;cursor:default}.timeline{margin-top:15px;padding:16px;background:#fffdf7;border:1px solid #dedfd1;border-radius:14px}.timeline input{width:100%;accent-color:#345b47;min-height:32px}.timeline-head{display:flex;justify-content:space-between;gap:10px;font-size:13px}.controls select{font:inherit;border:1px solid #c9d2c6;border-radius:9px;padding:10px;background:#fffdf5;color:#344e40}.controls label{display:flex;align-items:center;gap:8px;font-size:13px}.caption{max-width:calc(100% - 30px);font-size:12px}@media(max-width:500px){.caption{top:10px;left:10px}.controls nav{gap:6px}button{padding:10px}}
-</style><header><div><small>SMALL WORLD / OBSERVATORY 01</small><h1>こもれびの村</h1><small>小さな暮らしを、少しだけ見守る。</small></div><span class="tag">実験中の小さな世界</span></header><main><div class="layout"><section><div class="scene"><canvas id="world" width="1000" height="660" aria-label="住人が行動する村。下の住人ボタンで詳細を選べます"></canvas><div class="caption" id="clock"></div></div><div class="controls"><nav><button id="play" class="active" disabled>Ⅱ 一時停止</button><button id="back" disabled>−5分</button><button id="next" disabled>＋5分</button><button id="restart" disabled>最初から</button></nav><label>再生速度 <select id="speed" disabled><option value="1">×1（実時間）</option><option value="30" selected>×30（2時間を4分で）</option><option value="120">×120（2時間を1分で）</option></select></label></div><div class="timeline"><div class="timeline-head"><span id="elapsed">読み込み中</span><span id="status" role="status">2時間の暮らし</span></div><input id="seek" type="range" min="0" max="120" step="1" value="0" aria-label="再生位置（分）" disabled><div class="timeline-head"><span>0分</span><span>60分</span><span>120分</span></div></div><div class="people" id="people"></div><div class="footer">住人を選ぶと、今の行動の理由が見られます。5分刻みの記録を再生しています。住人は記録の合間も歩きます。再読み込みすると最初から再生します。</div></section><aside><div class="panel" id="detail"></div><div class="panel" style="margin-top:16px"><h2>村の手帳</h2><div id="log" class="log"></div></div><div class="footer">ある朝の2時間を収めたサンプルです。現実の時計とは連動しません。<br>最後まで再生すると記録は停止します。最初から何度でも見返せます。</div></aside></div></main><script src="./player.js"></script><script>
+</style><header><div><small>SMALL WORLD / OBSERVATORY 01</small><h1>こもれびの村</h1><small>小さな暮らしを、少しだけ見守る。</small></div><span class="tag">実験中の小さな世界</span></header><main><div class="layout"><section><div class="scene"><canvas id="world" width="1000" height="660" aria-label="住人が行動する村。下の住人ボタンで詳細を選べます"></canvas><div class="caption" id="clock"></div></div><div class="controls"><nav><button id="live" class="active" disabled>現在に戻る</button></nav><span class="tag" id="status" role="status">記録を読み込み中</span></div><div class="timeline"><div class="timeline-head"><span id="elapsed">過去2時間を振り返る</span><span>未来の記録は非表示</span></div><input id="seek" type="range" min="0" max="120" step="1" value="120" aria-label="過去2時間の再生位置" disabled><div class="timeline-head"><span>2時間前</span><span>1時間前</span><span>現在</span></div></div><div class="people" id="people"></div><div class="footer">住人を選ぶと、今の行動の理由が見られます。現在の村を表示しています。スライダーで過去2時間を振り返れます。住人は記録の合間も動きます。</div></section><aside><div class="panel" id="detail"></div><div class="panel" style="margin-top:16px"><h2>村の手帳</h2><div id="log" class="log"></div></div><div class="footer">現実の時刻に合わせた村の記録です。<br>更新が遅れた場合は最後の記録で待ち、住人の動きは続きます。</div></aside></div></main><script src="./player.js"></script><script>
 const $=id=>document.getElementById(id),canvas=$('world'),ctx=canvas.getContext('2d');
 const places={home:[240,395],forest:[795,245],square:[525,360],hill:[735,475]};
-let state=null,timeline=null,minute=0,frameIndex=-1,selected=0,running=true,last=null,speed=30,animationTime=0;const actions=['食べる','休む','採集する','交流する','探検する'];
+let state=null,timeline=null,selected=0,running=true,last=null,animationTime=0,selectedAt=null,displayAt=0,lastState=null,lastUi=0,fetching=false,loadFailed=false;
+const actions=['食べる','休む','採集する','交流する','探検する'];
 const visuals=new Map();
 async function loadState(){
+ if(fetching)return;fetching=true;
  try{
   const response=await fetch('./state.json',{cache:'no-store'});
-  if(!response.ok)throw new Error('HTTP '+response.status);
-  timeline=VillagePlayer.validate(await response.json());
-  ['play','back','next','restart','speed','seek'].forEach(id=>$(id).disabled=false);
-  applyPosition(0,true);last=null;
- }catch(error){$('clock').textContent='記録を読み込めませんでした。再読み込みをお試しください。';$('status').textContent='読み込み失敗';}
+  if(!response.ok)throw Error('HTTP '+response.status);
+  const next=VillagePlayer.validate(await response.json());
+  // Ignore an older cached response. Preserve a snapshot being reviewed even after it rolls out.
+  if(!timeline||Date.parse(next.anchorAt)>=Date.parse(timeline.anchorAt))timeline=next;
+  loadFailed=false;$('live').disabled=false;$('seek').disabled=false;refresh();
+ }catch(error){loadFailed=true;if(!state)$('clock').textContent='記録を読み込めませんでした。自動で再試行します。';$('status').textContent='記録の取得に失敗・再試行待ち';}
+ finally{fetching=false;}
 }
-function updateControls(){
- $('seek').value=minute;
- $('seek').setAttribute('aria-valuetext',Math.floor(minute)+'分 / 120分');
- $('elapsed').textContent=`${Math.floor(minute)} / 120分 · 5分刻み`;
- $('status').textContent=minute>=120?'再生終了':running?'再生中':'一時停止中';
- $('play').textContent=minute>=120?'▶ もう一度':running?'Ⅱ 一時停止':'▶ 再開';
- $('play').classList.toggle('active',running&&minute<120);
-}
-function applyPosition(value,resetVisuals=false){
- minute=Math.max(0,Math.min(120,value));
- const nextIndex=minute>=120?24:Math.floor(minute/5);
- if(resetVisuals)visuals.clear();
- if(nextIndex!==frameIndex||resetVisuals){frameIndex=nextIndex;state=VillagePlayer.snapshotAt(timeline,minute);render();}
- if(minute>=120)running=false;
- updateControls();updateClock();
-}
-function updateClock(){
- const total=Math.round(timeline.frames[0].state.hour*60)+Math.floor(minute);
- $('clock').textContent=`${Math.floor(total/1440)+1}日目 · ${String(Math.floor(total/60)%24).padStart(2,'0')}:${String(total%60).padStart(2,'0')}　 ${state.rain?'🌧 雨':'☀ 晴れ'}　 🍎 ${state.food}`;
+function refresh(){
+ if(!timeline)return;
+ const now=Date.now(),b=VillagePlayer.bounds(timeline,now);
+ displayAt=VillagePlayer.position(timeline,now,selectedAt);
+ const retained=selectedAt!==null&&selectedAt<Date.parse(timeline.windowStart)&&lastState;
+ const next=retained?lastState:VillagePlayer.snapshotAt(timeline,displayAt);
+ if(next!==state){state=next;lastState=next;render();}
+ const ago=Math.max(0,Math.floor((now-displayAt)/60000));
+ $('elapsed').textContent=selectedAt===null?'現在の村':ago+'分前を表示中';
+ $('status').textContent=loadFailed?'記録の取得に失敗・前回の記録を表示':b.notStarted?'記録の開始待ち':b.waiting?'更新待ち・最後の状態を表示':selectedAt===null?'LIVE · 現在':'過去の記録';
+ $('live').classList.toggle('active',selectedAt===null);
+ $('seek').value=selectedAt===null?120:Math.max(0,Math.min(120,120-ago));
+ $('seek').setAttribute('aria-valuetext',selectedAt===null?'現在':ago+'分前');
+ const date=new Date(displayAt);const clock=new Intl.DateTimeFormat('ja-JP',{timeZone:'Asia/Tokyo',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit',hour12:false}).format(date);
+ $('clock').textContent=`${clock}　 ${state.rain?'🌧 雨':'☀ 晴れ'}　 🍎 ${state.food}`;
 }
 function motion(p,i,dt,t){
  let v=visuals.get(p.name);
@@ -41,7 +41,7 @@ function motion(p,i,dt,t){
  const center=places[area]||places.square;
  if(!v){v={x:p.x??center[0],y:p.y??center[1],tx:center[0],ty:center[1],wait:i*1.8,area};visuals.set(p.name,v);}
  if(v.area!==area){v.area=area;v.tx=center[0];v.ty=center[1];v.wait=0;}
- if(running||minute>=120){
+ if(running){
   const distance=Math.hypot(v.tx-v.x,v.ty-v.y);
   if(distance>2){const move=Math.min(distance,dt*26);v.x+=(v.tx-v.x)/distance*move;v.y+=(v.ty-v.y)/distance*move;}
   else {v.wait-=dt;if(v.wait<=0){v.tx=center[0]+(Math.random()-.5)*110;v.ty=center[1]+(Math.random()-.5)*65;v.wait=2+Math.random()*5;}}
@@ -53,17 +53,13 @@ function select(i){selected=i;render()}
 function ellipse(x,y,rx,ry,c){ctx.fillStyle=c;ctx.beginPath();ctx.ellipse(x,y,rx,ry,0,0,Math.PI*2);ctx.fill()}
 function tree(x,y,s=1){ctx.fillStyle='#827254';ctx.fillRect(x-5*s,y-10*s,10*s,48*s);ellipse(x,y-27*s,29*s,38*s,'#78995f');ellipse(x-15*s,y-13*s,24*s,25*s,'#86a969');ellipse(x+18*s,y-16*s,25*s,29*s,'#729359')}
 function house(x,y){ctx.fillStyle='#eee1b9';ctx.fillRect(x-60,y-40,120,85);ctx.fillStyle='#ab7759';ctx.beginPath();ctx.moveTo(x-77,y-38);ctx.lineTo(x,y-103);ctx.lineTo(x+77,y-38);ctx.fill();ctx.fillStyle='#6e7057';ctx.fillRect(x-12,y+5,25,40);ctx.fillStyle='#9ec8bd';ctx.fillRect(x-42,y-15,22,23);ctx.fillRect(x+23,y-15,22,23)}
-function draw(timestamp){const elapsed=last===null||document.hidden?0:Math.max(0,(timestamp-last)/1000);last=timestamp;const dt=Math.min(elapsed,.1);if(timeline&&running&&minute<120&&!document.hidden)applyPosition(VillagePlayer.advance(minute,elapsed,speed,120));if((running||minute>=120)&&!document.hidden)animationTime+=dt*1000;const t=animationTime;ctx.fillStyle='#dbe8c7';ctx.fillRect(0,0,1000,660);ellipse(850,60,330,170,'#c4d7ae');ellipse(70,30,320,145,'#cbdcb4');ctx.strokeStyle='#ece3c8';ctx.lineWidth=45;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(240,405);ctx.quadraticCurveTo(490,330,790,250);ctx.moveTo(510,360);ctx.lineTo(735,480);ctx.stroke();ctx.fillStyle='#a8cbd0';ctx.beginPath();ctx.moveTo(0,520);ctx.bezierCurveTo(300,480,400,650,1000,570);ctx.lineTo(1000,660);ctx.lineTo(0,660);ctx.fill();ctx.strokeStyle='#8ebac1';ctx.lineWidth=2;for(let i=0;i<10;i++){ctx.beginPath();ctx.moveTo(i*110+Math.sin(t/1800+i)*8,610);ctx.lineTo(i*110+38,610);ctx.stroke()}
+function draw(timestamp){const elapsed=last===null||document.hidden?0:Math.max(0,(timestamp-last)/1000);last=timestamp;const dt=Math.min(elapsed,.1);if(!document.hidden){animationTime+=dt*1000;if(timestamp-lastUi>=1000){lastUi=timestamp;refresh();}}const t=animationTime;ctx.fillStyle='#dbe8c7';ctx.fillRect(0,0,1000,660);ellipse(850,60,330,170,'#c4d7ae');ellipse(70,30,320,145,'#cbdcb4');ctx.strokeStyle='#ece3c8';ctx.lineWidth=45;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(240,405);ctx.quadraticCurveTo(490,330,790,250);ctx.moveTo(510,360);ctx.lineTo(735,480);ctx.stroke();ctx.fillStyle='#a8cbd0';ctx.beginPath();ctx.moveTo(0,520);ctx.bezierCurveTo(300,480,400,650,1000,570);ctx.lineTo(1000,660);ctx.lineTo(0,660);ctx.fill();ctx.strokeStyle='#8ebac1';ctx.lineWidth=2;for(let i=0;i<10;i++){ctx.beginPath();ctx.moveTo(i*110+Math.sin(t/1800+i)*8,610);ctx.lineTo(i*110+38,610);ctx.stroke()}
 for(const [x,y,s] of [[90,170,1.2],[160,140,1],[870,170,1.2],[925,220,1],[785,140,1.1],[865,295,.8],[95,430,.8],[420,170,.7]])tree(x,y,s);house(235,360);ellipse(525,360,55,30,'#c7c9a8');ellipse(525,350,20,12,'#a5b9ad');ctx.fillStyle='#8f9b82';ctx.fillRect(516,332,18,20);ellipse(525,330,25,9,'#b4c3b3');ctx.font='18px system-ui';ctx.fillStyle='#53684b';ctx.textAlign='center';ctx.fillText('家',235,440);ctx.fillText('広場',525,410);ctx.fillText('木の実の森',800,335);ctx.fillText('見晴らしの丘',750,535);for(let i=0;i<35;i++){let x=(i*137)%970,y=180+(i*71)%350;ellipse(x,y,2,2,i%2?'#f5e9ab':'#a9bd8b')}
 if(state)state.people.forEach((person,i)=>{const v=motion(person,i,dt,t),p={...person,...v};const bob=Math.hypot(p.tx-p.x,p.ty-p.y)>5?Math.sin(t/130+i)*3:Math.sin(t/700+i);ellipse(p.x,p.y+14,15,6,'#51634b25');if(selected===i){ctx.strokeStyle='#fafcf0';ctx.lineWidth=3;ctx.beginPath();ctx.ellipse(p.x,p.y+13,22,10,0,0,7);ctx.stroke()}ctx.fillStyle=p.color;ctx.beginPath();ctx.roundRect(p.x-11,p.y-10+bob,22,26,8);ctx.fill();ellipse(p.x,p.y-18+bob,10,11,'#f2d6ad');ellipse(p.x-2,p.y-25+bob,11,6,'#655342');ctx.fillStyle='#344537';ctx.font='bold 16px system-ui';ctx.fillText(p.name,p.x,p.y-40+bob);ctx.font='12px system-ui';ctx.fillText(p.action,p.x,p.y+34)});
 const h=state?state.hour%24:12;if(h>=20||h<6){ctx.fillStyle='#1b345b40';ctx.fillRect(0,0,1000,660)}if(state&&state.rain){ctx.strokeStyle='#6e94a966';ctx.lineWidth=2;for(let i=0;i<65;i++){let x=(i*59+t/15)%1000,y=(i*83+t/3)%660;ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x-6,y+16);ctx.stroke()}}requestAnimationFrame(draw)}
-$('play').onclick=()=>{if(!timeline)return;if(minute>=120){running=true;applyPosition(0,true);}else{running=!running;updateControls();}last=null;};
-$('back').onclick=()=>{applyPosition(minute-5,true);last=null;};
-$('next').onclick=()=>{applyPosition(minute+5,true);last=null;};
-$('restart').onclick=()=>{running=true;applyPosition(0,true);last=null;};
-$('speed').onchange=()=>{speed=Number($('speed').value);last=null;};
-$('seek').oninput=()=>{applyPosition(Number($('seek').value),true);last=null;};
+$('live').onclick=()=>{selectedAt=null;visuals.clear();lastState=null;refresh();};
+$('seek').oninput=()=>{if(!timeline)return;const now=Date.now(),value=Number($('seek').value);selectedAt=value>=120?null:Math.max(Date.parse(timeline.windowStart),now-(120-value)*60000);visuals.clear();lastState=null;refresh();};
 canvas.onclick=e=>{if(!state)return;let r=canvas.getBoundingClientRect(),x=(e.clientX-r.left)*1000/r.width,y=(e.clientY-r.top)*660/r.height;let i=state.people.findIndex(p=>{const v=visuals.get(p.name);return v&&Math.hypot(v.x-x,v.y-y)<40});if(i>=0)select(i)};
-document.addEventListener('visibilitychange',()=>{last=null;});
-loadState();requestAnimationFrame(draw);
+document.addEventListener('visibilitychange',()=>{last=null;if(!document.hidden){refresh();loadState();}});
+loadState();setInterval(()=>{if(!document.hidden)loadState()},60000);requestAnimationFrame(draw);
 </script></html>

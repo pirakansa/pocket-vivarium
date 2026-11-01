@@ -1,12 +1,14 @@
-/* Relative playback clock. World snapshots are never mutated. */
+/* Absolute timestamps select immutable world snapshots. */
 (function(root){
- function validate(data){
-  if(data.schemaVersion!==2||data.mode!=='relative'||data.durationMinutes!==120||data.stepMinutes!==5||!Array.isArray(data.frames)||data.frames.length!==24)throw Error('2時間・5分刻みのデータが必要です');
-  const validState=s=>s&&Number.isFinite(s.hour)&&Number.isFinite(s.food)&&Array.isArray(s.logs)&&s.logs.every(x=>typeof x==='string')&&Array.isArray(s.people)&&s.people.length===3&&s.people.every(p=>typeof p.name==='string'&&typeof p.action==='string'&&typeof p.reason==='string'&&['hunger','energy','social','curiosity','success','discoveries','kindness'].every(k=>Number.isFinite(p[k])));
-  if(!data.frames.every((f,i)=>f.minute===i*5&&validState(f.state))||!validState(data.endState))throw Error('状態データを読み込めません');
-  return data;
+ const STEP=300000;
+ function validate(d){
+  const start=Date.parse(d.windowStart),end=Date.parse(d.windowEnd),anchor=Date.parse(d.anchorAt);
+  const valid=s=>s&&Number.isFinite(s.hour)&&Number.isFinite(s.food)&&Array.isArray(s.logs)&&Array.isArray(s.people)&&s.people.length===3;
+  if(d.schemaVersion!==3||d.mode!=='realtime'||!Number.isFinite(start)||end-start!==21600000||anchor-start!==7200000||d.stepMinutes!==5||!Array.isArray(d.frames)||d.frames.length!==72||!d.frames.every((f,i)=>Date.parse(f.at)===start+i*STEP&&valid(f.state))||!valid(d.endState))throw Error('6時間分の記録が必要です');
+  return d;
  }
- function snapshotAt(data,minute){return minute>=data.durationMinutes?data.endState:data.frames[Math.max(0,Math.min(23,Math.floor(minute/data.stepMinutes)))].state;}
- function advance(minute,seconds,speed,duration){return Math.min(duration,Math.max(0,minute+Math.max(0,seconds)*speed/60));}
- root.VillagePlayer={validate,snapshotAt,advance};
+ function snapshotAt(d,at){const start=Date.parse(d.windowStart);return at>=Date.parse(d.windowEnd)?d.endState:d.frames[Math.max(0,Math.min(71,Math.floor((at-start)/STEP)))].state;}
+ function bounds(d,now){const upper=Math.min(now,Date.parse(d.windowEnd));return {min:Math.max(now-7200000,Date.parse(d.windowStart)),max:upper,waiting:now>=Date.parse(d.windowEnd),notStarted:now<Date.parse(d.windowStart)};}
+ function position(d,now,selected=null){const b=bounds(d,now);return selected===null?Math.max(Date.parse(d.windowStart),Math.min(now,b.max)):Math.min(selected,now,Date.parse(d.windowEnd));}
+ root.VillagePlayer={validate,snapshotAt,bounds,position};
 })(typeof module==='object'?module.exports:window);

@@ -39,22 +39,26 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Generate records or migrate legacy format
+        env:
+          UPDATE_STATE: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.update_state) }}
+        run: |
+          if [ "$UPDATE_STATE" = "true" ] || node -e "process.exit(require('./dist/state.json').schemaVersion === 3 ? 1 : 0)"; then
+            node scripts/update-state.cjs
+          fi
+
       - name: Test state generator
         run: node tests/update-state.cjs
 
-      - name: Generate next village records
-        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.update_state)
-        run: node scripts/update-state.cjs
-
-      - name: Test playback
+      - name: Test live viewer
         run: node tests/player.cjs
 
       - name: Commit generated records
-        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.update_state)
         run: |
-          git add dist/state.json data/history
+          git add dist/state.json
+          if [ -d data/history ]; then git add data/history; fi
           if git diff --cached --quiet; then
-            echo 'This execution slot has already been generated.'
+            echo 'No new records to persist.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'

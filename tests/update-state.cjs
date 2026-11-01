@@ -1,22 +1,21 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),os=require('node:os'),path=require('node:path');
-const {makeBatch,update,SLOT_MS}=require('../scripts/update-state.cjs');
-const {VillagePlayer}=require('../dist/player.js');
-const input=JSON.parse(fs.readFileSync('dist/state.json','utf8')),original=JSON.stringify(input);
-const next=makeBatch(input,1000);assert.equal(JSON.stringify(input),original);
-assert.deepEqual(next.frames[0].state,input.endState);
-assert.equal(Math.round((next.endState.hour-next.frames[0].state.hour)*60),120);
-const root=fs.mkdtempSync(path.join(os.tmpdir(),'vivarium-'));
+const {makeBatch,update,SLOT_MS}=require('../scripts/update-state.cjs');const {VillagePlayer:P}=require('../dist/player.js');
+const input=P.validate(JSON.parse(fs.readFileSync('dist/state.json'))),slot=Date.parse(input.anchorAt)/SLOT_MS,original=JSON.stringify(input);
+const next=makeBatch(input,slot+1);assert.equal(JSON.stringify(input),original);assert.equal(next.frames.length,72);
+assert.deepEqual(next.frames.slice(0,48),input.frames.slice(24));assert.deepEqual(next.frames[48].state,input.endState);
+assert.equal(Date.parse(next.windowEnd)-Date.parse(next.windowStart),6*3600000);
+const gap=makeBatch(input,slot+3);assert.deepEqual(gap.frames[0].state,input.endState);
+const root=fs.mkdtempSync(path.join(os.tmpdir(),'vivarium-live-'));
 try{
- fs.mkdirSync(path.join(root,'dist'));fs.writeFileSync(path.join(root,'dist/state.json'),JSON.stringify(next));
- assert.equal(update(root,new Date(1000*SLOT_MS)).updated,0);
- assert.equal(update(root,new Date(1003*SLOT_MS)).updated,3);
- let state=JSON.parse(fs.readFileSync(path.join(root,'dist/state.json')));assert.equal(state.generatedSlot,1003);
- assert.equal(state.frames[0].state.hour,next.endState.hour+4);
- assert.equal(fs.readdirSync(path.join(root,'data/history')).length,3);
- assert.equal(update(root,new Date(1003*SLOT_MS)).updated,0);
- update(root,new Date(1200*SLOT_MS));update(root,new Date(1200*SLOT_MS));update(root,new Date(1200*SLOT_MS));
- state=JSON.parse(fs.readFileSync(path.join(root,'dist/state.json')));assert.equal(state.generatedSlot,1200);assert.equal(fs.readdirSync(path.join(root,'data/history')).length,168);
- VillagePlayer.validate(state);
- for(const f of [...state.frames,{state:state.endState}]){assert(f.state.food>=0);for(const p of f.state.people)for(const key of ['hunger','energy','social','curiosity'])assert(p[key]>=0&&p[key]<=100);}
- console.log('PASS: continuity, 24 frames, idempotence, missed slots, bounded catch-up, history retention, valid values');
+ fs.mkdirSync(path.join(root,'dist'));fs.writeFileSync(path.join(root,'dist/state.json'),JSON.stringify(input));
+ assert.equal(update(root,new Date(slot*SLOT_MS+40*60000)).updated,0);
+ assert.equal(update(root,new Date((slot+1)*SLOT_MS+30*60000)).updated,1);
+ const saved=P.validate(JSON.parse(fs.readFileSync(path.join(root,'dist/state.json'))));assert.deepEqual(saved.frames,next.frames);
+ assert.equal(update(root,new Date((slot+1)*SLOT_MS+50*60000)).updated,0);
+ assert.equal(update(root,new Date((slot-1)*SLOT_MS)).updated,0);
+ assert.equal(fs.readdirSync(path.join(root,'data/history')).length,1);
+ for(const f of saved.frames){assert(f.state.food>=0);for(const p of f.state.people)for(const k of ['hunger','energy','social','curiosity'])assert(p[k]>=0&&p[k]<=100);}
+ // v2 migration anchors the old end state without depending on generatedSlot.
+ const legacy={schemaVersion:2,frames:[{state:{hour:8}}],endState:input.endState};const migrated=makeBatch(legacy,slot);P.validate(migrated);assert.deepEqual(migrated.frames[0].state.people,legacy.endState.people);
+ console.log('PASS: 72 timestamps, exact four-hour overlap, end-state continuity, delayed/missed runs, idempotence, migration');
 }finally{fs.rmSync(root,{recursive:true,force:true});}
