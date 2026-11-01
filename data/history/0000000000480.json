@@ -26,15 +26,16 @@
             "safe": 3,
             "adventure": 0.7,
             "action": "朝の支度",
-            "reason": "朝ごはんを食べてから、森へ備えを集めに行こう。",
+            "reason": "朝の充電を食べてから、森へ備えを集めに行こう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "home",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 40,
             "energy": 75,
@@ -49,7 +50,8 @@
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "square",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -62,12 +64,13 @@
             "safe": 0.8,
             "adventure": 3,
             "action": "丘へ向かう",
-            "reason": "丘の向こうが気になる。朝のうちに見に行こう。",
+            "reason": "丘の向こうが気になる。朝のうちに調べに行こう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "hill",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -94,15 +97,16 @@
             "safe": 3,
             "adventure": 0.7,
             "action": "朝の支度",
-            "reason": "朝ごはんを食べてから、森へ備えを集めに行こう。",
+            "reason": "朝の充電を食べてから、森へ備えを集めに行こう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "home",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 41.25,
             "energy": 74.2,
@@ -117,7 +121,8 @@
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "square",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -130,12 +135,13 @@
             "safe": 0.8,
             "adventure": 3,
             "action": "丘へ向かう",
-            "reason": "丘の向こうが気になる。朝のうちに見に行こう。",
+            "reason": "丘の向こうが気になる。朝のうちに調べに行こう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "hill",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -162,15 +168,16 @@
             "safe": 3,
             "adventure": 0.7,
             "action": "朝の支度",
-            "reason": "朝ごはんを食べてから、森へ備えを集めに行こう。",
+            "reason": "朝の充電を食べてから、森へ備えを集めに行こう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "home",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 42.5,
             "energy": 73.4,
@@ -185,7 +192,8 @@
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "square",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -198,12 +206,13 @@
             "safe": 0.8,
             "adventure": 3,
             "action": "丘へ向かう",
-            "reason": "丘の向こうが気になる。朝のうちに見に行こう。",
+            "reason": "丘の向こうが気になる。朝のうちに調べに行こう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "hill",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -216,7 +225,7 @@
         "food": 9,
         "rain": 0,
         "logs": [
-          "08:15　住人 #1が食料を集めに森へ出かけた。",
+          "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
@@ -231,15 +240,16 @@
             "safe": 3,
             "adventure": 0.7,
             "action": "森へ出かける",
-            "reason": "食料を少し蓄えておくと安心できそう。",
+            "reason": "電力セルを少し蓄えておくと安心できそう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "forest",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 43.75,
             "energy": 72.6,
@@ -254,7 +264,8 @@
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "square",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -267,12 +278,13 @@
             "safe": 0.8,
             "adventure": 3,
             "action": "丘へ向かう",
-            "reason": "丘の向こうが気になる。朝のうちに見に行こう。",
+            "reason": "丘の向こうが気になる。朝のうちに調べに行こう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "hill",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -285,7 +297,7 @@
         "food": 9,
         "rain": 0,
         "logs": [
-          "08:15　住人 #1が食料を集めに森へ出かけた。",
+          "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
@@ -300,15 +312,16 @@
             "safe": 3,
             "adventure": 0.7,
             "action": "森へ出かける",
-            "reason": "食料を少し蓄えておくと安心できそう。",
+            "reason": "電力セルを少し蓄えておくと安心できそう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "forest",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 45,
             "energy": 71.8,
@@ -317,13 +330,14 @@
             "care": 3,
             "safe": 1,
             "adventure": 1,
-            "action": "家の様子を見に行く",
-            "reason": "住人 #1はもう出かけたかな。",
+            "action": "充電ステーションの様子を見に行く",
+            "reason": "MEHS #1はもう出かけたかな。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "home",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -336,12 +350,13 @@
             "safe": 0.8,
             "adventure": 3,
             "action": "丘へ向かう",
-            "reason": "丘の向こうが気になる。朝のうちに見に行こう。",
+            "reason": "丘の向こうが気になる。朝のうちに調べに行こう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "hill",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -354,7 +369,7 @@
         "food": 9,
         "rain": 0,
         "logs": [
-          "08:15　住人 #1が食料を集めに森へ出かけた。",
+          "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
@@ -369,15 +384,16 @@
             "safe": 3,
             "adventure": 0.7,
             "action": "森へ出かける",
-            "reason": "食料を少し蓄えておくと安心できそう。",
+            "reason": "電力セルを少し蓄えておくと安心できそう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "forest",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 46.25,
             "energy": 71,
@@ -386,13 +402,14 @@
             "care": 3,
             "safe": 1,
             "adventure": 1,
-            "action": "家の様子を見に行く",
-            "reason": "住人 #1はもう出かけたかな。",
+            "action": "充電ステーションの様子を見に行く",
+            "reason": "MEHS #1はもう出かけたかな。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "home",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -404,13 +421,14 @@
             "care": 0.8,
             "safe": 0.8,
             "adventure": 3,
-            "action": "丘を探検する",
+            "action": "丘を探索する",
             "reason": "いつもと違う道を歩いてみたい。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "hill",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -423,7 +441,7 @@
         "food": 9,
         "rain": 0,
         "logs": [
-          "08:15　住人 #1が食料を集めに森へ出かけた。",
+          "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
@@ -437,16 +455,17 @@
             "care": 1,
             "safe": 3,
             "adventure": 0.7,
-            "action": "木の実を集める",
+            "action": "電力セルを集める",
             "reason": "昨日見つけた木のそばを探してみよう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "forest",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 47.5,
             "energy": 70.2,
@@ -455,13 +474,14 @@
             "care": 3,
             "safe": 1,
             "adventure": 1,
-            "action": "家の様子を見に行く",
-            "reason": "住人 #1はもう出かけたかな。",
+            "action": "充電ステーションの様子を見に行く",
+            "reason": "MEHS #1はもう出かけたかな。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "home",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -473,13 +493,14 @@
             "care": 0.8,
             "safe": 0.8,
             "adventure": 3,
-            "action": "丘を探検する",
+            "action": "丘を探索する",
             "reason": "いつもと違う道を歩いてみたい。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "hill",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -492,7 +513,7 @@
         "food": 9,
         "rain": 0,
         "logs": [
-          "08:15　住人 #1が食料を集めに森へ出かけた。",
+          "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
@@ -506,16 +527,17 @@
             "care": 1,
             "safe": 3,
             "adventure": 0.7,
-            "action": "木の実を集める",
+            "action": "電力セルを集める",
             "reason": "昨日見つけた木のそばを探してみよう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "forest",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 48.75,
             "energy": 69.4,
@@ -524,13 +546,14 @@
             "care": 3,
             "safe": 1,
             "adventure": 1,
-            "action": "家の様子を見に行く",
-            "reason": "住人 #1はもう出かけたかな。",
+            "action": "充電ステーションの様子を見に行く",
+            "reason": "MEHS #1はもう出かけたかな。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "home",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -542,13 +565,14 @@
             "care": 0.8,
             "safe": 0.8,
             "adventure": 3,
-            "action": "丘を探検する",
+            "action": "丘を探索する",
             "reason": "いつもと違う道を歩いてみたい。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "hill",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -561,8 +585,8 @@
         "food": 9,
         "rain": 0,
         "logs": [
-          "08:40　住人 #2が広場を整えている。",
-          "08:15　住人 #1が食料を集めに森へ出かけた。",
+          "08:40　MEHS #2が広場を整えている。",
+          "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
@@ -576,16 +600,17 @@
             "care": 1,
             "safe": 3,
             "adventure": 0.7,
-            "action": "木の実を集める",
+            "action": "電力セルを集める",
             "reason": "昨日見つけた木のそばを探してみよう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "forest",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 50,
             "energy": 68.6,
@@ -600,7 +625,8 @@
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "square",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -612,13 +638,14 @@
             "care": 0.8,
             "safe": 0.8,
             "adventure": 3,
-            "action": "丘を探検する",
+            "action": "丘を探索する",
             "reason": "いつもと違う道を歩いてみたい。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "hill",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -631,8 +658,8 @@
         "food": 9,
         "rain": 0,
         "logs": [
-          "08:40　住人 #2が広場を整えている。",
-          "08:15　住人 #1が食料を集めに森へ出かけた。",
+          "08:40　MEHS #2が広場を整えている。",
+          "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
@@ -646,16 +673,17 @@
             "care": 1,
             "safe": 3,
             "adventure": 0.7,
-            "action": "木の実を集める",
+            "action": "電力セルを集める",
             "reason": "昨日見つけた木のそばを探してみよう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "forest",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 51.25,
             "energy": 67.8,
@@ -670,7 +698,8 @@
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "square",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -682,13 +711,14 @@
             "care": 0.8,
             "safe": 0.8,
             "adventure": 3,
-            "action": "丘を探検する",
+            "action": "丘を探索する",
             "reason": "いつもと違う道を歩いてみたい。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "hill",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -701,8 +731,8 @@
         "food": 9,
         "rain": 0,
         "logs": [
-          "08:40　住人 #2が広場を整えている。",
-          "08:15　住人 #1が食料を集めに森へ出かけた。",
+          "08:40　MEHS #2が広場を整えている。",
+          "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
@@ -716,16 +746,17 @@
             "care": 1,
             "safe": 3,
             "adventure": 0.7,
-            "action": "木の実を集める",
+            "action": "電力セルを集める",
             "reason": "昨日見つけた木のそばを探してみよう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "forest",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 52.5,
             "energy": 67,
@@ -740,7 +771,8 @@
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "square",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -752,13 +784,14 @@
             "care": 0.8,
             "safe": 0.8,
             "adventure": 3,
-            "action": "丘を探検する",
+            "action": "丘を探索する",
             "reason": "いつもと違う道を歩いてみたい。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "hill",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -771,9 +804,9 @@
         "food": 9,
         "rain": 0,
         "logs": [
-          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
-          "08:40　住人 #2が広場を整えている。",
-          "08:15　住人 #1が食料を集めに森へ出かけた。",
+          "08:55　MEHS #3が丘でお気に入りの景色を見つけた。",
+          "08:40　MEHS #2が広場を整えている。",
+          "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
@@ -787,16 +820,17 @@
             "care": 1,
             "safe": 3,
             "adventure": 0.7,
-            "action": "木の実を集める",
+            "action": "電力セルを集める",
             "reason": "昨日見つけた木のそばを探してみよう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "forest",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 53.75,
             "energy": 66.2,
@@ -811,7 +845,8 @@
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "square",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -829,7 +864,8 @@
             "discoveries": 1,
             "kindness": 0,
             "activityArea": "hill",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -842,9 +878,9 @@
         "food": 9,
         "rain": 0,
         "logs": [
-          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
-          "08:40　住人 #2が広場を整えている。",
-          "08:15　住人 #1が食料を集めに森へ出かけた。",
+          "08:55　MEHS #3が丘でお気に入りの景色を見つけた。",
+          "08:40　MEHS #2が広場を整えている。",
+          "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
@@ -858,16 +894,17 @@
             "care": 1,
             "safe": 3,
             "adventure": 0.7,
-            "action": "木の実を集める",
+            "action": "電力セルを集める",
             "reason": "昨日見つけた木のそばを探してみよう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "forest",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 55,
             "energy": 65.4,
@@ -882,7 +919,8 @@
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "square",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -900,7 +938,8 @@
             "discoveries": 1,
             "kindness": 0,
             "activityArea": "hill",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -913,10 +952,10 @@
         "food": 13,
         "rain": 0,
         "logs": [
-          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
-          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
-          "08:40　住人 #2が広場を整えている。",
-          "08:15　住人 #1が食料を集めに森へ出かけた。",
+          "09:05　MEHS #1が電力セルを持ち帰った。電力セル +4",
+          "08:55　MEHS #3が丘でお気に入りの景色を見つけた。",
+          "08:40　MEHS #2が広場を整えている。",
+          "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
@@ -930,16 +969,17 @@
             "care": 1,
             "safe": 3,
             "adventure": 0.7,
-            "action": "家へ戻る",
-            "reason": "集めた木の実を村へ持ち帰ろう。",
+            "action": "充電ステーションへ戻る",
+            "reason": "集めた電力セルを村へ持ち帰ろう。",
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "home",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 56.25,
             "energy": 64.6,
@@ -954,7 +994,8 @@
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "square",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -972,7 +1013,8 @@
             "discoveries": 1,
             "kindness": 0,
             "activityArea": "hill",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -985,11 +1027,11 @@
         "food": 13,
         "rain": 0,
         "logs": [
-          "09:10　住人 #2と住人 #3が丘の景色について話した。",
-          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
-          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
-          "08:40　住人 #2が広場を整えている。",
-          "08:15　住人 #1が食料を集めに森へ出かけた。",
+          "09:10　MEHS #2とMEHS #3が丘の景色について通信した。",
+          "09:05　MEHS #1が電力セルを持ち帰った。電力セル +4",
+          "08:55　MEHS #3が丘でお気に入りの景色を見つけた。",
+          "08:40　MEHS #2が広場を整えている。",
+          "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
@@ -1003,16 +1045,17 @@
             "care": 1,
             "safe": 3,
             "adventure": 0.7,
-            "action": "家へ戻る",
-            "reason": "集めた木の実を村へ持ち帰ろう。",
+            "action": "充電ステーションへ戻る",
+            "reason": "集めた電力セルを村へ持ち帰ろう。",
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "home",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 57.5,
             "energy": 63.8,
@@ -1021,13 +1064,14 @@
             "care": 3,
             "safe": 1,
             "adventure": 1,
-            "action": "レンと話す",
+            "action": "レンと通信する",
             "reason": "丘でどんな景色を見たのか、聞いてみたい。",
             "success": 0,
             "discoveries": 0,
             "kindness": 1,
             "activityArea": "square",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -1039,13 +1083,14 @@
             "care": 0.8,
             "safe": 0.8,
             "adventure": 3,
-            "action": "ユイに発見を話す",
-            "reason": "丘で見た景色を、住人 #2にも教えたい。",
+            "action": "ユイに発見を通信する",
+            "reason": "丘で見た景色を、MEHS #2にも教えたい。",
             "success": 0,
             "discoveries": 1,
             "kindness": 1,
             "activityArea": "square",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -1058,11 +1103,11 @@
         "food": 13,
         "rain": 0,
         "logs": [
-          "09:10　住人 #2と住人 #3が丘の景色について話した。",
-          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
-          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
-          "08:40　住人 #2が広場を整えている。",
-          "08:15　住人 #1が食料を集めに森へ出かけた。",
+          "09:10　MEHS #2とMEHS #3が丘の景色について通信した。",
+          "09:05　MEHS #1が電力セルを持ち帰った。電力セル +4",
+          "08:55　MEHS #3が丘でお気に入りの景色を見つけた。",
+          "08:40　MEHS #2が広場を整えている。",
+          "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
@@ -1076,16 +1121,17 @@
             "care": 1,
             "safe": 3,
             "adventure": 0.7,
-            "action": "家へ戻る",
-            "reason": "集めた木の実を村へ持ち帰ろう。",
+            "action": "充電ステーションへ戻る",
+            "reason": "集めた電力セルを村へ持ち帰ろう。",
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "home",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 58.75,
             "energy": 63,
@@ -1094,13 +1140,14 @@
             "care": 3,
             "safe": 1,
             "adventure": 1,
-            "action": "レンと話す",
+            "action": "レンと通信する",
             "reason": "丘でどんな景色を見たのか、聞いてみたい。",
             "success": 0,
             "discoveries": 0,
             "kindness": 1,
             "activityArea": "square",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -1112,13 +1159,14 @@
             "care": 0.8,
             "safe": 0.8,
             "adventure": 3,
-            "action": "ユイに発見を話す",
-            "reason": "丘で見た景色を、住人 #2にも教えたい。",
+            "action": "ユイに発見を通信する",
+            "reason": "丘で見た景色を、MEHS #2にも教えたい。",
             "success": 0,
             "discoveries": 1,
             "kindness": 1,
             "activityArea": "square",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -1131,12 +1179,12 @@
         "food": 12,
         "rain": 0,
         "logs": [
-          "09:20　住人 #1が朝食を食べた。食料 −1",
-          "09:10　住人 #2と住人 #3が丘の景色について話した。",
-          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
-          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
-          "08:40　住人 #2が広場を整えている。",
-          "08:15　住人 #1が食料を集めに森へ出かけた。",
+          "09:20　MEHS #1が充電を食べた。電力セル −1",
+          "09:10　MEHS #2とMEHS #3が丘の景色について通信した。",
+          "09:05　MEHS #1が電力セルを持ち帰った。電力セル +4",
+          "08:55　MEHS #3が丘でお気に入りの景色を見つけた。",
+          "08:40　MEHS #2が広場を整えている。",
+          "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
@@ -1150,16 +1198,17 @@
             "care": 1,
             "safe": 3,
             "adventure": 0.7,
-            "action": "食事をする",
-            "reason": "仕事がひと段落したので腹ごしらえ。",
+            "action": "充電をする",
+            "reason": "仕事がひと段落したのでエネルギー補給。",
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "home",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 60,
             "energy": 62.2,
@@ -1168,13 +1217,14 @@
             "care": 3,
             "safe": 1,
             "adventure": 1,
-            "action": "レンと話す",
+            "action": "レンと通信する",
             "reason": "丘でどんな景色を見たのか、聞いてみたい。",
             "success": 0,
             "discoveries": 0,
             "kindness": 1,
             "activityArea": "square",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -1186,13 +1236,14 @@
             "care": 0.8,
             "safe": 0.8,
             "adventure": 3,
-            "action": "ユイに発見を話す",
-            "reason": "丘で見た景色を、住人 #2にも教えたい。",
+            "action": "ユイに発見を通信する",
+            "reason": "丘で見た景色を、MEHS #2にも教えたい。",
             "success": 0,
             "discoveries": 1,
             "kindness": 1,
             "activityArea": "square",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -1205,12 +1256,12 @@
         "food": 12,
         "rain": 0,
         "logs": [
-          "09:20　住人 #1が朝食を食べた。食料 −1",
-          "09:10　住人 #2と住人 #3が丘の景色について話した。",
-          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
-          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
-          "08:40　住人 #2が広場を整えている。",
-          "08:15　住人 #1が食料を集めに森へ出かけた。",
+          "09:20　MEHS #1が充電を食べた。電力セル −1",
+          "09:10　MEHS #2とMEHS #3が丘の景色について通信した。",
+          "09:05　MEHS #1が電力セルを持ち帰った。電力セル +4",
+          "08:55　MEHS #3が丘でお気に入りの景色を見つけた。",
+          "08:40　MEHS #2が広場を整えている。",
+          "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
@@ -1224,16 +1275,17 @@
             "care": 1,
             "safe": 3,
             "adventure": 0.7,
-            "action": "食事をする",
-            "reason": "仕事がひと段落したので腹ごしらえ。",
+            "action": "充電をする",
+            "reason": "仕事がひと段落したのでエネルギー補給。",
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "home",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 61.25,
             "energy": 61.4,
@@ -1242,13 +1294,14 @@
             "care": 3,
             "safe": 1,
             "adventure": 1,
-            "action": "レンと話す",
+            "action": "レンと通信する",
             "reason": "丘でどんな景色を見たのか、聞いてみたい。",
             "success": 0,
             "discoveries": 0,
             "kindness": 1,
             "activityArea": "square",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -1260,13 +1313,14 @@
             "care": 0.8,
             "safe": 0.8,
             "adventure": 3,
-            "action": "ユイに発見を話す",
-            "reason": "丘で見た景色を、住人 #2にも教えたい。",
+            "action": "ユイに発見を通信する",
+            "reason": "丘で見た景色を、MEHS #2にも教えたい。",
             "success": 0,
             "discoveries": 1,
             "kindness": 1,
             "activityArea": "square",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -1279,13 +1333,13 @@
         "food": 11,
         "rain": 0,
         "logs": [
-          "09:30　住人 #3が食事に戻った。食料 −1",
-          "09:20　住人 #1が朝食を食べた。食料 −1",
-          "09:10　住人 #2と住人 #3が丘の景色について話した。",
-          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
-          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
-          "08:40　住人 #2が広場を整えている。",
-          "08:15　住人 #1が食料を集めに森へ出かけた。",
+          "09:30　MEHS #3が充電に戻った。電力セル −1",
+          "09:20　MEHS #1が充電を食べた。電力セル −1",
+          "09:10　MEHS #2とMEHS #3が丘の景色について通信した。",
+          "09:05　MEHS #1が電力セルを持ち帰った。電力セル +4",
+          "08:55　MEHS #3が丘でお気に入りの景色を見つけた。",
+          "08:40　MEHS #2が広場を整えている。",
+          "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
@@ -1299,16 +1353,17 @@
             "care": 1,
             "safe": 3,
             "adventure": 0.7,
-            "action": "食事をする",
-            "reason": "仕事がひと段落したので腹ごしらえ。",
+            "action": "充電をする",
+            "reason": "仕事がひと段落したのでエネルギー補給。",
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "home",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 62.5,
             "energy": 60.6,
@@ -1317,13 +1372,14 @@
             "care": 3,
             "safe": 1,
             "adventure": 1,
-            "action": "レンと話す",
+            "action": "レンと通信する",
             "reason": "丘でどんな景色を見たのか、聞いてみたい。",
             "success": 0,
             "discoveries": 0,
             "kindness": 1,
             "activityArea": "square",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -1335,13 +1391,14 @@
             "care": 0.8,
             "safe": 0.8,
             "adventure": 3,
-            "action": "食事に戻る",
-            "reason": "歩いたらお腹がすいてきた。",
+            "action": "充電に戻る",
+            "reason": "歩いたら蓄電量が減ってきた。",
             "success": 0,
             "discoveries": 1,
             "kindness": 1,
             "activityArea": "home",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -1354,13 +1411,13 @@
         "food": 11,
         "rain": 0,
         "logs": [
-          "09:30　住人 #3が食事に戻った。食料 −1",
-          "09:20　住人 #1が朝食を食べた。食料 −1",
-          "09:10　住人 #2と住人 #3が丘の景色について話した。",
-          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
-          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
-          "08:40　住人 #2が広場を整えている。",
-          "08:15　住人 #1が食料を集めに森へ出かけた。",
+          "09:30　MEHS #3が充電に戻った。電力セル −1",
+          "09:20　MEHS #1が充電を食べた。電力セル −1",
+          "09:10　MEHS #2とMEHS #3が丘の景色について通信した。",
+          "09:05　MEHS #1が電力セルを持ち帰った。電力セル +4",
+          "08:55　MEHS #3が丘でお気に入りの景色を見つけた。",
+          "08:40　MEHS #2が広場を整えている。",
+          "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
@@ -1374,16 +1431,17 @@
             "care": 1,
             "safe": 3,
             "adventure": 0.7,
-            "action": "食事をする",
-            "reason": "仕事がひと段落したので腹ごしらえ。",
+            "action": "充電をする",
+            "reason": "仕事がひと段落したのでエネルギー補給。",
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "home",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 63.75,
             "energy": 77.8,
@@ -1392,13 +1450,14 @@
             "care": 3,
             "safe": 1,
             "adventure": 1,
-            "action": "家でひと休み",
+            "action": "充電ステーションでひと休み",
             "reason": "少し歩いたので、お茶にしよう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 1,
             "activityArea": "home",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -1410,13 +1469,14 @@
             "care": 0.8,
             "safe": 0.8,
             "adventure": 3,
-            "action": "食事に戻る",
-            "reason": "歩いたらお腹がすいてきた。",
+            "action": "充電に戻る",
+            "reason": "歩いたら蓄電量が減ってきた。",
             "success": 0,
             "discoveries": 1,
             "kindness": 1,
             "activityArea": "home",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -1429,13 +1489,13 @@
         "food": 11,
         "rain": 0,
         "logs": [
-          "09:30　住人 #3が食事に戻った。食料 −1",
-          "09:20　住人 #1が朝食を食べた。食料 −1",
-          "09:10　住人 #2と住人 #3が丘の景色について話した。",
-          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
-          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
-          "08:40　住人 #2が広場を整えている。",
-          "08:15　住人 #1が食料を集めに森へ出かけた。",
+          "09:30　MEHS #3が充電に戻った。電力セル −1",
+          "09:20　MEHS #1が充電を食べた。電力セル −1",
+          "09:10　MEHS #2とMEHS #3が丘の景色について通信した。",
+          "09:05　MEHS #1が電力セルを持ち帰った。電力セル +4",
+          "08:55　MEHS #3が丘でお気に入りの景色を見つけた。",
+          "08:40　MEHS #2が広場を整えている。",
+          "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
@@ -1450,15 +1510,16 @@
             "safe": 3,
             "adventure": 0.7,
             "action": "広場を散歩する",
-            "reason": "備えは十分。みんなの顔を見に行こう。",
+            "reason": "備えは十分。みんなの顔を調べに行こう。",
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "square",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 65,
             "energy": 77,
@@ -1467,13 +1528,14 @@
             "care": 3,
             "safe": 1,
             "adventure": 1,
-            "action": "家でひと休み",
+            "action": "充電ステーションでひと休み",
             "reason": "少し歩いたので、お茶にしよう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 1,
             "activityArea": "home",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -1485,13 +1547,14 @@
             "care": 0.8,
             "safe": 0.8,
             "adventure": 3,
-            "action": "食事に戻る",
-            "reason": "歩いたらお腹がすいてきた。",
+            "action": "充電に戻る",
+            "reason": "歩いたら蓄電量が減ってきた。",
             "success": 0,
             "discoveries": 1,
             "kindness": 1,
             "activityArea": "home",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -1504,13 +1567,13 @@
         "food": 11,
         "rain": 0,
         "logs": [
-          "09:30　住人 #3が食事に戻った。食料 −1",
-          "09:20　住人 #1が朝食を食べた。食料 −1",
-          "09:10　住人 #2と住人 #3が丘の景色について話した。",
-          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
-          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
-          "08:40　住人 #2が広場を整えている。",
-          "08:15　住人 #1が食料を集めに森へ出かけた。",
+          "09:30　MEHS #3が充電に戻った。電力セル −1",
+          "09:20　MEHS #1が充電を食べた。電力セル −1",
+          "09:10　MEHS #2とMEHS #3が丘の景色について通信した。",
+          "09:05　MEHS #1が電力セルを持ち帰った。電力セル +4",
+          "08:55　MEHS #3が丘でお気に入りの景色を見つけた。",
+          "08:40　MEHS #2が広場を整えている。",
+          "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
@@ -1525,15 +1588,16 @@
             "safe": 3,
             "adventure": 0.7,
             "action": "広場を散歩する",
-            "reason": "備えは十分。みんなの顔を見に行こう。",
+            "reason": "備えは十分。みんなの顔を調べに行こう。",
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "square",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 66.25,
             "energy": 76.2,
@@ -1542,13 +1606,14 @@
             "care": 3,
             "safe": 1,
             "adventure": 1,
-            "action": "家でひと休み",
+            "action": "充電ステーションでひと休み",
             "reason": "少し歩いたので、お茶にしよう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 1,
             "activityArea": "home",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -1560,13 +1625,14 @@
             "care": 0.8,
             "safe": 0.8,
             "adventure": 3,
-            "action": "食事に戻る",
-            "reason": "歩いたらお腹がすいてきた。",
+            "action": "充電に戻る",
+            "reason": "歩いたら蓄電量が減ってきた。",
             "success": 0,
             "discoveries": 1,
             "kindness": 1,
             "activityArea": "home",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -1579,14 +1645,14 @@
         "food": 11,
         "rain": 0,
         "logs": [
-          "09:50　住人 #3が家で休み始めた。",
-          "09:30　住人 #3が食事に戻った。食料 −1",
-          "09:20　住人 #1が朝食を食べた。食料 −1",
-          "09:10　住人 #2と住人 #3が丘の景色について話した。",
-          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
-          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
-          "08:40　住人 #2が広場を整えている。",
-          "08:15　住人 #1が食料を集めに森へ出かけた。",
+          "09:50　MEHS #3が充電ステーションで休み始めた。",
+          "09:30　MEHS #3が充電に戻った。電力セル −1",
+          "09:20　MEHS #1が充電を食べた。電力セル −1",
+          "09:10　MEHS #2とMEHS #3が丘の景色について通信した。",
+          "09:05　MEHS #1が電力セルを持ち帰った。電力セル +4",
+          "08:55　MEHS #3が丘でお気に入りの景色を見つけた。",
+          "08:40　MEHS #2が広場を整えている。",
+          "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
@@ -1601,15 +1667,16 @@
             "safe": 3,
             "adventure": 0.7,
             "action": "広場を散歩する",
-            "reason": "備えは十分。みんなの顔を見に行こう。",
+            "reason": "備えは十分。みんなの顔を調べに行こう。",
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "square",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 67.5,
             "energy": 75.4,
@@ -1618,13 +1685,14 @@
             "care": 3,
             "safe": 1,
             "adventure": 1,
-            "action": "家でひと休み",
+            "action": "充電ステーションでひと休み",
             "reason": "少し歩いたので、お茶にしよう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 1,
             "activityArea": "home",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -1636,13 +1704,14 @@
             "care": 0.8,
             "safe": 0.8,
             "adventure": 3,
-            "action": "家で休む",
-            "reason": "次の探検に備えて、ひと休み。",
+            "action": "充電ステーションで整備する",
+            "reason": "次の探索に備えて、ひと休み。",
             "success": 0,
             "discoveries": 1,
             "kindness": 1,
             "activityArea": "home",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -1655,14 +1724,14 @@
         "food": 11,
         "rain": 0,
         "logs": [
-          "09:50　住人 #3が家で休み始めた。",
-          "09:30　住人 #3が食事に戻った。食料 −1",
-          "09:20　住人 #1が朝食を食べた。食料 −1",
-          "09:10　住人 #2と住人 #3が丘の景色について話した。",
-          "09:05　住人 #1が木の実を持ち帰った。食料 +4",
-          "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
-          "08:40　住人 #2が広場を整えている。",
-          "08:15　住人 #1が食料を集めに森へ出かけた。",
+          "09:50　MEHS #3が充電ステーションで休み始めた。",
+          "09:30　MEHS #3が充電に戻った。電力セル −1",
+          "09:20　MEHS #1が充電を食べた。電力セル −1",
+          "09:10　MEHS #2とMEHS #3が丘の景色について通信した。",
+          "09:05　MEHS #1が電力セルを持ち帰った。電力セル +4",
+          "08:55　MEHS #3が丘でお気に入りの景色を見つけた。",
+          "08:40　MEHS #2が広場を整えている。",
+          "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
           "08:00　3人の朝が始まりました。"
         ],
         "people": [
@@ -1677,15 +1746,16 @@
             "safe": 3,
             "adventure": 0.7,
             "action": "広場を散歩する",
-            "reason": "備えは十分。みんなの顔を見に行こう。",
+            "reason": "備えは十分。みんなの顔を調べに行こう。",
             "success": 1,
             "discoveries": 0,
             "kindness": 0,
             "activityArea": "square",
-            "id": 1
+            "id": 1,
+            "kind": "mehs"
           },
           {
-            "trait": "仲間を気にかける",
+            "trait": "ほかの機体を気にかける",
             "color": "#b76a79",
             "hunger": 68.75,
             "energy": 74.6,
@@ -1694,13 +1764,14 @@
             "care": 3,
             "safe": 1,
             "adventure": 1,
-            "action": "家でひと休み",
+            "action": "充電ステーションでひと休み",
             "reason": "少し歩いたので、お茶にしよう。",
             "success": 0,
             "discoveries": 0,
             "kindness": 1,
             "activityArea": "home",
-            "id": 2
+            "id": 2,
+            "kind": "mehs"
           },
           {
             "trait": "知らない場所が好き",
@@ -1712,13 +1783,14 @@
             "care": 0.8,
             "safe": 0.8,
             "adventure": 3,
-            "action": "家で休む",
-            "reason": "次の探検に備えて、ひと休み。",
+            "action": "充電ステーションで整備する",
+            "reason": "次の探索に備えて、ひと休み。",
             "success": 0,
             "discoveries": 1,
             "kindness": 1,
             "activityArea": "home",
-            "id": 3
+            "id": 3,
+            "kind": "mehs"
           }
         ],
         "nextResidentId": 4
@@ -1730,14 +1802,14 @@
     "food": 11,
     "rain": 0,
     "logs": [
-      "09:50　住人 #3が家で休み始めた。",
-      "09:30　住人 #3が食事に戻った。食料 −1",
-      "09:20　住人 #1が朝食を食べた。食料 −1",
-      "09:10　住人 #2と住人 #3が丘の景色について話した。",
-      "09:05　住人 #1が木の実を持ち帰った。食料 +4",
-      "08:55　住人 #3が丘でお気に入りの景色を見つけた。",
-      "08:40　住人 #2が広場を整えている。",
-      "08:15　住人 #1が食料を集めに森へ出かけた。",
+      "09:50　MEHS #3が充電ステーションで休み始めた。",
+      "09:30　MEHS #3が充電に戻った。電力セル −1",
+      "09:20　MEHS #1が充電を食べた。電力セル −1",
+      "09:10　MEHS #2とMEHS #3が丘の景色について通信した。",
+      "09:05　MEHS #1が電力セルを持ち帰った。電力セル +4",
+      "08:55　MEHS #3が丘でお気に入りの景色を見つけた。",
+      "08:40　MEHS #2が広場を整えている。",
+      "08:15　MEHS #1が電力セルを集めに森へ出かけた。",
       "08:00　3人の朝が始まりました。"
     ],
     "people": [
@@ -1752,15 +1824,16 @@
         "safe": 3,
         "adventure": 0.7,
         "action": "広場を散歩する",
-        "reason": "備えは十分。みんなの顔を見に行こう。",
+        "reason": "備えは十分。みんなの顔を調べに行こう。",
         "success": 1,
         "discoveries": 0,
         "kindness": 0,
         "activityArea": "square",
-        "id": 1
+        "id": 1,
+        "kind": "mehs"
       },
       {
-        "trait": "仲間を気にかける",
+        "trait": "ほかの機体を気にかける",
         "color": "#b76a79",
         "hunger": 70,
         "energy": 73.8,
@@ -1769,13 +1842,14 @@
         "care": 3,
         "safe": 1,
         "adventure": 1,
-        "action": "家でひと休み",
+        "action": "充電ステーションでひと休み",
         "reason": "少し歩いたので、お茶にしよう。",
         "success": 0,
         "discoveries": 0,
         "kindness": 1,
         "activityArea": "home",
-        "id": 2
+        "id": 2,
+        "kind": "mehs"
       },
       {
         "trait": "知らない場所が好き",
@@ -1787,13 +1861,14 @@
         "care": 0.8,
         "safe": 0.8,
         "adventure": 3,
-        "action": "家で休む",
-        "reason": "次の探検に備えて、ひと休み。",
+        "action": "充電ステーションで整備する",
+        "reason": "次の探索に備えて、ひと休み。",
         "success": 0,
         "discoveries": 1,
         "kindness": 1,
         "activityArea": "home",
-        "id": 3
+        "id": 3,
+        "kind": "mehs"
       }
     ],
     "nextResidentId": 4
