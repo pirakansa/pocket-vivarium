@@ -51,7 +51,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -77,7 +79,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0
           },
           {
             "trait": "知らない場所が好き",
@@ -103,7 +107,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0
           }
         ],
         "nextResidentId": 4,
@@ -158,7 +164,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 21
+        }
       }
     },
     {
@@ -239,7 +249,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.08333333333333215
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -298,7 +310,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.08333333333333215
           },
           {
             "trait": "知らない場所が好き",
@@ -357,7 +371,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.08333333333333215
           }
         ],
         "nextResidentId": 4,
@@ -412,7 +428,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 21.083333333333332
+        }
       }
     },
     {
@@ -493,7 +513,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.16666666666666785
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -552,7 +574,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.16666666666666785
           },
           {
             "trait": "知らない場所が好き",
@@ -611,7 +635,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.16666666666666785
           }
         ],
         "nextResidentId": 4,
@@ -666,7 +692,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 21.166666666666668
+        }
       }
     },
     {
@@ -749,7 +779,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.25
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -808,7 +840,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.25
           },
           {
             "trait": "知らない場所が好き",
@@ -867,7 +901,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.25
           }
         ],
         "nextResidentId": 4,
@@ -922,7 +958,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 21.25
+        }
       }
     },
     {
@@ -1006,7 +1046,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.33333333333333215
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -1065,7 +1107,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.33333333333333215
           },
           {
             "trait": "知らない場所が好き",
@@ -1124,7 +1168,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.33333333333333215
           }
         ],
         "nextResidentId": 4,
@@ -1179,7 +1225,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 21.333333333333332
+        }
       }
     },
     {
@@ -1264,7 +1314,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.41666666666666785
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -1323,7 +1375,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.41666666666666785
           },
           {
             "trait": "知らない場所が好き",
@@ -1382,7 +1436,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.41666666666666785
           }
         ],
         "nextResidentId": 4,
@@ -1437,7 +1493,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 21.416666666666668
+        }
       }
     },
     {
@@ -1524,7 +1584,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.5
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -1583,7 +1645,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.5
           },
           {
             "trait": "知らない場所が好き",
@@ -1642,7 +1706,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.5
           }
         ],
         "nextResidentId": 4,
@@ -1697,7 +1763,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 21.5
+        }
       }
     },
     {
@@ -1784,7 +1854,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.5833333333333321
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -1843,7 +1915,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.5833333333333321
           },
           {
             "trait": "知らない場所が好き",
@@ -1902,7 +1976,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.5833333333333321
           }
         ],
         "nextResidentId": 4,
@@ -1957,7 +2033,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 21.583333333333332
+        }
       }
     },
     {
@@ -2046,7 +2126,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.6666666666666679
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -2105,7 +2187,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.6666666666666679
           },
           {
             "trait": "知らない場所が好き",
@@ -2164,7 +2248,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.6666666666666679
           }
         ],
         "nextResidentId": 4,
@@ -2219,7 +2305,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 21.666666666666668
+        }
       }
     },
     {
@@ -2309,7 +2399,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.75
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -2368,7 +2460,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.75
           },
           {
             "trait": "知らない場所が好き",
@@ -2427,7 +2521,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.75
           }
         ],
         "nextResidentId": 4,
@@ -2482,7 +2578,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 21.75
+        }
       }
     },
     {
@@ -2574,7 +2674,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.8333333333333321
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -2633,7 +2735,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.8333333333333321
           },
           {
             "trait": "知らない場所が好き",
@@ -2692,7 +2796,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.8333333333333321
           }
         ],
         "nextResidentId": 4,
@@ -2747,7 +2853,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 21.833333333333332
+        }
       }
     },
     {
@@ -2840,7 +2950,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.9166666666666679
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -2899,7 +3011,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.9166666666666679
           },
           {
             "trait": "知らない場所が好き",
@@ -2958,7 +3072,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 0.9166666666666679
           }
         ],
         "nextResidentId": 4,
@@ -3013,7 +3129,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 21.916666666666668
+        }
       }
     },
     {
@@ -3108,7 +3228,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -3167,7 +3289,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1
           },
           {
             "trait": "知らない場所が好き",
@@ -3226,7 +3350,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1
           }
         ],
         "nextResidentId": 4,
@@ -3281,7 +3407,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 22
+        }
       }
     },
     {
@@ -3377,7 +3507,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.0833333333333321
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -3436,7 +3568,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.0833333333333321
           },
           {
             "trait": "知らない場所が好き",
@@ -3495,7 +3629,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.0833333333333321
           }
         ],
         "nextResidentId": 4,
@@ -3550,7 +3686,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 22.083333333333332
+        }
       }
     },
     {
@@ -3646,7 +3786,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.1666666666666679
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -3705,7 +3847,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.1666666666666679
           },
           {
             "trait": "知らない場所が好き",
@@ -3764,7 +3908,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.1666666666666679
           }
         ],
         "nextResidentId": 4,
@@ -3819,7 +3965,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 22.166666666666668
+        }
       }
     },
     {
@@ -3918,7 +4068,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.25
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -3977,7 +4129,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.25
           },
           {
             "trait": "知らない場所が好き",
@@ -4036,7 +4190,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.25
           }
         ],
         "nextResidentId": 4,
@@ -4091,7 +4247,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 22.25
+        }
       }
     },
     {
@@ -4190,7 +4350,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.3333333333333321
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -4249,7 +4411,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.3333333333333321
           },
           {
             "trait": "知らない場所が好き",
@@ -4308,7 +4472,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.3333333333333321
           }
         ],
         "nextResidentId": 4,
@@ -4363,7 +4529,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 22.333333333333332
+        }
       }
     },
     {
@@ -4465,7 +4635,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.4166666666666679
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -4524,7 +4696,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.4166666666666679
           },
           {
             "trait": "知らない場所が好き",
@@ -4583,7 +4757,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.4166666666666679
           }
         ],
         "nextResidentId": 4,
@@ -4638,7 +4814,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 22.416666666666668
+        }
       }
     },
     {
@@ -4740,7 +4920,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.5
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -4799,7 +4981,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.5
           },
           {
             "trait": "知らない場所が好き",
@@ -4858,7 +5042,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.5
           }
         ],
         "nextResidentId": 4,
@@ -4913,7 +5099,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 22.5
+        }
       }
     },
     {
@@ -5017,7 +5207,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.5833333333333321
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -5076,7 +5268,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.5833333333333321
           },
           {
             "trait": "知らない場所が好き",
@@ -5135,7 +5329,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.5833333333333321
           }
         ],
         "nextResidentId": 4,
@@ -5190,7 +5386,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 22.583333333333332
+        }
       }
     },
     {
@@ -5294,7 +5494,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.6666666666666679
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -5353,7 +5555,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.6666666666666679
           },
           {
             "trait": "知らない場所が好き",
@@ -5412,7 +5616,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.6666666666666679
           }
         ],
         "nextResidentId": 4,
@@ -5467,7 +5673,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 22.666666666666668
+        }
       }
     },
     {
@@ -5571,7 +5781,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.75
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -5630,7 +5842,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.75
           },
           {
             "trait": "知らない場所が好き",
@@ -5689,7 +5903,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.75
           }
         ],
         "nextResidentId": 4,
@@ -5744,7 +5960,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 22.75
+        }
       }
     },
     {
@@ -5848,7 +6068,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.8333333333333321
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -5907,7 +6129,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.8333333333333321
           },
           {
             "trait": "知らない場所が好き",
@@ -5966,7 +6190,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.8333333333333321
           }
         ],
         "nextResidentId": 4,
@@ -6021,7 +6247,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 22.833333333333332
+        }
       }
     },
     {
@@ -6125,7 +6355,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.9166666666666679
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -6184,7 +6416,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.9166666666666679
           },
           {
             "trait": "知らない場所が好き",
@@ -6243,7 +6477,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 1.9166666666666679
           }
         ],
         "nextResidentId": 4,
@@ -6298,7 +6534,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 22.916666666666668
+        }
       }
     },
     {
@@ -6402,7 +6642,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -6461,7 +6703,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2
           },
           {
             "trait": "知らない場所が好き",
@@ -6520,7 +6764,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2
           }
         ],
         "nextResidentId": 4,
@@ -6575,7 +6821,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 23
+        }
       }
     },
     {
@@ -6679,7 +6929,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.083333333333332
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -6738,7 +6990,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.083333333333332
           },
           {
             "trait": "知らない場所が好き",
@@ -6797,7 +7051,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.083333333333332
           }
         ],
         "nextResidentId": 4,
@@ -6852,7 +7108,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 23.083333333333332
+        }
       }
     },
     {
@@ -6956,7 +7216,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.166666666666668
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -7015,7 +7277,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.166666666666668
           },
           {
             "trait": "知らない場所が好き",
@@ -7074,7 +7338,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.166666666666668
           }
         ],
         "nextResidentId": 4,
@@ -7129,7 +7395,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 23.166666666666668
+        }
       }
     },
     {
@@ -7233,7 +7503,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.25
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -7292,7 +7564,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.25
           },
           {
             "trait": "知らない場所が好き",
@@ -7351,7 +7625,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.25
           }
         ],
         "nextResidentId": 4,
@@ -7406,7 +7682,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 23.25
+        }
       }
     },
     {
@@ -7510,7 +7790,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.333333333333332
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -7569,7 +7851,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.333333333333332
           },
           {
             "trait": "知らない場所が好き",
@@ -7628,7 +7912,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.333333333333332
           }
         ],
         "nextResidentId": 4,
@@ -7683,7 +7969,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 23.333333333333332
+        }
       }
     },
     {
@@ -7787,7 +8077,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.416666666666668
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -7846,7 +8138,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.416666666666668
           },
           {
             "trait": "知らない場所が好き",
@@ -7905,7 +8199,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.416666666666668
           }
         ],
         "nextResidentId": 4,
@@ -7960,7 +8256,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 23.416666666666668
+        }
       }
     },
     {
@@ -8064,7 +8364,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.5
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -8123,7 +8425,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.5
           },
           {
             "trait": "知らない場所が好き",
@@ -8182,7 +8486,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.5
           }
         ],
         "nextResidentId": 4,
@@ -8237,7 +8543,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 23.5
+        }
       }
     },
     {
@@ -8341,7 +8651,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.583333333333332
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -8400,7 +8712,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.583333333333332
           },
           {
             "trait": "知らない場所が好き",
@@ -8459,7 +8773,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.583333333333332
           }
         ],
         "nextResidentId": 4,
@@ -8514,7 +8830,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 23.583333333333332
+        }
       }
     },
     {
@@ -8618,7 +8938,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.666666666666668
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -8677,7 +8999,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.666666666666668
           },
           {
             "trait": "知らない場所が好き",
@@ -8736,7 +9060,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.666666666666668
           }
         ],
         "nextResidentId": 4,
@@ -8791,7 +9117,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 23.666666666666668
+        }
       }
     },
     {
@@ -8895,7 +9225,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.75
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -8954,7 +9286,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.75
           },
           {
             "trait": "知らない場所が好き",
@@ -9013,7 +9347,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.75
           }
         ],
         "nextResidentId": 4,
@@ -9068,7 +9404,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 23.75
+        }
       }
     },
     {
@@ -9172,7 +9512,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.833333333333332
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -9231,7 +9573,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.833333333333332
           },
           {
             "trait": "知らない場所が好き",
@@ -9290,7 +9634,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.833333333333332
           }
         ],
         "nextResidentId": 4,
@@ -9345,7 +9691,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 23.833333333333332
+        }
       }
     },
     {
@@ -9449,7 +9799,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.916666666666668
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -9508,7 +9860,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.916666666666668
           },
           {
             "trait": "知らない場所が好き",
@@ -9567,7 +9921,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 2.916666666666668
           }
         ],
         "nextResidentId": 4,
@@ -9622,7 +9978,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 23.916666666666668
+        }
       }
     },
     {
@@ -9726,7 +10086,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -9785,7 +10147,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3
           },
           {
             "trait": "知らない場所が好き",
@@ -9844,7 +10208,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3
           }
         ],
         "nextResidentId": 4,
@@ -9899,7 +10265,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 24
+        }
       }
     },
     {
@@ -10003,7 +10373,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.083333333333332
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -10062,7 +10434,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.083333333333332
           },
           {
             "trait": "知らない場所が好き",
@@ -10121,7 +10495,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.083333333333332
           }
         ],
         "nextResidentId": 4,
@@ -10176,7 +10552,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 24.083333333333332
+        }
       }
     },
     {
@@ -10280,7 +10660,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.166666666666668
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -10339,7 +10721,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.166666666666668
           },
           {
             "trait": "知らない場所が好き",
@@ -10398,7 +10782,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.166666666666668
           }
         ],
         "nextResidentId": 4,
@@ -10453,7 +10839,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 24.166666666666668
+        }
       }
     },
     {
@@ -10557,7 +10947,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.25
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -10616,7 +11008,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.25
           },
           {
             "trait": "知らない場所が好き",
@@ -10675,7 +11069,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.25
           }
         ],
         "nextResidentId": 4,
@@ -10730,7 +11126,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 24.25
+        }
       }
     },
     {
@@ -10834,7 +11234,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.333333333333332
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -10893,7 +11295,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.333333333333332
           },
           {
             "trait": "知らない場所が好き",
@@ -10952,7 +11356,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.333333333333332
           }
         ],
         "nextResidentId": 4,
@@ -11007,7 +11413,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 24.333333333333332
+        }
       }
     },
     {
@@ -11111,7 +11521,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.416666666666668
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -11170,7 +11582,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.416666666666668
           },
           {
             "trait": "知らない場所が好き",
@@ -11229,7 +11643,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.416666666666668
           }
         ],
         "nextResidentId": 4,
@@ -11284,7 +11700,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 24.416666666666668
+        }
       }
     },
     {
@@ -11388,7 +11808,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.5
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -11447,7 +11869,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.5
           },
           {
             "trait": "知らない場所が好き",
@@ -11506,7 +11930,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.5
           }
         ],
         "nextResidentId": 4,
@@ -11561,7 +11987,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 24.5
+        }
       }
     },
     {
@@ -11665,7 +12095,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.583333333333332
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -11724,7 +12156,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.583333333333332
           },
           {
             "trait": "知らない場所が好き",
@@ -11783,7 +12217,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.583333333333332
           }
         ],
         "nextResidentId": 4,
@@ -11838,7 +12274,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 24.583333333333332
+        }
       }
     },
     {
@@ -11942,7 +12382,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.666666666666668
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -12001,7 +12443,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.666666666666668
           },
           {
             "trait": "知らない場所が好き",
@@ -12060,7 +12504,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.666666666666668
           }
         ],
         "nextResidentId": 4,
@@ -12115,7 +12561,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 24.666666666666668
+        }
       }
     },
     {
@@ -12219,7 +12669,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.75
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -12278,7 +12730,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.75
           },
           {
             "trait": "知らない場所が好き",
@@ -12337,7 +12791,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.75
           }
         ],
         "nextResidentId": 4,
@@ -12392,7 +12848,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 24.75
+        }
       }
     },
     {
@@ -12496,7 +12956,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.833333333333332
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -12555,7 +13017,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.833333333333332
           },
           {
             "trait": "知らない場所が好き",
@@ -12614,7 +13078,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.833333333333332
           }
         ],
         "nextResidentId": 4,
@@ -12669,7 +13135,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 24.833333333333332
+        }
       }
     },
     {
@@ -12773,7 +13243,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.916666666666668
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -12832,7 +13304,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.916666666666668
           },
           {
             "trait": "知らない場所が好き",
@@ -12891,7 +13365,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 3.916666666666668
           }
         ],
         "nextResidentId": 4,
@@ -12946,7 +13422,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 24.916666666666668
+        }
       }
     },
     {
@@ -13050,7 +13530,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -13109,7 +13591,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4
           },
           {
             "trait": "知らない場所が好き",
@@ -13168,7 +13652,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4
           }
         ],
         "nextResidentId": 4,
@@ -13223,7 +13709,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 25
+        }
       }
     },
     {
@@ -13327,7 +13817,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.083333333333332
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -13386,7 +13878,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.083333333333332
           },
           {
             "trait": "知らない場所が好き",
@@ -13445,7 +13939,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.083333333333332
           }
         ],
         "nextResidentId": 4,
@@ -13500,7 +13996,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 25.083333333333332
+        }
       }
     },
     {
@@ -13604,7 +14104,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.166666666666668
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -13663,7 +14165,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.166666666666668
           },
           {
             "trait": "知らない場所が好き",
@@ -13722,7 +14226,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.166666666666668
           }
         ],
         "nextResidentId": 4,
@@ -13777,7 +14283,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 25.166666666666668
+        }
       }
     },
     {
@@ -13881,7 +14391,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.25
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -13940,7 +14452,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.25
           },
           {
             "trait": "知らない場所が好き",
@@ -13999,7 +14513,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.25
           }
         ],
         "nextResidentId": 4,
@@ -14054,7 +14570,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 25.25
+        }
       }
     },
     {
@@ -14158,7 +14678,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.333333333333332
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -14217,7 +14739,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.333333333333332
           },
           {
             "trait": "知らない場所が好き",
@@ -14276,7 +14800,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.333333333333332
           }
         ],
         "nextResidentId": 4,
@@ -14331,7 +14857,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 25.333333333333332
+        }
       }
     },
     {
@@ -14435,7 +14965,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.416666666666668
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -14494,7 +15026,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.416666666666668
           },
           {
             "trait": "知らない場所が好き",
@@ -14553,7 +15087,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.416666666666668
           }
         ],
         "nextResidentId": 4,
@@ -14608,7 +15144,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 25.416666666666668
+        }
       }
     },
     {
@@ -14712,7 +15252,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.5
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -14771,7 +15313,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.5
           },
           {
             "trait": "知らない場所が好き",
@@ -14830,7 +15374,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.5
           }
         ],
         "nextResidentId": 4,
@@ -14885,7 +15431,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 25.5
+        }
       }
     },
     {
@@ -14989,7 +15539,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.583333333333332
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -15048,7 +15600,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.583333333333332
           },
           {
             "trait": "知らない場所が好き",
@@ -15107,7 +15661,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.583333333333332
           }
         ],
         "nextResidentId": 4,
@@ -15162,7 +15718,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 25.583333333333332
+        }
       }
     },
     {
@@ -15266,7 +15826,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.666666666666668
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -15325,7 +15887,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.666666666666668
           },
           {
             "trait": "知らない場所が好き",
@@ -15384,7 +15948,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.666666666666668
           }
         ],
         "nextResidentId": 4,
@@ -15439,7 +16005,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 25.666666666666668
+        }
       }
     },
     {
@@ -15543,7 +16113,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.75
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -15602,7 +16174,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.75
           },
           {
             "trait": "知らない場所が好き",
@@ -15661,7 +16235,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.75
           }
         ],
         "nextResidentId": 4,
@@ -15716,7 +16292,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 25.75
+        }
       }
     },
     {
@@ -15820,7 +16400,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.833333333333332
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -15879,7 +16461,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.833333333333332
           },
           {
             "trait": "知らない場所が好き",
@@ -15938,7 +16522,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.833333333333332
           }
         ],
         "nextResidentId": 4,
@@ -15993,7 +16579,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 25.833333333333332
+        }
       }
     },
     {
@@ -16097,7 +16687,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.916666666666668
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -16156,7 +16748,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.916666666666668
           },
           {
             "trait": "知らない場所が好き",
@@ -16215,7 +16809,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 4.916666666666668
           }
         ],
         "nextResidentId": 4,
@@ -16270,7 +16866,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 25.916666666666668
+        }
       }
     },
     {
@@ -16374,7 +16974,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -16433,7 +17035,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5
           },
           {
             "trait": "知らない場所が好き",
@@ -16492,7 +17096,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5
           }
         ],
         "nextResidentId": 4,
@@ -16547,7 +17153,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 26
+        }
       }
     },
     {
@@ -16651,7 +17261,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.083333333333332
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -16710,7 +17322,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.083333333333332
           },
           {
             "trait": "知らない場所が好き",
@@ -16769,7 +17383,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.083333333333332
           }
         ],
         "nextResidentId": 4,
@@ -16824,7 +17440,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 26.083333333333332
+        }
       }
     },
     {
@@ -16928,7 +17548,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.166666666666668
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -16987,7 +17609,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.166666666666668
           },
           {
             "trait": "知らない場所が好き",
@@ -17046,7 +17670,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.166666666666668
           }
         ],
         "nextResidentId": 4,
@@ -17101,7 +17727,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 26.166666666666668
+        }
       }
     },
     {
@@ -17205,7 +17835,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.25
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -17264,7 +17896,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.25
           },
           {
             "trait": "知らない場所が好き",
@@ -17323,7 +17957,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.25
           }
         ],
         "nextResidentId": 4,
@@ -17378,7 +18014,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 26.25
+        }
       }
     },
     {
@@ -17482,7 +18122,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.333333333333332
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -17541,7 +18183,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.333333333333332
           },
           {
             "trait": "知らない場所が好き",
@@ -17600,7 +18244,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.333333333333332
           }
         ],
         "nextResidentId": 4,
@@ -17655,7 +18301,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 26.333333333333332
+        }
       }
     },
     {
@@ -17759,7 +18409,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.416666666666668
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -17818,7 +18470,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.416666666666668
           },
           {
             "trait": "知らない場所が好き",
@@ -17877,7 +18531,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.416666666666668
           }
         ],
         "nextResidentId": 4,
@@ -17932,7 +18588,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 26.416666666666668
+        }
       }
     },
     {
@@ -18036,7 +18696,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.5
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -18095,7 +18757,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.5
           },
           {
             "trait": "知らない場所が好き",
@@ -18154,7 +18818,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.5
           }
         ],
         "nextResidentId": 4,
@@ -18209,7 +18875,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 26.5
+        }
       }
     },
     {
@@ -18313,7 +18983,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.583333333333332
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -18372,7 +19044,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.583333333333332
           },
           {
             "trait": "知らない場所が好き",
@@ -18431,7 +19105,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.583333333333332
           }
         ],
         "nextResidentId": 4,
@@ -18486,7 +19162,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 26.583333333333332
+        }
       }
     },
     {
@@ -18590,7 +19270,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.666666666666668
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -18649,7 +19331,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.666666666666668
           },
           {
             "trait": "知らない場所が好き",
@@ -18708,7 +19392,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.666666666666668
           }
         ],
         "nextResidentId": 4,
@@ -18763,7 +19449,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 26.666666666666668
+        }
       }
     },
     {
@@ -18867,7 +19557,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.75
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -18926,7 +19618,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.75
           },
           {
             "trait": "知らない場所が好き",
@@ -18985,7 +19679,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.75
           }
         ],
         "nextResidentId": 4,
@@ -19040,7 +19736,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 26.75
+        }
       }
     },
     {
@@ -19144,7 +19844,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.833333333333332
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -19203,7 +19905,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.833333333333332
           },
           {
             "trait": "知らない場所が好き",
@@ -19262,7 +19966,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.833333333333332
           }
         ],
         "nextResidentId": 4,
@@ -19317,7 +20023,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 26.833333333333332
+        }
       }
     },
     {
@@ -19421,7 +20131,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.916666666666668
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -19480,7 +20192,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.916666666666668
           },
           {
             "trait": "知らない場所が好き",
@@ -19539,7 +20253,9 @@
             "generation": 1,
             "durability": 100,
             "knowledge": [],
-            "eyeShape": "square"
+            "eyeShape": "square",
+            "rainWearHours": 0,
+            "wearHours": 5.916666666666668
           }
         ],
         "nextResidentId": 4,
@@ -19594,7 +20310,11 @@
         "rngState": 1831565813,
         "finds": [],
         "sites": [],
-        "nextFindId": 1
+        "nextFindId": 1,
+        "weather": {
+          "raining": false,
+          "nextChangeHour": 26.916666666666668
+        }
       }
     }
   ],
@@ -19697,7 +20417,9 @@
         "generation": 1,
         "durability": 100,
         "knowledge": [],
-        "eyeShape": "square"
+        "eyeShape": "square",
+        "rainWearHours": 0,
+        "wearHours": 6
       },
       {
         "trait": "ほかの機体を気にかける",
@@ -19756,7 +20478,9 @@
         "generation": 1,
         "durability": 100,
         "knowledge": [],
-        "eyeShape": "square"
+        "eyeShape": "square",
+        "rainWearHours": 0,
+        "wearHours": 6
       },
       {
         "trait": "知らない場所が好き",
@@ -19815,7 +20539,9 @@
         "generation": 1,
         "durability": 100,
         "knowledge": [],
-        "eyeShape": "square"
+        "eyeShape": "square",
+        "rainWearHours": 0,
+        "wearHours": 6
       }
     ],
     "nextResidentId": 4,
@@ -19870,6 +20596,10 @@
     "rngState": 1831565813,
     "finds": [],
     "sites": [],
-    "nextFindId": 1
+    "nextFindId": 1,
+    "weather": {
+      "raining": false,
+      "nextChangeHour": 27
+    }
   }
 }
