@@ -49,7 +49,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -73,7 +75,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -97,14 +101,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -147,7 +154,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -226,7 +237,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -283,7 +296,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -340,14 +355,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -390,7 +408,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -469,7 +491,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -526,7 +550,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -583,14 +609,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -633,7 +662,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -714,7 +747,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -771,7 +806,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -828,14 +865,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -878,7 +918,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -960,7 +1004,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -1017,7 +1063,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -1074,14 +1122,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -1124,7 +1175,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -1207,7 +1262,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -1264,7 +1321,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -1321,14 +1380,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -1371,7 +1433,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -1456,7 +1522,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -1513,7 +1581,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -1570,14 +1640,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -1620,7 +1693,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -1705,7 +1782,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -1762,7 +1841,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -1819,14 +1900,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -1869,7 +1953,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -1956,7 +2044,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -2013,7 +2103,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -2070,14 +2162,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -2120,7 +2215,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -2208,7 +2307,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -2265,7 +2366,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -2322,14 +2425,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -2372,7 +2478,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -2462,7 +2572,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -2519,7 +2631,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -2576,14 +2690,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -2626,7 +2743,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -2717,7 +2838,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -2774,7 +2897,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -2831,14 +2956,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -2881,7 +3009,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -2974,7 +3106,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -3031,7 +3165,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -3088,14 +3224,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -3138,7 +3277,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -3232,7 +3375,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -3289,7 +3434,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -3346,14 +3493,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -3396,7 +3546,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -3490,7 +3644,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -3547,7 +3703,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -3604,14 +3762,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -3654,7 +3815,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -3751,7 +3916,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -3808,7 +3975,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -3865,14 +4034,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -3915,7 +4087,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -4012,7 +4188,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -4069,7 +4247,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -4126,14 +4306,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -4176,7 +4359,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -4276,7 +4463,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -4333,7 +4522,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -4390,14 +4581,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -4440,7 +4634,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -4540,7 +4738,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -4597,7 +4797,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -4654,14 +4856,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -4704,7 +4909,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -4806,7 +5015,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -4863,7 +5074,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -4920,14 +5133,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -4970,7 +5186,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -5072,7 +5292,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -5129,7 +5351,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -5186,14 +5410,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -5236,7 +5463,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -5338,7 +5569,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -5395,7 +5628,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -5452,14 +5687,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -5502,7 +5740,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -5604,7 +5846,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -5661,7 +5905,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -5718,14 +5964,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -5768,7 +6017,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -5870,7 +6123,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -5927,7 +6182,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -5984,14 +6241,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -6034,7 +6294,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -6136,7 +6400,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -6193,7 +6459,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -6250,14 +6518,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -6300,7 +6571,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -6402,7 +6677,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -6459,7 +6736,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -6516,14 +6795,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -6566,7 +6848,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -6668,7 +6954,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -6725,7 +7013,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -6782,14 +7072,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -6832,7 +7125,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -6934,7 +7231,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -6991,7 +7290,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -7048,14 +7349,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -7098,7 +7402,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -7200,7 +7508,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -7257,7 +7567,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -7314,14 +7626,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -7364,7 +7679,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -7466,7 +7785,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -7523,7 +7844,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -7580,14 +7903,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -7630,7 +7956,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -7732,7 +8062,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -7789,7 +8121,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -7846,14 +8180,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -7896,7 +8233,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -7998,7 +8339,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -8055,7 +8398,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -8112,14 +8457,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -8162,7 +8510,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -8264,7 +8616,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -8321,7 +8675,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -8378,14 +8734,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -8428,7 +8787,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -8530,7 +8893,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -8587,7 +8952,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -8644,14 +9011,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -8694,7 +9064,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -8796,7 +9170,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -8853,7 +9229,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -8910,14 +9288,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -8960,7 +9341,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -9062,7 +9447,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -9119,7 +9506,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -9176,14 +9565,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -9226,7 +9618,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -9328,7 +9724,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -9385,7 +9783,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -9442,14 +9842,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -9492,7 +9895,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -9594,7 +10001,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -9651,7 +10060,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -9708,14 +10119,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -9758,7 +10172,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -9860,7 +10278,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -9917,7 +10337,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -9974,14 +10396,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -10024,7 +10449,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -10126,7 +10555,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -10183,7 +10614,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -10240,14 +10673,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -10290,7 +10726,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -10392,7 +10832,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -10449,7 +10891,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -10506,14 +10950,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -10556,7 +11003,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -10658,7 +11109,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -10715,7 +11168,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -10772,14 +11227,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -10822,7 +11280,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -10924,7 +11386,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -10981,7 +11445,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -11038,14 +11504,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -11088,7 +11557,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -11190,7 +11663,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -11247,7 +11722,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -11304,14 +11781,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -11354,7 +11834,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -11456,7 +11940,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -11513,7 +11999,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -11570,14 +12058,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -11620,7 +12111,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -11722,7 +12217,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -11779,7 +12276,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -11836,14 +12335,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -11886,7 +12388,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -11988,7 +12494,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -12045,7 +12553,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -12102,14 +12612,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -12152,7 +12665,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -12254,7 +12771,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -12311,7 +12830,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -12368,14 +12889,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -12418,7 +12942,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -12520,7 +13048,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -12577,7 +13107,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -12634,14 +13166,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -12684,7 +13219,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -12786,7 +13325,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -12843,7 +13384,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -12900,14 +13443,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -12950,7 +13496,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -13052,7 +13602,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -13109,7 +13661,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -13166,14 +13720,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -13216,7 +13773,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -13318,7 +13879,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -13375,7 +13938,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -13432,14 +13997,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -13482,7 +14050,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -13584,7 +14156,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -13641,7 +14215,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -13698,14 +14274,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -13748,7 +14327,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -13850,7 +14433,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -13907,7 +14492,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -13964,14 +14551,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -14014,7 +14604,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -14116,7 +14710,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -14173,7 +14769,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -14230,14 +14828,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -14280,7 +14881,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -14382,7 +14987,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -14439,7 +15046,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -14496,14 +15105,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -14546,7 +15158,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -14648,7 +15264,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -14705,7 +15323,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -14762,14 +15382,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -14812,7 +15435,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -14914,7 +15541,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -14971,7 +15600,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -15028,14 +15659,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -15078,7 +15712,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -15180,7 +15818,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -15237,7 +15877,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -15294,14 +15936,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -15344,7 +15989,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -15446,7 +16095,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -15503,7 +16154,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -15560,14 +16213,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -15610,7 +16266,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -15712,7 +16372,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -15769,7 +16431,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -15826,14 +16490,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -15876,7 +16543,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -15978,7 +16649,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -16035,7 +16708,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -16092,14 +16767,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -16142,7 +16820,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -16244,7 +16926,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -16301,7 +16985,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -16358,14 +17044,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -16408,7 +17097,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -16510,7 +17203,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -16567,7 +17262,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -16624,14 +17321,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -16674,7 +17374,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -16776,7 +17480,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -16833,7 +17539,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -16890,14 +17598,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -16940,7 +17651,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -17042,7 +17757,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -17099,7 +17816,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -17156,14 +17875,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -17206,7 +17928,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -17308,7 +18034,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -17365,7 +18093,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -17422,14 +18152,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -17472,7 +18205,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -17574,7 +18311,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -17631,7 +18370,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -17688,14 +18429,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -17738,7 +18482,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -17840,7 +18588,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -17897,7 +18647,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -17954,14 +18706,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -18004,7 +18759,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -18106,7 +18865,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -18163,7 +18924,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -18220,14 +18983,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -18270,7 +19036,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -18372,7 +19142,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -18429,7 +19201,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -18486,14 +19260,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -18536,7 +19313,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     },
     {
@@ -18638,7 +19419,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "ほかの機体を気にかける",
@@ -18695,7 +19478,9 @@
             "serviceLifeHours": 528,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           },
           {
             "trait": "知らない場所が好き",
@@ -18752,14 +19537,17 @@
             "serviceLifeHours": 552,
             "parentIds": [],
             "generation": 1,
-            "durability": 100
+            "durability": 100,
+            "knowledge": [],
+            "eyeShape": "square"
           }
         ],
         "nextResidentId": 4,
         "nextAssemblyHour": 25,
         "lifecycleVersion": 1,
         "resources": {
-          "parts": 24
+          "parts": 24,
+          "rarePartFinds": []
         },
         "lineage": {
           "1": {
@@ -18802,7 +19590,11 @@
             }
           }
         },
-        "assembly": null
+        "assembly": null,
+        "rngState": 1831565813,
+        "finds": [],
+        "sites": [],
+        "nextFindId": 1
       }
     }
   ],
@@ -18903,7 +19695,9 @@
         "serviceLifeHours": 528,
         "parentIds": [],
         "generation": 1,
-        "durability": 100
+        "durability": 100,
+        "knowledge": [],
+        "eyeShape": "square"
       },
       {
         "trait": "ほかの機体を気にかける",
@@ -18960,7 +19754,9 @@
         "serviceLifeHours": 528,
         "parentIds": [],
         "generation": 1,
-        "durability": 100
+        "durability": 100,
+        "knowledge": [],
+        "eyeShape": "square"
       },
       {
         "trait": "知らない場所が好き",
@@ -19017,14 +19813,17 @@
         "serviceLifeHours": 552,
         "parentIds": [],
         "generation": 1,
-        "durability": 100
+        "durability": 100,
+        "knowledge": [],
+        "eyeShape": "square"
       }
     ],
     "nextResidentId": 4,
     "nextAssemblyHour": 25,
     "lifecycleVersion": 1,
     "resources": {
-      "parts": 24
+      "parts": 24,
+      "rarePartFinds": []
     },
     "lineage": {
       "1": {
@@ -19067,6 +19866,10 @@
         }
       }
     },
-    "assembly": null
+    "assembly": null,
+    "rngState": 1831565813,
+    "finds": [],
+    "sites": [],
+    "nextFindId": 1
   }
 }
