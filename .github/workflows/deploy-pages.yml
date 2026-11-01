@@ -48,6 +48,9 @@ jobs:
       - name: Migrate lifecycle metadata
         run: node scripts/migrate-lifecycle.cjs
 
+      - name: Test reproducible randomness
+        run: node tests/random.cjs
+
       - name: Test lifecycle
         run: node tests/lifecycle.cjs
 

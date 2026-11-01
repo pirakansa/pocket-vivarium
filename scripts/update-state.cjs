@@ -3,6 +3,7 @@ const {VillagePlayer}=require('../dist/player.js');
 const {migrateTimeline}=require('./identities.cjs');
 const {translate,convertTimeline}=require('../dist/mehs.js');
 const lifecycle=require('./lifecycle.cjs');
+const R=require('./random.cjs'),discoveries=require('./discoveries.cjs');
 const clone=x=>JSON.parse(JSON.stringify(x));
 const clamp=x=>Math.max(0,Math.min(100,x));
 const SLOT_MS=2*60*60*1000,KEEP=168;
@@ -22,13 +23,17 @@ function step(previous){
    {a:3,s:p.social*(p.care||1)*.65,to:'square',why:'広場で仲間の様子を見て、話をしたい。'},
    {a:4,s:p.curiosity*(p.adventure||1)*.45-tired*.5-(s.rain?35:0),to:'hill',why:'丘の向こうを歩いて、新しい景色を探そう。'}
   ].sort((a,b)=>b.s-a.s);
-  const c=choices[0];for(const choice of choices)choice.why=translate(choice.why);p.scores=choices;p.activityArea=c.to;p.action=['充電する','整備する','資源を回収する','通信する','探索する'][c.a];p.reason=translate(c.why);p.remainingSteps=c.a===1?2:1;
+  const hint=p.hint&&p.hint.untilHour>=s.hour?p.hint:null;
+  if(hint){const target=choices.find(c=>c.a===(hint.kind==='recover'?2:4));target.s+=10;target.why=`#${hint.sourceId}から受け取った発見情報を確かめたい。`;choices.sort((a,b)=>b.s-a.s);}
+  const c=(p.hunger>=85&&s.food>=1)?choices.find(x=>x.a===0):p.energy<=15?choices.find(x=>x.a===1):R.chooseAction(s,choices);for(const choice of choices)choice.why=translate(choice.why);p.scores=choices;p.activityArea=c.to;p.action=['充電する','整備する','資源を回収する','通信する','探索する'][c.a];p.reason=translate(c.why)+(c!==choices[0]?' 優先度が近い選択肢から、今回はこれを選びました。':'');p.remainingSteps=c.a===1?2:1;
   if(c.a===0){s.food--;p.hunger=clamp(p.hunger-55);}
   if(c.a===1)p.energy=clamp(p.energy+18);
-  if(c.a===2){s.resources.parts+=.35;s.food+=s.rain?1:2;p.energy=clamp(p.energy-4);p.success++;}
+  if(c.a===2){if(s.sites.some(site=>site.id==='cell-grove')&&R.next(s)<.25)s.food+=1;s.resources.parts+=.35;s.food+=s.rain?1:2;p.energy=clamp(p.energy-4);p.success++;}
   if(c.a===3){p.social=clamp(p.social-45);p.kindness++;}
   if(c.a===4){p.curiosity=clamp(p.curiosity-55);p.energy=clamp(p.energy-6);p.discoveries++;if(p.discoveries%3===0)s.food+=3;}
   note(s,`MEHS #${p.id}：${p.action}。`);
+  if(c.a===2||c.a===4){if(hint&&c.a===(hint.kind==='recover'?2:4))delete p.hint;discoveries.discover(s,p,c.a,note);}
+  if(c.a===3)discoveries.communicate(s,p,note);
  }
  return lifecycle.advance(s);
 }

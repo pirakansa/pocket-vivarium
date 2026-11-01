@@ -1,11 +1,13 @@
-/* World-hour based lifecycle. No wall clock or randomness enters simulation. */
+/* World-hour lifecycle with a persisted, replayable random stream. */
+const R=require('./random.cjs');
+const discoveries=require('./discoveries.cjs');
 const clone=x=>JSON.parse(JSON.stringify(x));
 const clamp=(x,min,max)=>Math.max(min,Math.min(max,x));
 const HOURS={assembly:4,cooldown:12};
 function lifeHours(id){return 24*(21+((Math.imul(id,2654435761)>>>0)%15));}
 function log(s,text){const m=Math.round(s.hour*60);s.logs.unshift(`第${Math.floor(m/1440)+1}日 ${String(Math.floor(m/60)%24).padStart(2,'0')}:${String(m%60).padStart(2,'0')}　${text}`);s.logs=s.logs.slice(0,35);}
 function initialize(s){
- s.people??=[];s.logs??=[];s.lifecycleVersion=1;s.resources??={parts:24};s.lineage??={};s.assembly??=null;s.nextAssemblyHour??=s.hour+6;
+ s.people??=[];s.logs??=[];discoveries.initialize(s);s.lifecycleVersion=1;s.resources??={parts:24};s.lineage??={};s.assembly??=null;s.nextAssemblyHour??=s.hour+6;
  for(const p of s.people){
   p.activatedHour??=s.hour;p.serviceLifeHours??=lifeHours(p.id);p.parentIds??=[];p.generation??=1;p.durability??=100;
   s.lineage[p.id]??={id:p.id,generation:p.generation,parentIds:clone(p.parentIds),activatedHour:p.activatedHour,serviceLifeHours:p.serviceLifeHours,design:{care:p.care,safe:p.safe,adventure:p.adventure,color:p.color}};
@@ -13,22 +15,28 @@ function initialize(s){
  s.nextResidentId=Math.max(s.nextResidentId||1,1,...Object.keys(s.lineage).map(id=>Number(id)+1),s.assembly?s.assembly.id+1:1);
  return s;
 }
-function designOf(parents,id){
- const variation=((id*17)%11-5)/40;
- const value=key=>clamp(parents.reduce((sum,p)=>sum+(p[key]||1),0)/parents.length+variation,.5,3.5);
- return {care:value('care'),safe:value('safe'),adventure:value('adventure'),color:parents[0].color||'#709e91'};
+function designOf(s,parents,id,rare){
+ const value=key=>clamp(parents.reduce((sum,p)=>sum+(p[key]||1),0)/parents.length+(R.next(s)-.5)*.3,.5,3.5);
+ const shapes=['square','round','visor'],inherited=parents[0].eyeShape||'square';
+ const changeEye=!!rare||R.next(s)<.2;
+ const options=shapes.filter(x=>x!==inherited);
+ const eyeShape=changeEye?options[Math.floor(R.next(s)*options.length)]:inherited;
+ const colors=['#c38450','#b76a79','#597eab','#648f78','#967ab0','#b2974a'];
+ const changeColor=R.next(s)<.15;
+ return {care:value('care'),safe:value('safe'),adventure:value('adventure'),color:changeColor?colors[Math.floor(R.next(s)*colors.length)]:(parents[0].color||'#709e91'),eyeShape,variant:rare?'発見部品の特別仕様':changeEye||changeColor?'小さな設計変異':'継承設計'};
 }
 function trait(d){return d.adventure>=d.care&&d.adventure>=d.safe?'探索を好む設計':d.care>=d.safe?'通信を好む設計':'備えを重視する設計';}
 function start(s,parents,station){
- const id=s.nextResidentId++,design=designOf(parents,id);
+ const id=s.nextResidentId++,rare=s.resources.rarePartFinds.shift(),design=designOf(s,parents,id,rare);
  const builder=station?null:parents[0].id;
- s.assembly={id,builderId:builder,parentIds:parents.map(p=>p.id).filter(id=>id>0),generation:Math.max(...parents.map(p=>p.generation||1))+1,design,startedHour:s.hour,readyHour:s.hour+HOURS.assembly,source:station?'station':'mehs'};
+ s.assembly={id,builderId:builder,parentIds:parents.map(p=>p.id).filter(id=>id>0),generation:Math.max(...parents.map(p=>p.generation||1))+1,design,startedHour:s.hour,readyHour:s.hour+HOURS.assembly,source:station?'station':'mehs',inspirationFindId:rare?.id??null,inspiration:rare||null};
  s.nextAssemblyHour=s.hour+HOURS.assembly+HOURS.cooldown;
+ if(rare)log(s,`発見記録 #${rare.id}の光学モジュールをMEHS #${id}の設計へ組み込んだ。`);
  log(s,station?`継承設備がMEHS #${id}の自動組み立てを開始。`:`MEHS #${builder}が新しいMEHS #${id}の組み立てを開始。`);
 }
 function finish(s){
- const a=s.assembly,p={id:a.id,kind:'mehs',...a.design,trait:trait(a.design),hunger:10,energy:90,social:20,curiosity:35,success:0,discoveries:0,kindness:0,remainingSteps:0,activityArea:'home',action:'起動チェック',reason:`設計元 ${a.parentIds.map(id=>'#'+id).join('・')}の特性を受け継いで起動しました。`,parentIds:a.parentIds,generation:a.generation,activatedHour:s.hour,serviceLifeHours:lifeHours(a.id),durability:100};
- s.people.push(p);initialize(s);s.assembly=null;log(s,`MEHS #${p.id}が起動。第${p.generation}世代／継承元 ${p.parentIds.map(id=>'#'+id).join('・')}。`);
+ const a=s.assembly,p={id:a.id,kind:'mehs',...a.design,trait:trait(a.design),hunger:10,energy:90,social:20,curiosity:35,success:0,discoveries:0,kindness:0,remainingSteps:0,activityArea:'home',action:'起動チェック',reason:`設計元 ${a.parentIds.map(id=>'#'+id).join('・')}の特性を受け継いで起動しました。`,parentIds:a.parentIds,generation:a.generation,activatedHour:s.hour,serviceLifeHours:lifeHours(a.id),durability:100,inspirationFindId:a.inspirationFindId??null,inspiration:a.inspiration||null};
+ s.people.push(p);initialize(s);s.lineage[p.id].design.eyeShape=p.eyeShape;s.lineage[p.id].design.variant=p.variant;s.lineage[p.id].inspirationFindId=p.inspirationFindId;s.lineage[p.id].inspiration=p.inspiration;s.assembly=null;log(s,`MEHS #${p.id}が起動。第${p.generation}世代・${p.variant}／継承元 ${p.parentIds.map(id=>'#'+id).join('・')}。`);
 }
 function advance(s){
  initialize(s);
