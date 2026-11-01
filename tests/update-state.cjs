@@ -19,3 +19,14 @@ try{
  const legacy={schemaVersion:2,frames:[{state:{hour:8}}],endState:input.endState};const migrated=makeBatch(legacy,slot);P.validate(migrated);assert.deepEqual(migrated.frames[0].state.people,legacy.endState.people);
  console.log('PASS: 72 timestamps, exact four-hour overlap, end-state continuity, delayed/missed runs, idempotence, migration');
 }finally{fs.rmSync(root,{recursive:true,force:true});}
+
+const {step}=require('../scripts/update-state.cjs');
+const daytime=JSON.parse(JSON.stringify(input.endState));daytime.hour=10;
+for(const p of daytime.people)p.remainingSteps=0;
+const nighttime=JSON.parse(JSON.stringify(daytime));nighttime.hour=22;
+const dayResult=step(daytime),nightResult=step(nighttime);
+assert.deepEqual(nightResult.people,dayResult.people,'Night must not alter decisions or rest priority');
+const exhausted=JSON.parse(JSON.stringify(nighttime));exhausted.food=9;
+for(const p of exhausted.people)Object.assign(p,{energy:0,hunger:0,social:0,curiosity:0,success:0});
+assert(step(exhausted).people.every(p=>p.action==='休む'),'Fatigued residents still rest');
+console.log('PASS: identical day/night decisions; rest remains available when exhausted');

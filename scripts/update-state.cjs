@@ -11,10 +11,10 @@ function step(previous){
  for(const p of s.people){
   p.hunger=clamp(p.hunger+.9);p.energy=clamp(p.energy-.35);p.social=clamp(p.social+.8);p.curiosity=clamp(p.curiosity+.7);
   if(p.remainingSteps>0){p.remainingSteps--;continue;}
-  const tired=100-p.energy,night=s.hour%24>=21||s.hour%24<6;
+  const tired=100-p.energy;
   const choices=[
    {a:0,s:s.food>=1?p.hunger*1.3:-1,to:'home',why:'お腹がすいてきた。家で食事をしよう。'},
-   {a:1,s:tired*1.2+(night?35:0),to:'home',why:night?'夜になったので、家でゆっくり休もう。':'疲れたので、家で少し休もう。'},
+   {a:1,s:tired*1.2,to:'home',why:'疲れたので、家で少し休もう。'},
    {a:2,s:Math.max(0,9-s.food)*7*(p.safe||1)+12+Math.min(8,p.success)*2-tired*.3-(s.rain?22:0),to:'forest',why:'村の食料を確かめて、森で木の実を集めよう。'},
    {a:3,s:p.social*(p.care||1)*.65,to:'square',why:'広場で仲間の様子を見て、話をしたい。'},
    {a:4,s:p.curiosity*(p.adventure||1)*.45-tired*.5-(s.rain?35:0),to:'hill',why:'丘の向こうを歩いて、新しい景色を探そう。'}
