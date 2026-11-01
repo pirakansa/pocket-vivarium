@@ -1,5 +1,6 @@
 const fs=require('node:fs'),path=require('node:path');
 const {VillagePlayer}=require('../dist/player.js');
+const {migrateTimeline}=require('./identities.cjs');
 const clone=x=>JSON.parse(JSON.stringify(x));
 const clamp=x=>Math.max(0,Math.min(100,x));
 const SLOT_MS=2*60*60*1000,KEEP=168;
@@ -24,11 +25,12 @@ function step(previous){
   if(c.a===2){s.food+=s.rain?1:2;p.energy=clamp(p.energy-4);p.success++;}
   if(c.a===3){p.social=clamp(p.social-45);p.kindness++;}
   if(c.a===4){p.curiosity=clamp(p.curiosity-55);p.energy=clamp(p.energy-6);p.discoveries++;if(p.discoveries%3===0)s.food+=3;}
-  note(s,`${p.name}：${p.action}。`);
+  note(s,`住人 #${p.id}：${p.action}。`);
  }
  return s;
 }
 function makeBatch(previous,slot){
+ previous=migrateTimeline(previous);
  const anchor=slot*SLOT_MS,start=anchor-SLOT_MS,end=anchor+2*SLOT_MS;
  let frames=[],state,time,origin;
  if(previous.schemaVersion===3){

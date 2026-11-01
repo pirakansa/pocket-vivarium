@@ -39,6 +39,12 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Migrate resident identities
+        run: node scripts/migrate-identities.cjs
+
+      - name: Test resident identities
+        run: node tests/identities.cjs
+
       - name: Generate records or migrate legacy format
         env:
           UPDATE_STATE: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.update_state) }}
