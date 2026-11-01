@@ -28,6 +28,7 @@ jobs:
     timeout-minutes: 10
     permissions:
       contents: write
+      issues: read
     steps:
       - name: Checkout latest main
         uses: actions/checkout@v6
@@ -63,13 +64,29 @@ jobs:
       - name: Test resident identities
         run: node tests/identities.cjs
 
+      - name: Test executable programs
+        run: node tests/programs.cjs
+
+      - name: Load disposable external plugin
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXTERNAL_PLUGIN_PATH: ${{ runner.temp }}/external-plugin.json
+        run: node scripts/fetch-external-plugin.cjs
+
       - name: Generate records or migrate legacy format
         env:
+          EXTERNAL_PLUGIN_PATH: ${{ runner.temp }}/external-plugin.json
           UPDATE_STATE: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.update_state) }}
         run: |
           if [ "$UPDATE_STATE" = "true" ] || node -e "process.exit(require('./dist/state.json').schemaVersion === 3 ? 1 : 0)"; then
             node scripts/update-state.cjs
           fi
+
+      - name: Remove disposable source
+        if: always()
+        env:
+          EXTERNAL_PLUGIN_PATH: ${{ runner.temp }}/external-plugin.json
+        run: node -e "require('node:fs').rmSync(process.env.EXTERNAL_PLUGIN_PATH, {force:true})"
 
       - name: Test state generator
         run: node tests/update-state.cjs

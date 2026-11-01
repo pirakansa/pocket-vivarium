@@ -77,4 +77,9 @@ function advance(s){
  return s;
 }
 function migrateTimeline(input){const data=clone(input);const origin=data.frames?.[0]?.state?.hour??data.endState?.hour??0;for(const s of [...(data.frames||[]).map(f=>f.state),data.endState].filter(Boolean)){for(const p of s.people||[])p.activatedHour??=origin;s.nextAssemblyHour??=origin+6;initialize(s);}return data;}
-module.exports={initialize,advance,migrateTimeline,lifeHours,HOURS};
+function admitVisitor(s){
+ initialize(s);const id=s.nextResidentId++;
+ const p={id,kind:'mehs',care:1,safe:1,adventure:1.2,color:'#967ab0',eyeShape:'round',variant:'外界からの来訪機',trait:'探索を好む設計',hunger:25,energy:80,social:25,curiosity:40,success:0,discoveries:0,kindness:0,remainingSteps:0,activityArea:'square',action:'村を見渡す',reason:'外の世界からたどり着きました。',parentIds:[],generation:1,activatedHour:s.hour,serviceLifeHours:lifeHours(id)};
+ s.people.push(p);initialize(s);s.lineage[id].origin='outside';log(s,`外界からMEHS #${id}が村へ加わった。`);return p;
+}
+module.exports={admitVisitor,initialize,advance,migrateTimeline,lifeHours,HOURS};

@@ -7,6 +7,7 @@ let now=anchor+3600000,responseData=data,fail=false,frame,visibility;const eleme
 class Clock extends Date{static now(){return now;}}
 const sandbox={Date:Clock,Intl,console,Math,Map,VillagePlayer:P,setInterval:()=>{},requestAnimationFrame:f=>{frame=f},fetch:async()=>({ok:!fail,status:503,json:async()=>responseData}),document:{hidden:false,addEventListener:(n,fn)=>visibility=fn,getElementById:id=>elements[id]??=(id==='world'?{getContext:()=>context}:{textContent:'',innerHTML:'',value:'',setAttribute(){},classList:{toggle(){}}})}};
 vm.createContext(sandbox);vm.runInContext(fs.readFileSync('dist/index.html','utf8').match(/<script>([\s\S]*?)<\/script>/)[1],sandbox);const v=s=>vm.runInContext(s,sandbox);
+assert(v('programCard('+JSON.stringify({program:{name:'<img>',source:'return "<script>";',authorId:1,runs:2}})+')').includes('&lt;script&gt;'));
 setImmediate(async()=>{
  assert.equal(v('displayAt'),now);assert.equal(v('state'),data.frames[36].state);
  elements.seek.value='0';elements.seek.oninput();const selected=v('selectedAt'),snapshot=v('state');assert.equal(selected,now-7200000);
