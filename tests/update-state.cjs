@@ -21,8 +21,8 @@ try{
 }finally{fs.rmSync(root,{recursive:true,force:true});}
 
 const {step}=require('../scripts/update-state.cjs');
-const daytime=JSON.parse(JSON.stringify(input.endState));daytime.hour=10;
-for(const p of daytime.people)p.remainingSteps=0;
+const daytime=JSON.parse(JSON.stringify(input.endState));daytime.hour=10;daytime.assembly=null;daytime.nextAssemblyHour=Number.MAX_SAFE_INTEGER;
+for(const p of daytime.people){p.remainingSteps=0;p.activatedHour=0;}
 const nighttime=JSON.parse(JSON.stringify(daytime));nighttime.hour=22;
 const dayResult=step(daytime),nightResult=step(nighttime);
 const decisions=s=>s.people.map(p=>({id:p.id,action:p.action,scores:p.scores,hunger:p.hunger,energy:p.energy}));
