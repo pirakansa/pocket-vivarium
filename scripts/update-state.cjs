@@ -2,15 +2,17 @@ const fs=require('node:fs'),path=require('node:path');
 const {VillagePlayer}=require('../dist/player.js');
 const {migrateTimeline}=require('./identities.cjs');
 const {translate,convertTimeline}=require('../dist/mehs.js');
+const lifecycle=require('./lifecycle.cjs');
 const clone=x=>JSON.parse(JSON.stringify(x));
 const clamp=x=>Math.max(0,Math.min(100,x));
 const SLOT_MS=2*60*60*1000,KEEP=168;
 function note(state,text){const m=Math.round(state.hour*60);state.logs.unshift(`第${Math.floor(m/1440)+1}日 ${String(Math.floor(m/60)%24).padStart(2,'0')}:${String(m%60).padStart(2,'0')}　${text}`);state.logs=state.logs.slice(0,35);}
 function step(previous){
- const s=clone(previous);s.hour=Math.round((s.hour+1/12)*12)/12;
+ const s=lifecycle.initialize(clone(previous));s.hour=Math.round((s.hour+1/12)*12)/12;
  if(s.rain>0)s.rain=Math.max(0,s.rain-1);
  for(const p of s.people){
   p.hunger=clamp(p.hunger+.9);p.energy=clamp(p.energy-.35);p.social=clamp(p.social+.8);p.curiosity=clamp(p.curiosity+.7);
+  if(s.assembly?.builderId===p.id&&s.hour<s.assembly.readyHour)continue;
   if(p.remainingSteps>0){p.remainingSteps--;continue;}
   const tired=100-p.energy;
   const choices=[
@@ -23,15 +25,15 @@ function step(previous){
   const c=choices[0];for(const choice of choices)choice.why=translate(choice.why);p.scores=choices;p.activityArea=c.to;p.action=['充電する','整備する','資源を回収する','通信する','探索する'][c.a];p.reason=translate(c.why);p.remainingSteps=c.a===1?2:1;
   if(c.a===0){s.food--;p.hunger=clamp(p.hunger-55);}
   if(c.a===1)p.energy=clamp(p.energy+18);
-  if(c.a===2){s.food+=s.rain?1:2;p.energy=clamp(p.energy-4);p.success++;}
+  if(c.a===2){s.resources.parts+=.35;s.food+=s.rain?1:2;p.energy=clamp(p.energy-4);p.success++;}
   if(c.a===3){p.social=clamp(p.social-45);p.kindness++;}
   if(c.a===4){p.curiosity=clamp(p.curiosity-55);p.energy=clamp(p.energy-6);p.discoveries++;if(p.discoveries%3===0)s.food+=3;}
   note(s,`MEHS #${p.id}：${p.action}。`);
  }
- return s;
+ return lifecycle.advance(s);
 }
 function makeBatch(previous,slot){
- previous=convertTimeline(migrateTimeline(previous));
+ previous=lifecycle.migrateTimeline(convertTimeline(migrateTimeline(previous)));
  const anchor=slot*SLOT_MS,start=anchor-SLOT_MS,end=anchor+2*SLOT_MS;
  let frames=[],state,time,origin;
  if(previous.schemaVersion===3){

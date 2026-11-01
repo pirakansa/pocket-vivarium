@@ -45,6 +45,12 @@ jobs:
       - name: Migrate MEHS vocabulary
         run: node scripts/migrate-mehs.cjs
 
+      - name: Migrate lifecycle metadata
+        run: node scripts/migrate-lifecycle.cjs
+
+      - name: Test lifecycle
+        run: node tests/lifecycle.cjs
+
       - name: Test MEHS migration
         run: node tests/mehs.cjs
 
