@@ -70,6 +70,9 @@ jobs:
       - name: Test changing daily event contracts
         run: node tests/event-contract.cjs
 
+      - name: Test AI resident routines
+        run: node tests/ai-routines.cjs
+
       - name: Load disposable external plugin
         env:
           GH_TOKEN: ${{ github.token }}

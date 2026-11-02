@@ -4,6 +4,7 @@ const {migrateTimeline}=require('./identities.cjs');
 const {translate,convertTimeline}=require('../dist/mehs.js');
 const lifecycle=require('./lifecycle.cjs');
 const R=require('./random.cjs'),discoveries=require('./discoveries.cjs'),weather=require('./weather.cjs');
+const aiRoutines=require('./ai-routines.cjs');
 const programs=require('./programs.cjs'),external=require('./external-events.cjs');
 const clone=x=>JSON.parse(JSON.stringify(x));
 const clamp=x=>Math.max(0,Math.min(100,x));
@@ -12,7 +13,7 @@ function note(state,text){const m=Math.round(state.hour*60);state.logs.unshift(`
 function step(previous,context={}){
  const s=lifecycle.initialize(clone(previous));weather.addExposure(s,1/12);s.hour=Math.round((s.hour+1/12)*12)/12;
  weather.advance(s,note);
- if(context.plugin)external.apply(s,context.time+300000,context.plugin,note);
+ if(context.plugin){if(context.plugin.source)external.apply(s,context.time+300000,context.plugin,note);aiRoutines.apply(s,context.time+300000,context.plugin,note);}
  for(const p of s.people){
   p.hunger=clamp(p.hunger+.9);p.energy=clamp(p.energy-.35);p.social=clamp(p.social+.8);p.curiosity=clamp(p.curiosity+.7);
   if(s.assembly?.builderId===p.id&&s.hour<s.assembly.readyHour)continue;
@@ -75,5 +76,5 @@ function update(root,now=new Date(),options={}){
  const temp=file+'.tmp';fs.writeFileSync(temp,JSON.stringify(batch,null,2)+'\n');fs.renameSync(temp,file);
  return {updated:1,windowStart:batch.windowStart,windowEnd:batch.windowEnd};
 }
-if(require.main===module){let plugin=null;try{if(process.env.EXTERNAL_PLUGIN_PATH)plugin=external.validate(JSON.parse(fs.readFileSync(process.env.EXTERNAL_PLUGIN_PATH,'utf8')));}catch{console.warn('External plugin unavailable.');}console.log(JSON.stringify(update(path.resolve(__dirname,'..'),new Date(),{plugin})));}
+if(require.main===module){let plugin=null;try{if(process.env.EXTERNAL_PLUGIN_PATH)plugin=require('./daily-package.cjs').validate(JSON.parse(fs.readFileSync(process.env.EXTERNAL_PLUGIN_PATH,'utf8')));}catch{console.warn('External plugin unavailable.');}console.log(JSON.stringify(update(path.resolve(__dirname,'..'),new Date(),{plugin})));}
 module.exports={step,makeBatch,update,SLOT_MS};
