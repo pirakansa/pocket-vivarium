@@ -23,6 +23,16 @@ for(const n of [0,1,12]){
  const d=world(n);apply(d,'return [{kind:"departure",text:"旅立った"}];');assert.equal(d.people.length,n>1?n-1:n);assert.equal(d.externalEvent.status,n>1?'applied':'skipped');
 }
 const builder=world();builder.assembly={builderId:1};apply(builder,'return [{kind:"departure",text:"旅立ち"}];');assert.deepEqual(builder.people.map(p=>p.id),[1]);assert.equal(builder.externalEvent.results[0].residentId,2);
+// A visitor must not consume the slot reserved for a pending activation.
+for(const n of [10,11]){
+ const s=world(n),id=s.nextResidentId++;
+ s.assembly={id,builderId:1,parentIds:[1],generation:2,design:{care:1,safe:1,adventure:1},readyHour:s.hour};
+ apply(s,'return [{kind:"arrival",text:"来訪した"}];');
+ assert.equal(s.externalEvent.status,n===10?'applied':'skipped');
+ if(n===11)assert.equal(s.externalEvent.results[0].reason,'population-limit');
+ L.advance(s);
+ assert.equal(s.people.length,12);assert(s.people.some(p=>p.id===id));assert.equal(s.assembly,null);
+}
 const full=world();full.food=72;full.resources.parts=64;apply(full,'return [{kind:"supplies",cells:6,parts:3,text:"補給"}];');assert.equal(full.externalEvent.status,'skipped');assert.equal(full.externalEvent.results[0].cells,0);
 const partial=world(12);apply(partial,'return [{kind:"arrival",text:"来訪"},{kind:"story",text:"遠くの影"}];');assert.equal(partial.externalEvent.status,'partial');assert(!partial.logs.some(t=>t.endsWith('：来訪')));
 const weak=world(1);weak.people[0].energy=3;apply(weak,'return [{kind:"interference",damage:8,text:"障害"}];');assert.equal(weak.people[0].energy,0);assert.deepEqual(weak.externalEvent.results[0].losses,[{residentId:1,damage:3}]);
@@ -43,6 +53,7 @@ for(let i=0;i<30*288;i++){
  if(previousEvent?.date===E.day(at+300000))assert.deepEqual(long.externalEvent,previousEvent);
  for(const [value,max] of [[long.food,72],[long.resources.parts,64]])assert(Number.isFinite(value)&&value>=0&&value<=max);
  for(const p of long.people)for(const key of ['hunger','energy','social','curiosity','durability'])assert(Number.isFinite(p[key])&&p[key]>=0&&p[key]<=100);
+ assert(long.people.length<=12);
  assert.equal(new Set(long.people.map(p=>p.id)).size,long.people.length);assert(long.people.every(p=>p.id<long.nextResidentId));
 }
 retirements=Object.values(long.lineage).filter(p=>p.retiredHour!==undefined).length;assert(retirements>0);

@@ -45,7 +45,7 @@ function apply(s,time,plugin,note){
     if(!result.losses.length){result.status='skipped';result.reason='no-affected-residents';}
    }
    if(c.kind==='arrival'){
-    if(draft.people.length<12)result.residentId=lifecycle.admitVisitor(draft).id;
+    if(draft.people.length+(draft.assembly?1:0)<12)result.residentId=lifecycle.admitVisitor(draft).id;
     else {result.status='skipped';result.reason='population-limit';}
    }
    if(c.kind==='departure'){
