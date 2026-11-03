@@ -29,5 +29,5 @@ const decisions=s=>s.people.map(p=>({id:p.id,action:p.action,scores:p.scores,hun
 assert.deepEqual(decisions(nightResult),decisions(dayResult),'Night must not alter decisions or rest priority');
 const exhausted=JSON.parse(JSON.stringify(nighttime));exhausted.food=9;
 for(const p of exhausted.people)Object.assign(p,{energy:0,hunger:0,social:0,curiosity:0,success:0});
-assert(step(exhausted).people.every(p=>p.action==='整備する'),'Fatigued residents still rest');
+assert(step(exhausted).people.every(p=>p.action==='整備する'||(p.journey?.to==='home'&&p.journey.plan.a===1)),'Fatigued residents maintain locally or travel home to maintain');
 console.log('PASS: identical day/night decisions; rest remains available when exhausted');

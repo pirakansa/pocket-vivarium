@@ -52,6 +52,9 @@ jobs:
       - name: Test weather and wear
         run: node tests/weather.cjs
 
+      - name: Test spatial movement and local communication
+        run: node tests/movement.cjs
+
       - name: Test prolonged power shortage wear
         run: node tests/power-wear.cjs
 

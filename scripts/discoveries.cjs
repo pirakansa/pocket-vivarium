@@ -1,3 +1,4 @@
+const {VillageGeography:G}=require('../dist/geography.js');
 const R=require('./random.cjs');
 const SITES=[{id:'cell-grove',name:'電力セルの隠れた集積地',kind:'recover'},{id:'old-relay',name:'古い通信中継器',kind:'explore'},{id:'workshop-ruins',name:'旧工房の記録',kind:'recover'}];
 function initialize(s){R.initialize(s);s.finds??=[];s.sites??=[];s.nextFindId??=1;s.resources??={parts:24};s.resources.rarePartFinds??=[];for(const p of s.people||[]){p.knowledge??=[];p.eyeShape??='square';}return s;}
@@ -20,7 +21,7 @@ function discover(s,p,action,note){
  const text=`MEHS #${p.id}が${find.name}を発見。${rare?'次の組み立てで特別な目の機体へ。':'新しい行動の手がかりを記録。'}`;note(s,text);event(s,p,text,id);
 }
 function communicate(s,p,note){
- const choices=s.people.filter(q=>q.id!==p.id).sort((a,b)=>(a.knowledge?.length||0)-(b.knowledge?.length||0)||a.id-b.id);
+ const choices=G.peers(s,p).sort((a,b)=>(a.knowledge?.length||0)-(b.knowledge?.length||0)||a.id-b.id);
  for(const q of choices){const known=s.finds.find(f=>p.knowledge.includes(f.id)&&!(q.knowledge||[]).includes(f.id));if(!known)continue;
   q.knowledge??=[];q.knowledge.push(known.id);q.knowledge=q.knowledge.slice(-16);q.hint={findId:known.id,sourceId:p.id,kind:known.kind,untilHour:s.hour+6};
   const text=`MEHS #${p.id}が#${q.id}へ「${known.name}」の情報を通信。`;note(s,text);event(s,p,text,known.id);event(s,q,`#${p.id}から発見情報を受信`,known.id);return;

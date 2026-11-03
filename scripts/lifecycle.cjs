@@ -1,3 +1,4 @@
+const {VillageGeography:G}=require('../dist/geography.js');
 /* World-hour lifecycle with a persisted, replayable random stream. */
 const R=require('./random.cjs');
 const discoveries=require('./discoveries.cjs');
@@ -37,7 +38,7 @@ function start(s,parents,station){
 }
 function finish(s){
  const a=s.assembly,p={id:a.id,kind:'mehs',...a.design,trait:trait(a.design),hunger:10,energy:90,social:20,curiosity:35,success:0,discoveries:0,kindness:0,remainingSteps:0,activityArea:'home',action:'起動チェック',reason:`設計元 ${a.parentIds.map(id=>'#'+id).join('・')}の特性を受け継いで起動しました。`,parentIds:a.parentIds,generation:a.generation,activatedHour:s.hour,serviceLifeHours:lifeHours(a.id),durability:100,inspirationFindId:a.inspirationFindId??null,inspiration:a.inspiration||null};
- s.people.push(p);initialize(s);s.lineage[p.id].design.eyeShape=p.eyeShape;s.lineage[p.id].design.variant=p.variant;s.lineage[p.id].inspirationFindId=p.inspirationFindId;s.lineage[p.id].inspiration=p.inspiration;s.assembly=null;log(s,`MEHS #${p.id}が起動。第${p.generation}世代・${p.variant}／継承元 ${p.parentIds.map(id=>'#'+id).join('・')}。`);
+ G.initialize(p);s.people.push(p);initialize(s);s.lineage[p.id].design.eyeShape=p.eyeShape;s.lineage[p.id].design.variant=p.variant;s.lineage[p.id].inspirationFindId=p.inspirationFindId;s.lineage[p.id].inspiration=p.inspiration;s.assembly=null;log(s,`MEHS #${p.id}が起動。第${p.generation}世代・${p.variant}／継承元 ${p.parentIds.map(id=>'#'+id).join('・')}。`);
 }
 function advance(s){
  initialize(s);
@@ -66,7 +67,7 @@ function advance(s){
  }
  if(!s.assembly&&s.hour>=s.nextAssemblyHour&&s.people.length){
   const n=s.people.length,cost=12+n*4,reserve=12+n*6;
-  const candidates=s.people.filter(p=>p.hunger<70&&p.energy>25&&p.durability>5).sort((a,b)=>((b.adventure||1)*b.curiosity/100+(b.care||1)*3/(n+1))-((a.adventure||1)*a.curiosity/100+(a.care||1)*3/(n+1))||a.id-b.id);
+  const candidates=s.people.filter(p=>p.hunger<70&&p.energy>25&&p.durability>5&&G.areaOf(p)==='home').sort((a,b)=>((b.adventure||1)*b.curiosity/100+(b.care||1)*3/(n+1))-((a.adventure||1)*a.curiosity/100+(a.care||1)*3/(n+1))||a.id-b.id);
   if(candidates.length&&s.food>=reserve+6&&s.resources.parts>=cost){
    s.food-=6;s.resources.parts-=cost;
    const sponsor=candidates[0],other=s.people.filter(p=>p.id!==sponsor.id).sort((a,b)=>b.kindness-a.kindness||a.id-b.id)[0];
@@ -80,6 +81,6 @@ function migrateTimeline(input){const data=clone(input);const origin=data.frames
 function admitVisitor(s){
  initialize(s);const id=s.nextResidentId++;
  const p={id,kind:'mehs',care:1,safe:1,adventure:1.2,color:'#967ab0',eyeShape:'round',variant:'外界からの来訪機',trait:'探索を好む設計',hunger:25,energy:80,social:25,curiosity:40,success:0,discoveries:0,kindness:0,remainingSteps:0,activityArea:'square',action:'村を見渡す',reason:'外の世界からたどり着きました。',parentIds:[],generation:1,activatedHour:s.hour,serviceLifeHours:lifeHours(id)};
- s.people.push(p);initialize(s);s.lineage[id].origin='outside';log(s,`外界からMEHS #${id}が村へ加わった。`);return p;
+ G.initialize(p);s.people.push(p);initialize(s);s.lineage[id].origin='outside';log(s,`外界からMEHS #${id}が村へ加わった。`);return p;
 }
 module.exports={admitVisitor,initialize,advance,migrateTimeline,lifeHours,HOURS};

@@ -37,9 +37,10 @@
 }
 
 @media(prefers-reduced-motion:reduce){.person{transition:none}.person:hover{transform:none}}
-</style></head><body><header><div class="brand"><div class="brand-mark" aria-hidden="true">✦</div><div><div class="eyebrow">POCKET VIVARIUM</div><h1>こもれびの村</h1></div></div><span class="subtitle">今日も、ちいさな発見を。</span><details class="guide"><summary aria-label="遊び方">?</summary><p>MEHSたちは、自分で考えて暮らしています。<br>機体をタップして、いまの気持ちをのぞいてみましょう。<br><br>時計を開くと、過去2時間の出来事を振り返れます。</p></details></header><main><div class="layout"><section><div class="scene"><canvas id="world" width="1000" height="660" aria-label="MEHSたちの小さな村。機体をタップして観察できます"></canvas><div class="map-top"><div class="map-sign"><b>✦ こもれびの小径</b><small>MEHS FIELD / 01</small></div><div class="caption" id="clock">村につないでいます…</div></div><div class="hud" id="hud"></div><span class="map-tip">機体をタップして観察</span><a class="mobile-focus" id="mobile-focus" href="#observation">機体を選んで観察</a></div><div class="watchbar"><span class="watch-label">MEHSたち</span><span class="tag" id="status" role="status">記録を読み込み中</span><button id="live" class="live-button active" disabled>現在に戻る</button></div><div class="people" id="people"></div><details class="time-travel"><summary><span>◷ 時間をさかのぼる</span><span id="elapsed">現在の村</span></summary><div class="timeline"><input id="seek" type="range" min="0" max="120" step="1" value="120" aria-label="過去2時間の再生位置" disabled><div class="timeline-head"><span>2時間前</span><span>1時間前</span><span>現在</span></div></div></details></section><aside class="field-guide" id="observation"><div class="guide-top"><b>観察ノート</b><small>FIELD NOTES</small></div><nav class="tabs" aria-label="観察ノート"><button id="tab-detail" class="active" onclick="showTab('detail')" aria-pressed="true">機体</button><button id="tab-world" onclick="showTab('world')" aria-pressed="false">工房</button><button id="tab-story" onclick="showTab('story')" aria-pressed="false">できごと</button></nav><div id="view-detail" class="tab-content"><div class="panel" id="detail"></div></div><div id="view-world" class="tab-content" hidden><div class="panel" id="population"></div></div><div id="view-story" class="tab-content" hidden><div class="panel" id="finds"></div><div class="section-label">VILLAGE DIARY</div><div id="log" class="log"></div></div></aside></div><p class="world-note">ちいさな機体がつなぐ、ゆっくりとした世界。</p></main><script src="./player.js"></script><script>
+</style></head><body><header><div class="brand"><div class="brand-mark" aria-hidden="true">✦</div><div><div class="eyebrow">POCKET VIVARIUM</div><h1>こもれびの村</h1></div></div><span class="subtitle">今日も、ちいさな発見を。</span><details class="guide"><summary aria-label="遊び方">?</summary><p>MEHSたちは、自分で考えて暮らしています。<br>機体をタップして、いまの気持ちをのぞいてみましょう。<br><br>時計を開くと、過去2時間の出来事を振り返れます。</p></details></header><main><div class="layout"><section><div class="scene"><canvas id="world" width="1000" height="660" aria-label="MEHSたちの小さな村。機体をタップして観察できます"></canvas><div class="map-top"><div class="map-sign"><b>✦ こもれびの小径</b><small>MEHS FIELD / 01</small></div><div class="caption" id="clock">村につないでいます…</div></div><div class="hud" id="hud"></div><span class="map-tip">機体をタップして観察</span><a class="mobile-focus" id="mobile-focus" href="#observation">機体を選んで観察</a></div><div class="watchbar"><span class="watch-label">MEHSたち</span><span class="tag" id="status" role="status">記録を読み込み中</span><button id="live" class="live-button active" disabled>現在に戻る</button></div><div class="people" id="people"></div><details class="time-travel"><summary><span>◷ 時間をさかのぼる</span><span id="elapsed">現在の村</span></summary><div class="timeline"><input id="seek" type="range" min="0" max="120" step="1" value="120" aria-label="過去2時間の再生位置" disabled><div class="timeline-head"><span>2時間前</span><span>1時間前</span><span>現在</span></div></div></details></section><aside class="field-guide" id="observation"><div class="guide-top"><b>観察ノート</b><small>FIELD NOTES</small></div><nav class="tabs" aria-label="観察ノート"><button id="tab-detail" class="active" onclick="showTab('detail')" aria-pressed="true">機体</button><button id="tab-world" onclick="showTab('world')" aria-pressed="false">工房</button><button id="tab-story" onclick="showTab('story')" aria-pressed="false">できごと</button></nav><div id="view-detail" class="tab-content"><div class="panel" id="detail"></div></div><div id="view-world" class="tab-content" hidden><div class="panel" id="population"></div></div><div id="view-story" class="tab-content" hidden><div class="panel" id="finds"></div><div class="section-label">VILLAGE DIARY</div><div id="log" class="log"></div></div></aside></div><p class="world-note">ちいさな機体がつなぐ、ゆっくりとした世界。</p></main><script src="./player.js"></script><script src="./geography.js"></script><script>
 const $=id=>document.getElementById(id),canvas=$('world'),ctx=canvas.getContext('2d');
-const places={home:[240,395],forest:[795,245],square:[525,360],hill:[735,475]};
+const G=VillageGeography;
+const places=Object.fromEntries(Object.entries(G.places).map(([key,p])=>[key,[p.x,p.y]]));
 let state=null,timeline=null,selectedId=null,running=true,last=null,animationTime=0,selectedAt=null,displayAt=0,lastState=null,lastUi=0,fetching=false,loadFailed=false;
 const actions=['充電する','整備する','資源を回収する','通信する','探索する'];
 const visuals=new Map();
@@ -72,6 +73,11 @@ function refresh(){
  $('clock').textContent=`${state.rain?'☂':'☀'} ${clock} · ${state.rain?'雨':'晴れ'}`;
 }
 function motion(p,i,dt,t){
+ if(p.position){
+  const hour=(displayAt-Date.parse(timeline.worldOrigin))/3600000,point=G.positionAt(p,hour),target=p.journey?(p.journey.target||G.places[p.journey.to]):point;
+  const dx=Math.cos(p.id*2.4)*18,dy=Math.sin(p.id*2.4)*10;
+  const v={x:point.x+dx,y:point.y+dy,tx:target.x+dx,ty:target.y+dy,area:point.area};visuals.set(p.id,v);return v;
+ }
  let v=visuals.get(p.id);
  const area=p.activityArea||({'充電する':'home','整備する':'home','資源を回収する':'forest','通信する':'square','探索する':'hill'}[p.action])||'square';
  const center=places[area]||places.square;
@@ -83,6 +89,11 @@ function motion(p,i,dt,t){
   else {v.wait-=dt;if(v.wait<=0){v.tx=center[0]+(Math.random()-.5)*110;v.ty=center[1]+(Math.random()-.5)*65;v.wait=2+Math.random()*5;}}
  }
  return v;
+}
+function locationLabel(p){
+ if(!p.position)return '';
+ if(p.journey)return `${G.places[p.journey.to].name}へ · 到着まで約${Math.max(0,Math.ceil((p.journey.arriveHour-state.hour)*60))}分`;
+ return G.places[G.areaOf(p)]?.name||'';
 }
 function avatar(p){
  const color=p.color||'#709e91';
@@ -109,7 +120,7 @@ function render(){
  $('people').innerHTML=state.people.map(p=>`<button class="person ${selectedId===p.id?'active':''}" onclick="select(${p.id})" aria-pressed="${selectedId===p.id}"><span class="gen">G${p.generation||1}</span>${avatar(p)}<strong>MEHS #${p.id}</strong><span class="mini-action">${p.action}</span></button>`).join('');
  const p=state.people.find(p=>p.id===selectedId);
  $('mobile-focus').textContent=`MEHS #${p.id} · ${p.action}`;
- $('detail').innerHTML=`<div class="portrait">${avatar(p)}</div><div class="profile-title"><small>GENERATION ${p.generation||1} / 起動から${Math.floor(Math.max(0,state.hour-(p.activatedHour??state.hour))/24)}日</small><h2>MEHS #${p.id}</h2><span class="tag">${p.trait}</span></div><div class="profile-action">${p.action==='組み立てる'?'⚙':'◈'} ${p.action}</div><div class="speech">${escapeHtml(p.reason)}</div>${[['ϟ 充電量',100-p.hunger,''],['♥ コンディション',p.energy,'amber'],['⌁ 通信したさ',p.social,'blue']].map(([label,value,color])=>`<div class="meter-head"><span>${label}</span><span>${Math.round(value)} / 100</span></div><div class="bar"><i class="${color}" style="width:${value}%"></i></div>`).join('')}<div class="experience"><div><b>${p.success}</b><small>⚙ 回収</small></div><div><b>${p.discoveries}</b><small>✦ 探索</small></div><div><b>${p.kindness}</b><small>⌁ 通信</small></div></div>${programCard(p)}<details class="details"><summary>◈ 設計と摩耗の記録</summary><p>継承元：${p.parentIds?.length?p.parentIds.map(id=>'#'+id).join('・'):'初期設計'}<br>経年耐久 ${Math.round(p.durability??100)} / 100<br>累積摩耗 ${Number((p.wearHours??0).toFixed(1))}時間相当<br>雨による追加 ${Number((p.rainWearHours??0).toFixed(1))}時間<br>仕様：${p.variant||'継承設計'}${p.inspiration?`<br>✦ 発見 #${p.inspiration.id}（#${p.inspiration.finderId}）を継承`:''}</p>${p.scores?.length?'<div class="section-label">行動前の優先度</div>':''}${(p.scores||[]).slice(0,3).map(c=>`<div class="scores"><span>${actions[c.a]}</span><b>${Math.max(0,Math.round(c.s))}</b></div>`).join('')}</details>`;
+ $('detail').innerHTML=`<div class="portrait">${avatar(p)}</div><div class="profile-title"><small>GENERATION ${p.generation||1} / 起動から${Math.floor(Math.max(0,state.hour-(p.activatedHour??state.hour))/24)}日</small><h2>MEHS #${p.id}</h2><span class="tag">${p.trait}</span></div><div class="profile-action">${p.action==='組み立てる'?'⚙':'◈'} ${p.action}</div>${p.position?'<p class="footer" style="text-align:center">⌖ '+escapeHtml(locationLabel(p))+'</p>':''}<div class="speech">${escapeHtml(p.reason)}</div>${[['ϟ 充電量',100-p.hunger,''],['♥ コンディション',p.energy,'amber'],['⌁ 通信したさ',p.social,'blue']].map(([label,value,color])=>`<div class="meter-head"><span>${label}</span><span>${Math.round(value)} / 100</span></div><div class="bar"><i class="${color}" style="width:${value}%"></i></div>`).join('')}<div class="experience"><div><b>${p.success}</b><small>⚙ 回収</small></div><div><b>${p.discoveries}</b><small>✦ 探索</small></div><div><b>${p.kindness}</b><small>⌁ 通信</small></div></div>${programCard(p)}<details class="details"><summary>◈ 設計と摩耗の記録</summary><p>継承元：${p.parentIds?.length?p.parentIds.map(id=>'#'+id).join('・'):'初期設計'}<br>経年耐久 ${Math.round(p.durability??100)} / 100<br>累積摩耗 ${Number((p.wearHours??0).toFixed(1))}時間相当<br>雨による追加 ${Number((p.rainWearHours??0).toFixed(1))}時間<br>仕様：${p.variant||'継承設計'}${p.inspiration?`<br>✦ 発見 #${p.inspiration.id}（#${p.inspiration.finderId}）を継承`:''}</p>${p.scores?.length?'<div class="section-label">行動前の優先度</div>':''}${(p.scores||[]).slice(0,3).map(c=>`<div class="scores"><span>${actions[c.a]}</span><b>${Math.max(0,Math.round(c.s))}</b></div>`).join('')}</details>`;
 }
 function select(id){selectedId=id;render();showTab('detail');}
 function ellipse(x,y,rx,ry,c){ctx.fillStyle=c;ctx.beginPath();ctx.ellipse(x,y,rx,ry,0,0,Math.PI*2);ctx.fill()}
@@ -156,7 +167,7 @@ function landscape(t){
  for(let i=0;i<8;i++){const x=100+i*108+Math.sin(t/3000+i)*16,y=175+(i*57)%280+Math.cos(t/2400+i)*9;ellipse(x,y,1.6,1.6,'#fff7cf99');}
 }
 function robot(p,t,i){
- const moving=Math.hypot(p.tx-p.x,p.ty-p.y)>5,bob=moving?Math.sin(t/130+i)*2:Math.sin(t/650+i)*.8,x=p.x,y=p.y+bob;
+ const moving=!!p.journey||Math.hypot(p.tx-p.x,p.ty-p.y)>5,bob=moving?Math.sin(t/130+i)*2:Math.sin(t/650+i)*.8,x=p.x,y=p.y+bob;
  ellipse(x,p.y+16,19,6,'#51634b25');
  if(selectedId===p.id){ctx.strokeStyle='#f8dfa3';ctx.lineWidth=3;ctx.beginPath();ctx.ellipse(x,p.y+15,25,11,0,0,7);ctx.stroke();}
  ctx.fillStyle='#40534e';ctx.beginPath();ctx.roundRect(x-17,y+5,34,12,6);ctx.fill();
@@ -176,6 +187,8 @@ function robot(p,t,i){
 function draw(timestamp){const elapsed=last===null||document.hidden?0:Math.max(0,(timestamp-last)/1000);last=timestamp;const dt=Math.min(elapsed,.1);if(!document.hidden){animationTime+=dt*1000;if(timestamp-lastUi>=1000){lastUi=timestamp;refresh();}}const t=animationTime;landscape(t);
 if(state?.sites?.length){ctx.fillStyle='#8b7842';ctx.font='12px system-ui';ctx.fillText(`✦ 発見した場所 ${state.sites.length}`,760,565);}
 if(state?.assembly){ctx.fillStyle='#d5a34c';ctx.font='bold 14px system-ui';ctx.fillText(`⚙ #${state.assembly.id} 組み立て中`,235,485);}
+const selected=state?.people.find(p=>p.id===selectedId);
+if(selected?.journey){const from=G.positionAt(selected,(displayAt-Date.parse(timeline.worldOrigin))/3600000),to=selected.journey.target||G.places[selected.journey.to];ctx.save();ctx.strokeStyle='#6d876a88';ctx.lineWidth=2;ctx.setLineDash([5,6]);ctx.beginPath();ctx.moveTo(from.x,from.y);ctx.lineTo(to.x,to.y);ctx.stroke();ctx.restore();}
 if(state)state.people.forEach((person,i)=>{const v=motion(person,i,dt,t);ctx.save();if(phonePortrait()){ctx.translate(v.x,v.y);ctx.scale(1.35,1.35);ctx.translate(-v.x,-v.y);}robot({...person,...v},t,i);ctx.restore();});
 const h=state?state.hour%24:12;if(h>=20||h<6){ctx.fillStyle='#243d5929';ctx.fillRect(0,0,1000,660)}if(state&&state.rain){ctx.strokeStyle='#6e94a966';ctx.lineWidth=2;for(let i=0;i<65;i++){let x=(i*59+t/15)%1000,y=(i*83+t/3)%660;ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x-6,y+16);ctx.stroke()}}requestAnimationFrame(draw)}
 $('live').onclick=()=>{selectedAt=null;visuals.clear();lastState=null;refresh();};
