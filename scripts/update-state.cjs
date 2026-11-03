@@ -3,6 +3,7 @@ const {VillagePlayer}=require('../dist/player.js');
 const {migrateTimeline}=require('./identities.cjs');
 const {translate,convertTimeline}=require('../dist/mehs.js');
 const lifecycle=require('./lifecycle.cjs');
+const powerWear=require('./power-wear.cjs');
 const R=require('./random.cjs'),discoveries=require('./discoveries.cjs'),weather=require('./weather.cjs');
 const aiRoutines=require('./ai-routines.cjs');
 const programs=require('./programs.cjs'),external=require('./external-events.cjs');
@@ -11,7 +12,7 @@ const clamp=x=>Math.max(0,Math.min(100,x));
 const SLOT_MS=2*60*60*1000,KEEP=360;
 function note(state,text){const m=Math.round(state.hour*60);state.logs.unshift(`第${Math.floor(m/1440)+1}日 ${String(Math.floor(m/60)%24).padStart(2,'0')}:${String(m%60).padStart(2,'0')}　${text}`);state.logs=state.logs.slice(0,35);}
 function step(previous,context={}){
- const s=lifecycle.initialize(clone(previous));weather.addExposure(s,1/12);s.hour=Math.round((s.hour+1/12)*12)/12;
+ const s=lifecycle.initialize(clone(previous));powerWear.addExposure(s,1/12);weather.addExposure(s,1/12);s.hour=Math.round((s.hour+1/12)*12)/12;
  weather.advance(s,note);
  if(context.plugin){if(context.plugin.source)external.apply(s,context.time+300000,context.plugin,note);aiRoutines.apply(s,context.time+300000,context.plugin,note);}
  for(const p of s.people){

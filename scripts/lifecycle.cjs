@@ -10,7 +10,7 @@ function log(s,text){const m=Math.round(s.hour*60);s.logs.unshift(`第${Math.flo
 function initialize(s){
  s.people??=[];s.logs??=[];discoveries.initialize(s);s.lifecycleVersion=1;weather.initialize(s);s.resources??={parts:24};s.lineage??={};s.assembly??=null;s.nextAssemblyHour??=s.hour+6;
  for(const p of s.people){
-  p.activatedHour??=s.hour;p.serviceLifeHours??=lifeHours(p.id);p.parentIds??=[];p.generation??=1;p.durability??=100;p.rainWearHours??=0;p.wearHours??=Math.max(0,s.hour-p.activatedHour)+p.rainWearHours;
+  p.activatedHour??=s.hour;p.serviceLifeHours??=lifeHours(p.id);p.parentIds??=[];p.generation??=1;p.durability??=100;p.rainWearHours??=0;p.wearHours??=Math.max(0,s.hour-p.activatedHour)+p.rainWearHours+(p.powerWearHours||0);
   s.lineage[p.id]??={id:p.id,generation:p.generation,parentIds:clone(p.parentIds),activatedHour:p.activatedHour,serviceLifeHours:p.serviceLifeHours,design:{care:p.care,safe:p.safe,adventure:p.adventure,color:p.color}};
  }
  s.nextResidentId=Math.max(s.nextResidentId||1,1,...Object.keys(s.lineage).map(id=>Number(id)+1),s.assembly?s.assembly.id+1:1);
@@ -43,9 +43,9 @@ function advance(s){
  initialize(s);
  const alive=[];
  for(const p of s.people){
-  const age=Math.max(0,s.hour-p.activatedHour);p.wearHours=age+p.rainWearHours;p.durability=clamp(100*(1-p.wearHours/p.serviceLifeHours),0,100);
+  const age=Math.max(0,s.hour-p.activatedHour);p.wearHours=age+p.rainWearHours+(p.powerWearHours||0);p.durability=clamp(100*(1-p.wearHours/p.serviceLifeHours),0,100);
   if(p.wearHours+1e-7>=p.serviceLifeHours){
-   const record=s.lineage[p.id];record.retiredHour=s.hour;record.wearHours=p.wearHours;record.rainWearHours=p.rainWearHours;record.experience={recovery:p.success,exploration:p.discoveries,communication:p.kindness};
+   const record=s.lineage[p.id];record.retiredHour=s.hour;record.wearHours=p.wearHours;record.rainWearHours=p.rainWearHours;record.powerWearHours=p.powerWearHours||0;record.experience={recovery:p.success,exploration:p.discoveries,communication:p.kindness};
    s.resources.parts=Math.min(64,s.resources.parts+8);log(s,`MEHS #${p.id}が稼働寿命を迎えて引退。設計を保存し、部品8個を次の機体へ。`);
   }else alive.push(p);
  }
