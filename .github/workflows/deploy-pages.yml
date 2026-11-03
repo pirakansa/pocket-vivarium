@@ -103,6 +103,9 @@ jobs:
       - name: Test live viewer
         run: node tests/player.cjs
 
+      - name: Test history summary
+        run: node tests/history.cjs
+
       - name: Commit generated records
         run: |
           git add dist/state.json
@@ -115,6 +118,9 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git commit -m 'chore: update village state records'
           git push origin HEAD:main
+
+      - name: Build history summary
+        run: node scripts/build-history.cjs
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
