@@ -8,7 +8,7 @@ const aiRoutines=require('./ai-routines.cjs');
 const programs=require('./programs.cjs'),external=require('./external-events.cjs');
 const clone=x=>JSON.parse(JSON.stringify(x));
 const clamp=x=>Math.max(0,Math.min(100,x));
-const SLOT_MS=2*60*60*1000,KEEP=168;
+const SLOT_MS=2*60*60*1000,KEEP=360;
 function note(state,text){const m=Math.round(state.hour*60);state.logs.unshift(`第${Math.floor(m/1440)+1}日 ${String(Math.floor(m/60)%24).padStart(2,'0')}:${String(m%60).padStart(2,'0')}　${text}`);state.logs=state.logs.slice(0,35);}
 function step(previous,context={}){
  const s=lifecycle.initialize(clone(previous));weather.addExposure(s,1/12);s.hour=Math.round((s.hour+1/12)*12)/12;
