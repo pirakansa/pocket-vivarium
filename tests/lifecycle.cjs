@@ -19,7 +19,7 @@ try{
  for(const roll of [.449999,.45])for(const pick of [0,.21,.41,.61,.81,.999999]){
   const sample=clone(base);sample.people.forEach(p=>p.color='#b76a79');
   sample.nextAssemblyHour=0;sample.resources.parts=64;
-  const values=[.9,roll,.5,.5,.5,pick];R.next=()=>values.length?values.shift():.5;
+  const values=[0,0,.9,roll,...Array(9).fill(.5),pick];R.next=()=>values.length?values.shift():.5;
   L.advance(sample);
   assert(sample.assembly);
   if(roll<.45)assert.equal(sample.assembly.design.color,['#c38450','#b76a79','#597eab','#648f78','#967ab0','#b2974a'][Math.floor(pick*6)]);
@@ -31,11 +31,31 @@ try{
  for(const rare of [false,true])for(const roll of [.449999,.45])for(const pick of [0,.4,.9]){
   const sample=clone(base);sample.nextAssemblyHour=0;sample.resources.parts=64;
   if(rare)sample.resources.rarePartFinds=[{id:1,name:'光学モジュール'}];
-  const values=rare?[pick]:[roll,pick];R.next=()=>values.length?values.shift():.9;
+  const values=rare?[0,0,pick]:[0,0,roll,pick];R.next=()=>values.length?values.shift():.9;
   L.advance(sample);
   const eye=sample.assembly.design.eyeShape;
   if(rare)assert.notEqual(eye,'square');
   else assert.equal(eye,roll<.45?['square','round','visor'][Math.floor(pick*3)]:'square');
  }
 }finally{R.next=savedEyeNext;}
+// Fixed synthetic worlds: selection diversity and per-trait inheritance are independent of live population.
+const sponsors=new Set(),pairCounts={same:0,different:0};let mixed=0,large=0;
+for(let seed=1;seed<=1500;seed++){
+ const sample=clone(base);sample.rngState=seed*100000;sample.nextAssemblyHour=0;sample.resources.parts=64;
+ sample.people[0].care=3;sample.people[0].safe=.6;sample.people[0].adventure=.6;
+ sample.people[1].care=3;sample.people[1].safe=.6;sample.people[1].adventure=.6;
+ sample.people[2].care=.6;sample.people[2].safe=3;sample.people[2].adventure=3;
+ L.advance(sample);const a=sample.assembly;assert(a);sponsors.add(a.builderId);
+ const parents=a.parentIds.map(id=>sample.people.find(p=>p.id===id));
+ const different=parents[0].care!==parents[1].care;pairCounts[different?'different':'same']++;
+ const origins=[];
+ for(const key of ['care','safe','adventure']){
+  const v=a.design[key];assert(v>=.5&&v<=3.5);
+  const distances=parents.map(p=>Math.abs(v-p[key]));
+  if(distances.every(d=>d>.150001))large++;
+  origins.push(distances.indexOf(Math.min(...distances)));
+ }
+ if(different&&new Set(origins).size>1)mixed++;
+}
+assert.equal(sponsors.size,3);assert(pairCounts.different>pairCounts.same);assert(mixed>0);assert(large>0);
 console.log('PASS: four-hour assembly, inherited designs, resource constraints, 21–35 day life, parts recycling, autonomous restart, unique IDs, overlap/determinism');

@@ -18,7 +18,7 @@ function initialize(s){
  return s;
 }
 function designOf(s,parents,id,rare){
- const value=key=>clamp(parents.reduce((sum,p)=>sum+(p[key]||1),0)/parents.length+(R.next(s)-.5)*.3,.5,3.5);
+ const value=key=>{const parent=parents[Math.floor(R.next(s)*parents.length)];const span=R.next(s)<.1?1.5:.3;return clamp((parent[key]||1)+(R.next(s)-.5)*span,.5,3.5);};
  const shapes=['square','round','visor'],inherited=parents[0].eyeShape||'square';
  const changeEye=!!rare||R.next(s)<.45;
  const options=rare?shapes.filter(x=>x!==inherited):shapes;
@@ -68,10 +68,13 @@ function advance(s){
  }
  if(!s.assembly&&s.hour>=s.nextAssemblyHour&&s.people.length){
   const n=s.people.length,cost=12+n*4,reserve=12+n*6;
-  const candidates=s.people.filter(p=>p.hunger<70&&p.energy>25&&p.durability>5&&G.areaOf(p)==='home').sort((a,b)=>((b.adventure||1)*b.curiosity/100+(b.care||1)*3/(n+1))-((a.adventure||1)*a.curiosity/100+(a.care||1)*3/(n+1))||a.id-b.id);
+  const candidates=s.people.filter(p=>p.hunger<70&&p.energy>25&&p.durability>5&&G.areaOf(p)==='home');
   if(candidates.length&&s.food>=reserve+6&&s.resources.parts>=cost){
    s.food-=6;s.resources.parts-=cost;
-   const sponsor=candidates[0],other=s.people.filter(p=>p.id!==sponsor.id).sort((a,b)=>b.kindness-a.kindness||a.id-b.id)[0];
+   const sponsor=candidates[Math.floor(R.next(s)*candidates.length)],others=s.people.filter(p=>p.id!==sponsor.id);
+   const weights=others.map(p=>1+['care','safe','adventure'].reduce((sum,key)=>sum+Math.abs((p[key]||1)-(sponsor[key]||1)),0));
+   let pick=others.length?R.next(s)*weights.reduce((a,b)=>a+b,0):0,other;
+   for(let i=0;i<others.length;i++){pick-=weights[i];if(pick<0){other=others[i];break;}}
    start(s,other?[sponsor,other]:[sponsor],false);
   }
  }
