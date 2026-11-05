@@ -13,4 +13,17 @@ const slot=Date.parse(data.anchorAt)/SLOT_MS;const future=makeBatch(data,slot+1)
 const takeover=clone(base);takeover.nextAssemblyHour=0;takeover.resources.parts=64;L.advance(takeover);const sponsor=takeover.people.find(p=>p.id===takeover.assembly.builderId);sponsor.activatedHour=takeover.hour-sponsor.serviceLifeHours;L.advance(takeover);assert.equal(takeover.assembly.builderId,null);assert.equal(takeover.assembly.source,'station');
 // Replaying the same world state produces exactly the same assembly and IDs.
 assert.deepEqual(step(base),step(base));assert.deepEqual(L.migrateTimeline(data),data);
+// Exercise both sides of the colour threshold and every alternative palette slot.
+const R=require('../scripts/random.cjs'),savedNext=R.next;
+try{
+ for(const roll of [.399999,.4])for(const pick of [0,.21,.41,.61,.81,.999999]){
+  const sample=clone(base);sample.people.forEach(p=>p.color='#b76a79');
+  sample.nextAssemblyHour=0;sample.resources.parts=64;
+  const values=[.9,roll,pick];R.next=()=>values.length?values.shift():.5;
+  L.advance(sample);
+  assert(sample.assembly);
+  if(roll<.4)assert.notEqual(sample.assembly.design.color,'#b76a79');
+  else assert.equal(sample.assembly.design.color,'#b76a79');
+ }
+}finally{R.next=savedNext;}
 console.log('PASS: four-hour assembly, inherited designs, resource constraints, 21–35 day life, parts recycling, autonomous restart, unique IDs, overlap/determinism');
