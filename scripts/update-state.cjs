@@ -45,7 +45,7 @@ function dispatch(s,p,c,note){
  let to=G.target(s,p,c.a);
  if(c.a===2&&hint?.falseReport)to='deepForest';
  if(c.a===4&&!s.rain&&area==='forest'&&hint?.kind!=='explore'&&R.next(s)<.15)to='deepForest';
- if(G.depart(p,to,c,s.hour))note(s,`MEHS #${p.id}が${G.places[to].name}へ出発。`);else perform(s,p,c,note);
+ if(G.depart(p,to,c,s.hour))note(s,`MEHS #${p.id}が${G.places[to].name}へ出発。`);else if(c.a===5)aiRoutines.work(s,p,note);else perform(s,p,c,note);
 }
 function step(previous,context={}){
  const s=lifecycle.initialize(clone(previous));
@@ -57,8 +57,21 @@ function step(previous,context={}){
  const arrivals=new Map();for(const p of s.people){const plan=G.advance(p,s.hour);if(plan)arrivals.set(p.id,plan);}
  for(const p of s.people){
   p.hunger=clamp(p.hunger+.9);p.energy=clamp(p.energy-.35);p.social=clamp(p.social+.8);p.curiosity=clamp(p.curiosity+.7);
+  const pending=aiRoutines.checkPending(s,p,note);
   if(s.assembly?.builderId===p.id&&s.hour<s.assembly.readyHour)continue;
   const urgent=emergency(s,p),arrived=arrivals.get(p.id);
+  if(pending&&p.pendingRoutine.readyHour!==undefined){
+   if(urgent===null&&aiRoutines.work(s,p,note))continue;
+   delete p.pendingRoutine.readyHour;
+  }
+  if(p.journey?.plan.a===5){
+   if(urgent!==null)dispatch(s,p,{a:urgent,why:'開発より充電・整備を優先します。'},note);
+   continue;
+  }
+  if(arrived?.a===5){
+   if(urgent!==null){dispatch(s,p,{a:urgent,why:'開発より充電・整備を優先します。'},note);continue;}
+   if(pending&&aiRoutines.canWork(s,p)&&aiRoutines.work(s,p,note))continue;
+  }
   if(p.journey){
    const suggested=programs.recommend(s,p,note),a=urgent??suggested;
    if(a!==null&&a!==p.journey.plan.a){
@@ -67,13 +80,14 @@ function step(previous,context={}){
    }
    continue;
   }
-  if(arrived){
+  if(arrived&&arrived.a!==5){
    // Conditions and stock may have changed while travelling.
    if(urgent!==null&&urgent!==arrived.a)dispatch(s,p,{a:urgent,why:'到着時の機体状態から充電・整備を優先します。'},note);
    else perform(s,p,arrived,note);
    continue;
   }
   if(p.remainingSteps>0){p.remainingSteps--;continue;}
+  if(urgent===null&&pending&&aiRoutines.canWork(s,p)){dispatch(s,p,{a:5,why:'改良案を開発室で試します。'},note);continue;}
   const suggested=programs.recommend(s,p,note),tired=100-p.energy;
   const choices=[
    {a:0,s:s.food>=1?p.hunger*1.3:-1,why:'充電の工房で電力を補給しよう。'},

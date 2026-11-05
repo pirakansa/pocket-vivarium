@@ -1,8 +1,8 @@
 /* Shared logical map. Only the generator changes positions; the viewer interpolates them. */
 (function(root){
- const places={home:{x:240,y:395,name:'充電の工房',indoors:true},forest:{x:795,y:245,name:'資源の林',indoors:false},deepForest:{x:920,y:105,name:'林の奥',indoors:false},square:{x:525,y:360,name:'語らいの広場',indoors:false},hill:{x:735,y:475,name:'見晴らしの丘',indoors:false}};
+ const places={home:{x:240,y:395,name:'充電の工房',indoors:true},lab:{x:380,y:245,name:'開発室',indoors:true},forest:{x:795,y:245,name:'資源の林',indoors:false},deepForest:{x:920,y:105,name:'林の奥',indoors:false},square:{x:525,y:360,name:'語らいの広場',indoors:false},hill:{x:735,y:475,name:'見晴らしの丘',indoors:false}};
  const actionAreas={charge:'home',maintain:'home',recover:'forest',communicate:'square',explore:'hill'};
- const oldAreas={'充電する':'home','整備する':'home','組み立てる':'home','資源を回収する':'forest','通信する':'square','探索する':'hill'};
+ const oldAreas={'充電する':'home','整備する':'home','組み立てる':'home','開発する':'lab','資源を回収する':'forest','通信する':'square','探索する':'hill'};
  const SPEED=1200,STEP=1/12;
  function areaOf(p){return p.journey?null:p.position?p.position.area:(places[p.activityArea]?p.activityArea:oldAreas[p.action]||'home');}
  function positionAt(p,hour){
@@ -14,7 +14,7 @@
  function speed(p){return SPEED*(.45+.55*(p.durability??100)/100);}
  function travelMinutes(p,to){const at=p.position||positionAt(p,0);const distance=Math.hypot(at.x-places[to].x,at.y-places[to].y);return Math.max(0,Math.ceil(distance/speed(p)/STEP-1e-9)*5);}
  function peers(s,p){const a=areaOf(p);return a===null?[]:s.people.filter(q=>q.id!==p.id&&areaOf(q)===a);}
- function target(s,p,a){return a===3&&areaOf(p)!==null&&peers(s,p).length?areaOf(p):['home','home','forest','square','hill'][a];}
+ function target(s,p,a){return a===3&&areaOf(p)!==null&&peers(s,p).length?areaOf(p):['home','home','forest','square','hill','lab'][a];}
  function depart(p,to,plan,hour){
   initialize(p);
   const minutes=travelMinutes(p,to);if(minutes===0){p.position={x:places[to].x,y:places[to].y,area:to};delete p.journey;return false;}
