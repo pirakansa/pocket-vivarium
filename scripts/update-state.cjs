@@ -103,7 +103,13 @@ function step(previous,context={}){
   const plan={a:c.a,why:c.why+(c!==choices[0]?' 優先度が近い選択肢から、今回はこれを選びました。':''),scores:choices,programRevision:suggested===c.a?aiRoutines.revision(p):null};
   p.scores=choices;dispatch(s,p,plan,note);
  }
- return lifecycle.advance(s);
+ lifecycle.advance(s);
+ for(const result of s.routineUpdates?.results||[]){
+  if(result.status==='queued'&&!s.people.some(p=>p.id===result.residentId)){
+   result.status='skipped';result.reason='resident-absent';
+  }
+ }
+ return s;
 }
 function makeBatch(previous,slot,options={}){
  previous=lifecycle.migrateTimeline(convertTimeline(migrateTimeline(previous)));

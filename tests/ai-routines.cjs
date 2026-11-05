@@ -46,5 +46,23 @@ assert.equal(cancelled.routineUpdates.results[0].reason,'routine-changed');
 const timedOut=world();AI.apply(timedOut,time,bundle([row(timedOut.people[0])]),note);
 timedOut.hour=timedOut.people[0].pendingRoutine.expiresHour;
 assert(!AI.checkPending(timedOut,timedOut.people[0],note));assert.equal(timedOut.routineUpdates.results[0].reason,'expired');
+// An old proposal expiring on the intake step must not block the newer daily proposal.
+const renewal=world();AI.apply(renewal,time,bundle([row(renewal.people[0])]),note);
+renewal.hour=renewal.people[0].pendingRoutine.expiresHour;
+const fresh={...row(renewal.people[0]),name:'新しい改良案'};
+AI.apply(renewal,time+48*3600000,{...bundle([fresh]),date:'2026-11-04'},note);
+assert.equal(renewal.routineUpdates.results[0].status,'queued');
+assert.equal(renewal.people[0].pendingRoutine.name,fresh.name);
+// A retired or departed resident cannot still have a queued result.
+for(const leave of ['retirement','departure']){
+ const gone=world(),target=gone.people[0];
+ AI.apply(gone,time,bundle([row(target)]),note);
+ if(leave==='retirement')target.activatedHour=gone.hour-target.serviceLifeHours;
+ const options=leave==='departure'?{time,plugin:{date:'2026-11-03',title:'旅立ち',source:'return [{kind:"departure",text:"旅立った"}];'}}:{};
+ const end=step(gone,options);
+ assert(!end.people.some(p=>p.id===target.id));
+ assert.equal(end.routineUpdates.results[0].status,'skipped');
+ assert.equal(end.routineUpdates.results[0].reason,'resident-absent');
+}
 const solo=world();const beforeSource=old.source;solo.people[0].program=clone(old);step(solo);assert.equal(solo.people[0].program.source,beforeSource);
 console.log('PASS: template/AI coexistence, rich inputs, authorship/sharing, independent validation, stale/missing/young targets, expiry, daily cap, urgent charging and exact overlap');

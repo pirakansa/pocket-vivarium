@@ -23,7 +23,7 @@ function apply(s,time,bundle,note){
    if(seen.has(id))throw Error('Duplicate resident');seen.add(id);
    const p=s.people.find(p=>p.id===id);
    if(!p){result.status='skipped';result.reason='resident-absent';}
-   else if(p.pendingRoutine){result.status='skipped';result.reason='development-pending';}
+   else if(checkPending(s,p,note)){result.status='skipped';result.reason='development-pending';}
    else if(row.baseRevision!==revision(p)){result.status='skipped';result.reason='routine-changed';}
    else if(Math.max(p.success||0,p.discoveries||0,p.kindness||0)<8){result.status='skipped';result.reason='experience-insufficient';}
    else {
