@@ -1,0 +1,53 @@
+const assert=require('node:assert/strict');
+const L=require('../scripts/lifecycle.cjs'),E=require('../scripts/external-events.cjs'),D=require('../scripts/discoveries.cjs'),R=require('../scripts/random.cjs');
+const {VillageGeography:G}=require('../dist/geography.js'),{step,makeBatch,SLOT_MS}=require('../scripts/update-state.cjs');
+const clone=x=>JSON.parse(JSON.stringify(x)),note=(s,t)=>s.logs.unshift(t);
+const time=Date.parse('2026-11-06T00:00:00+09:00');
+const plugin={date:'2026-11-06',title:'来訪試験',source:'return [{kind:"arrival",behavior:"misinformation",text:"来訪"}];'};
+function world(n=2){const s=L.initialize({hour:100,food:30,rain:0,logs:[],nextAssemblyHour:1e9,people:Array.from({length:n},(_,i)=>({id:i+1,kind:'mehs',care:1,safe:1,adventure:1,hunger:0,energy:100,social:0,curiosity:0,success:8,discoveries:0,kindness:0,activityArea:'square',remainingSteps:0,action:'通信する'}))});s.people.forEach(G.initialize);return s;}
+const w=world();E.apply(w,time,plugin,note);
+const visitor=w.people.at(-1);assert.equal(visitor.informationStyle,'unreliable');
+assert.equal(w.externalEvent.results[0].residentId,visitor.id);
+const once=clone(w);E.apply(w,time,plugin,note);assert.deepEqual(w,once);
+const regular=world();E.apply(regular,time,{...plugin,source:'return [{kind:"arrival",text:"普通の来訪"}];'},note);assert.equal(regular.people.at(-1).informationStyle,undefined);
+const full=world(12);E.apply(full,time,plugin,note);assert.equal(full.people.length,12);assert.equal(full.externalEvent.status,'skipped');
+const invalid=world();E.apply(invalid,time,{...plugin,source:'return [{kind:"arrival",behavior:"unknown",text:"来訪"}];'},note);assert.equal(invalid.externalEvent.status,'rejected');assert.equal(invalid.people.length,2);
+const save=R.next;
+try{
+ R.next=()=>0;
+ D.communicate(w,visitor,note);
+ const recipient=w.people.find(p=>p.hint?.falseReport);assert(recipient);
+ assert.equal(recipient.hint.sourceId,visitor.id);assert.equal(recipient.hint.untilHour,w.hour+2);
+ assert.equal(recipient.informationStyle,undefined);
+ const hints=JSON.stringify(w.people.map(p=>p.hint));D.communicate(w,visitor,note);assert.equal(JSON.stringify(w.people.map(p=>p.hint)),hints,'Six-hour cooldown');
+ const isolated=world();const sender=isolated.people[0];sender.informationStyle='unreliable';
+ isolated.people[1].position={...G.places.home,area:'home'};D.communicate(isolated,sender,note);assert(!isolated.people[1].hint);
+ const protectedHint=world();protectedHint.people[0].informationStyle='unreliable';
+ protectedHint.people[1].hint={kind:'explore',findId:123,sourceId:3,untilHour:102};
+ D.communicate(protectedHint,protectedHint.people[0],note);assert.equal(protectedHint.people[1].hint.findId,123);
+ const before=clone(w);recipient.position={...G.places.forest,area:'forest'};recipient.activityArea='forest';
+ const checked=step(w,{time}),q=checked.people.find(p=>p.id===recipient.id);
+ assert.equal(q.informationExperience.disproved,1);assert(!q.hint);
+ assert.equal(q.success,recipient.success);assert.equal(checked.resources.parts,w.resources.parts);
+ assert.equal(checked.food,w.food-checked.people.length*.015);
+ assert(checked.logs.some(t=>t.includes('何も見つからなかった')));
+ assert.deepEqual(before.people.filter(p=>p.id!==recipient.id).map(p=>p.informationStyle),w.people.filter(p=>p.id!==recipient.id).map(p=>p.informationStyle));
+ const expired=world();expired.people[1].hint={falseReport:true,kind:'recover',sourceId:1,untilHour:99};
+ const out=step(expired);assert(!out.people[1].hint);assert.equal(out.people[1].informationExperience,undefined);
+ const inherited=world();inherited.nextAssemblyHour=0;inherited.food=72;inherited.resources.parts=64;
+ inherited.people.forEach(p=>{p.position={...G.places.home,area:'home'};p.informationStyle='unreliable';});
+ L.advance(inherited);inherited.hour=inherited.assembly.readyHour;const childId=inherited.assembly.id;L.advance(inherited);
+ assert.equal(inherited.people.find(p=>p.id===childId).informationStyle,undefined);
+}finally{R.next=save;}
+const data=require('../dist/state.json'),batch=makeBatch(data,Date.parse(data.anchorAt)/SLOT_MS+1,{plugin});
+assert.deepEqual(batch.frames.slice(0,48),data.frames.slice(24));
+assert.deepEqual(batch.frames[48].state,data.endState);
+let long=world();long.people[0].informationStyle='unreliable';long.people.forEach(p=>p.kindness=20);
+for(let i=0;i<7*288;i++){
+ long=step(long);
+ assert(long.food>=0&&long.food<=72&&long.resources.parts>=0&&long.resources.parts<=64);
+ assert.equal(long.people.filter(p=>p.informationStyle==='unreliable').length,1);
+ for(const p of long.people)assert(!p.informationExperience||p.informationExperience.disproved<=p.informationExperience.received);
+}
+assert.deepEqual(step(long),step(long));
+console.log('PASS: special/normal arrivals, one-time application, limits, invalid behavior, local communication, cooldown, protected hints, expiry, empty verification, non-inheritance, immutable overlap and seven-day invariants');

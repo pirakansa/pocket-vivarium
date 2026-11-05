@@ -22,6 +22,17 @@ function discover(s,p,action,note){
 }
 function communicate(s,p,note){
  const choices=G.peers(s,p).sort((a,b)=>(a.knowledge?.length||0)-(b.knowledge?.length||0)||a.id-b.id);
+ if(p.informationStyle==='unreliable'&&s.hour>=(p.nextRumorHour||0)){
+  const q=choices.find(q=>!q.hint||q.hint.untilHour<s.hour);
+  if(q&&R.next(s)<.2){
+   q.hint={kind:'recover',sourceId:p.id,falseReport:true,untilHour:s.hour+2};
+   q.informationExperience??={received:0,disproved:0};q.informationExperience.received++;
+   q.informationExperience.lastSourceId=p.id;
+   p.nextRumorHour=s.hour+6;
+   const text=`MEHS #${p.id}が#${q.id}へ「林に未回収のセルがあるらしい」と通信。`;
+   note(s,text);event(s,p,text);event(s,q,`#${p.id}から回収情報を受信`);return;
+  }
+ }
  for(const q of choices){const known=s.finds.find(f=>p.knowledge.includes(f.id)&&!(q.knowledge||[]).includes(f.id));if(!known)continue;
   q.knowledge??=[];q.knowledge.push(known.id);q.knowledge=q.knowledge.slice(-16);q.hint={findId:known.id,sourceId:p.id,kind:known.kind,untilHour:s.hour+6};
   const text=`MEHS #${p.id}が#${q.id}へ「${known.name}」の情報を通信。`;note(s,text);event(s,p,text,known.id);event(s,q,`#${p.id}から発見情報を受信`,known.id);return;

@@ -76,6 +76,9 @@ jobs:
       - name: Test changing daily event contracts
         run: node tests/event-contract.cjs
 
+      - name: Test misleading information and visitor behavior
+        run: node tests/misinformation.cjs
+
       - name: Test AI resident routines
         run: node tests/ai-routines.cjs
 

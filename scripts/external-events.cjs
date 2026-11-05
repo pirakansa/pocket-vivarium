@@ -14,7 +14,7 @@ function normalize(commands){
   const result={kind:c.kind,text:c.text};
   if(c.kind==='supplies'){if(!Number.isFinite(c.cells)||!Number.isFinite(c.parts)||c.cells<0||c.parts<0)throw Error('Invalid supplies');cells+=c.cells;parts+=c.parts;result.cells=c.cells;result.parts=c.parts;}
   else if(c.kind==='interference'){if(!Number.isFinite(c.damage)||c.damage<0)throw Error('Invalid damage');damage+=c.damage;result.damage=c.damage;}
-  else if(c.kind==='arrival')arrivals++;
+  else if(c.kind==='arrival'){arrivals++;if(c.behavior!==undefined){if(c.behavior!=='misinformation')throw Error('Unknown arrival behavior');result.behavior=c.behavior;}}
   else if(c.kind==='departure')departures++;
   else if(c.kind!=='story')throw Error('Unknown event');
   return result;
@@ -45,7 +45,7 @@ function apply(s,time,plugin,note){
     if(!result.losses.length){result.status='skipped';result.reason='no-affected-residents';}
    }
    if(c.kind==='arrival'){
-    if(draft.people.length+(draft.assembly?1:0)<12)result.residentId=lifecycle.admitVisitor(draft).id;
+    if(draft.people.length+(draft.assembly?1:0)<12)result.residentId=lifecycle.admitVisitor(draft,{misinformation:c.behavior==='misinformation'}).id;
     else {result.status='skipped';result.reason='population-limit';}
    }
    if(c.kind==='departure'){

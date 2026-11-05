@@ -21,6 +21,14 @@ function perform(s,p,c,note){
  }
  if(c.programRevision&&p.program&&c.programRevision===aiRoutines.revision(p)){p.program.used=(p.program.used||0)+1;p.reason+=' 自作ルーチン「'+p.program.name+'」を使いました。';}
  if(c.a===1)p.energy=clamp(p.energy+18);
+ if(c.a===2&&hint?.falseReport){
+  delete p.hint;p.energy=clamp(p.energy-4);
+  p.informationExperience??={received:0,disproved:0};p.informationExperience.disproved++;
+  p.informationExperience.lastSourceId=hint.sourceId;p.informationExperience.lastCheckedHour=s.hour;
+  p.reason=`#${hint.sourceId}の情報を確かめましたが、セルは見つかりませんでした。`;
+  note(s,`MEHS #${p.id}：#${hint.sourceId}から教わった場所を確かめたが、何も見つからなかった。`);
+  p.lastEvent={text:p.reason,findId:null,hour:s.hour,untilHour:s.hour+.5};return;
+ }
  if(c.a===2){if(s.sites.some(site=>site.id==='cell-grove')&&R.next(s)<.25)s.food+=1;s.resources.parts+=.35;s.food+=s.rain?1:2;p.energy=clamp(p.energy-4);p.success++;}
  if(c.a===3){
   if(G.peers(s,p).length){p.social=clamp(p.social-45);p.kindness++;discoveries.communicate(s,p,note);programs.share(s,p,note);}
@@ -36,7 +44,7 @@ function dispatch(s,p,c,note){
 }
 function step(previous,context={}){
  const s=lifecycle.initialize(clone(previous));
- for(const p of s.people)G.initialize(p);
+ for(const p of s.people){G.initialize(p);if(p.hint?.falseReport&&p.hint.untilHour<s.hour)delete p.hint;}
  powerWear.addExposure(s,1/12);weather.addExposure(s,1/12);s.hour=Math.round((s.hour+1/12)*12)/12;
  weather.advance(s,note);
  if(context.plugin){if(context.plugin.source)external.apply(s,context.time+300000,context.plugin,note);aiRoutines.apply(s,context.time+300000,context.plugin,note);}
