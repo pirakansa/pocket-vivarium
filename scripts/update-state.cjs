@@ -29,18 +29,23 @@ function perform(s,p,c,note){
   note(s,`MEHS #${p.id}：#${hint.sourceId}から教わった場所を確かめたが、何も見つからなかった。`);
   p.lastEvent={text:p.reason,findId:null,hour:s.hour,untilHour:s.hour+.5};return;
  }
+ if(c.a===2&&p.activityArea==='deepForest'){p.reason='回収情報の期限が切れたため、林の奥での回収を見送りました。';p.remainingSteps=0;note(s,`MEHS #${p.id}：林の奥の回収情報が期限切れ。`);return;}
  if(c.a===2){if(s.sites.some(site=>site.id==='cell-grove')&&R.next(s)<.25)s.food+=1;s.resources.parts+=.35;s.food+=s.rain?1:2;p.energy=clamp(p.energy-4);p.success++;}
  if(c.a===3){
   if(G.peers(s,p).length){p.social=clamp(p.social-45);p.kindness++;discoveries.communicate(s,p,note);programs.share(s,p,note);}
   else p.reason='仲間の到着を待ちながら、通信できる相手を探しています。';
  }
- if(c.a===4){p.curiosity=clamp(p.curiosity-55);p.energy=clamp(p.energy-6);p.discoveries++;if(p.discoveries%3===0)s.food+=3;}
+ if(c.a===4){p.curiosity=clamp(p.curiosity-55);p.energy=clamp(p.energy-6);p.discoveries++;if(p.activityArea!=='deepForest'&&p.discoveries%3===0)s.food+=3;}
  note(s,`MEHS #${p.id}：${p.action}。`);
  if(c.a===2||c.a===4){if(hint&&c.a===(hint.kind==='recover'?2:4))delete p.hint;discoveries.discover(s,p,c.a,note);}
 }
 function emergency(s,p){return p.hunger>=85&&s.food>=1?0:p.energy<=15?1:null;}
 function dispatch(s,p,c,note){
- const to=G.target(s,p,c.a);if(G.depart(p,to,c,s.hour))note(s,`MEHS #${p.id}が${G.places[to].name}へ出発。`);else perform(s,p,c,note);
+ const hint=p.hint?.untilHour>=s.hour?p.hint:null,area=G.areaOf(p);
+ let to=G.target(s,p,c.a);
+ if(c.a===2&&hint?.falseReport)to='deepForest';
+ if(c.a===4&&!s.rain&&area==='forest'&&hint?.kind!=='explore'&&R.next(s)<.15)to='deepForest';
+ if(G.depart(p,to,c,s.hour))note(s,`MEHS #${p.id}が${G.places[to].name}へ出発。`);else perform(s,p,c,note);
 }
 function step(previous,context={}){
  const s=lifecycle.initialize(clone(previous));

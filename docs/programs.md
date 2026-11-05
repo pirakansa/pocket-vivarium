@@ -113,12 +113,12 @@ AI版にはorigin=ai、作成理由、改良者modifiedBy、元の作者authorId
 
 | 入力 | 意味 |
 |---|---|
-| location | home / forest / square / hill / route（移動中） |
+| location | home / forest / deepForest / square / hill / route（移動中） |
 | destination | 移動先。滞在中は現在地 |
 | moving | 移動中かどうか |
 | nearbyCount | 同じ場所に滞在している他機体の数。移動中は0 |
 | travelRemainingMinutes | 現旅程の残り時間。滞在中は0 |
-| minutesHome / minutesForest / minutesSquare / minutesHill | 現在位置から各場所へ向かう場合の所要分数（5分単位）。現旅程の残り時間とは別 |
+| minutesHome / minutesForest / minutesDeepForest / minutesSquare / minutesHill | 現在位置から各場所へ向かう場合の所要分数（5分単位）。現旅程の残り時間とは別 |
 
 `scripts/routine-context.cjs` は最新終端のmap、機体ごとのposition・journey・実際のinputsも出力する。日替わり生成では帰還距離、雨、同じ場所の仲間などを材料にできる。現在のAPIには未知の施設追加、テレポート、遠隔通信、独自経路を返す命令はない。将来の拡張を前提に本体の機能として追加する。
 
@@ -139,7 +139,7 @@ arrivalには任意のbehavior: "misinformation"を指定できる。この値�
 
 特性を持つ機体が同じ場所で通信する際、未失効の情報を持たない仲間がいれば20%で誤った回収情報を1機へ伝える。発信成功後は6時間休止し、情報の期限は2時間。正しい発見情報を上書きせず、受信機からの誤情報再配布もしない。発信しない場合は通常の情報交換を行う。
 
-受信情報は既存の回収優先度+10として使う。到着して回収を実行した時だけ情報を確かめ、セル・部品・回収経験・発見を得ず、通常回収と同じコンディション4を消費する。空振りは1回で情報を消し、手帳とlastEventに出所と確認結果を記録する。未確認のまま期限切れになった情報は結果を捏造せず消える。移動・切迫時の帰還・整備は従来どおり。
+受信情報は既存の回収優先度+10として使う。林の奥へ到着して回収を実行した時だけ情報を確かめ、セル・部品・回収経験・発見を得ず、通常回収と同じコンディション4を消費する。空振りは1回で情報を消し、手帳とlastEventに出所と確認結果を記録する。未確認のまま期限切れになった情報は結果を捏造せず消える。移動・切迫時の帰還・整備は従来どおり。
 
 informationExperienceは受信回数・空振り確認回数・最後の出所・確認時刻のみを保持する。routine-contextにこの経験、機体用ctxにmisinformationChecks（確認回数）を渡し、次のAI改良の判断材料にできる。情報を疑う判断が自動で学習・反映されるものではない。
 

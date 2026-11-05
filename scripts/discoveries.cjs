@@ -5,7 +5,7 @@ function initialize(s){R.initialize(s);s.finds??=[];s.sites??=[];s.nextFindId??=
 function event(s,p,text,findId){p.lastEvent={text,findId:findId??null,hour:s.hour,untilHour:s.hour+.5};}
 function discover(s,p,action,note){
  initialize(s);if(s.hour<(p.nextDiscoveryHour||0))return;
- const roll=R.next(s),rare=roll<.04,unseen=SITES.filter(site=>!s.sites.some(x=>x.id===site.id));
+ const roll=R.next(s),rare=roll<.04,unseen=G.areaOf(p)==='deepForest'?[]:SITES.filter(site=>!s.sites.some(x=>x.id===site.id));
  if(!rare&&!(action===4&&roll<.18&&unseen.length))return;
  const id=s.nextFindId++;let find;
  if(rare){
@@ -29,7 +29,7 @@ function communicate(s,p,note){
    q.informationExperience??={received:0,disproved:0};q.informationExperience.received++;
    q.informationExperience.lastSourceId=p.id;
    p.nextRumorHour=s.hour+6;
-   const text=`MEHS #${p.id}が#${q.id}へ「林に未回収のセルがあるらしい」と通信。`;
+   const text=`MEHS #${p.id}が#${q.id}へ「林の奥に未回収のセルがあるらしい」と通信。`;
    note(s,text);event(s,p,text);event(s,q,`#${p.id}から回収情報を受信`);return;
   }
  }
