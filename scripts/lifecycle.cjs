@@ -24,9 +24,9 @@ function designOf(s,parents,id,rare){
  const options=shapes.filter(x=>x!==inherited);
  const eyeShape=changeEye?options[Math.floor(R.next(s)*options.length)]:inherited;
  const colors=['#c38450','#b76a79','#597eab','#648f78','#967ab0','#b2974a'];
- const changeColor=R.next(s)<.4;
- const inheritedColor=parents[0].color||'#709e91',otherColors=colors.filter(c=>c!==inheritedColor);
- return {care:value('care'),safe:value('safe'),adventure:value('adventure'),color:changeColor?otherColors[Math.floor(R.next(s)*otherColors.length)]:inheritedColor,eyeShape,variant:rare?'発見部品の特別仕様':changeEye||changeColor?'小さな設計変異':'継承設計'};
+ const changeColor=R.next(s)<.45;
+ const inheritedColor=parents[0].color||'#709e91';
+ return {care:value('care'),safe:value('safe'),adventure:value('adventure'),color:changeColor?colors[Math.floor(R.next(s)*colors.length)]:inheritedColor,eyeShape,variant:rare?'発見部品の特別仕様':changeEye||changeColor?'小さな設計変異':'継承設計'};
 }
 function trait(d){return d.adventure>=d.care&&d.adventure>=d.safe?'探索を好む設計':d.care>=d.safe?'通信を好む設計':'備えを重視する設計';}
 function start(s,parents,station){
