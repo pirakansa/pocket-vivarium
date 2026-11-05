@@ -20,8 +20,8 @@ function initialize(s){
 function designOf(s,parents,id,rare){
  const value=key=>clamp(parents.reduce((sum,p)=>sum+(p[key]||1),0)/parents.length+(R.next(s)-.5)*.3,.5,3.5);
  const shapes=['square','round','visor'],inherited=parents[0].eyeShape||'square';
- const changeEye=!!rare||R.next(s)<.2;
- const options=shapes.filter(x=>x!==inherited);
+ const changeEye=!!rare||R.next(s)<.45;
+ const options=rare?shapes.filter(x=>x!==inherited):shapes;
  const eyeShape=changeEye?options[Math.floor(R.next(s)*options.length)]:inherited;
  const colors=['#c38450','#b76a79','#597eab','#648f78','#967ab0','#b2974a'];
  const changeColor=R.next(s)<.45;

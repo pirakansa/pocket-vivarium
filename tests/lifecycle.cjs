@@ -26,4 +26,16 @@ try{
   else assert.equal(sample.assembly.design.color,'#b76a79');
  }
 }finally{R.next=savedNext;}
+const savedEyeNext=R.next;
+try{
+ for(const rare of [false,true])for(const roll of [.449999,.45])for(const pick of [0,.4,.9]){
+  const sample=clone(base);sample.nextAssemblyHour=0;sample.resources.parts=64;
+  if(rare)sample.resources.rarePartFinds=[{id:1,name:'光学モジュール'}];
+  const values=rare?[pick]:[roll,pick];R.next=()=>values.length?values.shift():.9;
+  L.advance(sample);
+  const eye=sample.assembly.design.eyeShape;
+  if(rare)assert.notEqual(eye,'square');
+  else assert.equal(eye,roll<.45?['square','round','visor'][Math.floor(pick*3)]:'square');
+ }
+}finally{R.next=savedEyeNext;}
 console.log('PASS: four-hour assembly, inherited designs, resource constraints, 21–35 day life, parts recycling, autonomous restart, unique IDs, overlap/determinism');
