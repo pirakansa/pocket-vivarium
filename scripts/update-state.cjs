@@ -21,7 +21,7 @@ function perform(s,p,c,note){
  }
  if(c.programRevision&&p.program&&c.programRevision===aiRoutines.revision(p)){p.program.used=(p.program.used||0)+1;p.reason+=' 自作ルーチン「'+p.program.name+'」を使いました。';}
  if(c.a===1)p.energy=clamp(p.energy+18);
- if(c.a===2&&hint?.falseReport){
+ if(c.a===2&&p.activityArea==='deepForest'&&hint?.falseReport){
   delete p.hint;p.energy=clamp(p.energy-4);
   p.informationExperience??={received:0,disproved:0};p.informationExperience.disproved++;
   p.informationExperience.lastSourceId=hint.sourceId;p.informationExperience.lastCheckedHour=s.hour;
@@ -37,7 +37,7 @@ function perform(s,p,c,note){
  }
  if(c.a===4){p.curiosity=clamp(p.curiosity-55);p.energy=clamp(p.energy-6);p.discoveries++;if(p.activityArea!=='deepForest'&&p.discoveries%3===0)s.food+=3;}
  note(s,`MEHS #${p.id}：${p.action}。`);
- if(c.a===2||c.a===4){if(hint&&c.a===(hint.kind==='recover'?2:4))delete p.hint;discoveries.discover(s,p,c.a,note);}
+ if(c.a===2||c.a===4){if(hint&&!hint.falseReport&&c.a===(hint.kind==='recover'?2:4))delete p.hint;discoveries.discover(s,p,c.a,note);}
 }
 function emergency(s,p){return p.hunger>=85&&s.food>=1?0:p.energy<=15?1:null;}
 function dispatch(s,p,c,note){

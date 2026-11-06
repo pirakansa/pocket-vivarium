@@ -25,6 +25,17 @@ try{
  const protectedHint=world();protectedHint.people[0].informationStyle='unreliable';
  protectedHint.people[1].hint={kind:'explore',findId:123,sourceId:3,untilHour:102};
  D.communicate(protectedHint,protectedHint.people[0],note);assert.equal(protectedHint.people[1].hint.findId,123);
+ // An arriving recovery was planned before the local rumor was received.
+ const sameTick=world(),[speaker,inbound]=sameTick.people;
+ speaker.position={...G.places.forest,area:'forest'};
+ speaker.informationStyle='unreliable';speaker.social=100;speaker.care=3;
+ inbound.position={...G.places.forest,x:G.places.forest.x-5,area:'square'};
+ assert(G.depart(inbound,'forest',{a:2,why:'通常の回収'},sameTick.hour));
+ const arrived=step(sameTick).people.find(p=>p.id===inbound.id);
+ assert.equal(arrived.position.area,'forest');
+ assert.equal(arrived.success,inbound.success+1);
+ assert.equal(arrived.informationExperience.disproved,0);
+ assert(arrived.hint?.falseReport);
  const before=clone(w);recipient.position={...G.places.forest,area:'forest'};recipient.activityArea='forest';
  const moving=step(w,{time}),traveler=moving.people.find(p=>p.id===recipient.id);
  assert.equal(traveler.journey?.to,'deepForest');assert.equal(traveler.informationExperience.disproved,0);
