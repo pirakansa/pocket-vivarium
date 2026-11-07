@@ -13,5 +13,5 @@ function recommend(s,p,note){
  try{const result=AI.checkResult(execute(p.program.source,AI.inputs(s,p)));if(!result||!Object.hasOwn(actions,result.action))throw Error('Invalid action');delete p.program.error;p.program.runs++;p.program.lastAction=result.action;return actions[result.action];}
  catch{p.program.error='実行に失敗。通常の判断を使用。';return null;}
 }
-function share(s,p,note){if(!p.program)return;const other=G.peers(s,p).find(x=>!x.program);if(!other)return;other.program={...p.program,runs:0,used:0,receivedFrom:p.id,receivedHour:s.hour};note(s,`MEHS #${p.id}が#${other.id}へ「${p.program.name}」を渡した。`);}
+function share(s,p,note,peers=G.peers(s,p)){if(!p.program)return;const other=peers.find(x=>!x.program);if(!other)return;other.program={...p.program,runs:0,used:0,receivedFrom:p.id,receivedHour:s.hour};note(s,`MEHS #${p.id}が#${other.id}へ「${p.program.name}」を渡した。`);}
 module.exports={recommend,share};

@@ -117,6 +117,7 @@ AI版にはorigin=ai、作成理由、改良者modifiedBy、元の作者authorId
 | destination | 移動先。滞在中は現在地 |
 | moving | 移動中かどうか |
 | nearbyCount | 同じ場所に滞在している他機体の数。移動中は0 |
+| relayPeers | 稼働中の中継器を通じて通信できる他機体の数。移動中は0 |
 | travelRemainingMinutes | 現旅程の残り時間。滞在中は0 |
 | minutesHome / minutesLab / minutesForest / minutesDeepForest / minutesSquare / minutesHill | 現在位置から各場所へ向かう場合の所要分数（5分単位）。現旅程の残り時間とは別 |
 

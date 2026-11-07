@@ -4,6 +4,7 @@ const {migrateTimeline}=require('./identities.cjs');
 const {translate,convertTimeline}=require('../dist/mehs.js');
 const lifecycle=require('./lifecycle.cjs');
 const {VillageGeography:G}=require('../dist/geography.js');
+const relay=require('./relay.cjs');
 const powerWear=require('./power-wear.cjs');
 const R=require('./random.cjs'),discoveries=require('./discoveries.cjs'),weather=require('./weather.cjs');
 const aiRoutines=require('./ai-routines.cjs');
@@ -32,7 +33,13 @@ function perform(s,p,c,note){
  if(c.a===2&&p.activityArea==='deepForest'){p.reason='回収情報の期限が切れたため、林の奥での回収を見送りました。';p.remainingSteps=0;note(s,`MEHS #${p.id}：林の奥の回収情報が期限切れ。`);return;}
  if(c.a===2){if(s.sites.some(site=>site.id==='cell-grove')&&R.next(s)<.25)s.food+=1;s.resources.parts+=.35;s.food+=s.rain?1:2;p.energy=clamp(p.energy-4);p.success++;}
  if(c.a===3){
-  if(G.peers(s,p).length){p.social=clamp(p.social-45);p.kindness++;discoveries.communicate(s,p,note);programs.share(s,p,note);}
+  const local=G.peers(s,p),remote=local.length?[]:relay.remotePeers(s,p);
+  const peers=local.length?local:remote;
+  if(peers.length){
+   p.social=clamp(p.social-45);p.kindness++;
+   discoveries.communicate(s,p,note,peers);programs.share(s,p,note,peers);
+   if(remote.length){p.reason='中継器を使って離れた場所の仲間と通信しました。';relay.use(s,p,remote[0],note);}
+  }
   else p.reason='仲間の到着を待ちながら、通信できる相手を探しています。';
  }
  if(c.a===4){p.curiosity=clamp(p.curiosity-55);p.energy=clamp(p.energy-6);p.discoveries++;if(p.activityArea!=='deepForest'&&p.discoveries%3===0)s.food+=3;}
@@ -42,7 +49,7 @@ function perform(s,p,c,note){
 function emergency(s,p){return p.hunger>=85&&s.food>=1?0:p.energy<=15?1:null;}
 function dispatch(s,p,c,note){
  const hint=p.hint?.untilHour>=s.hour?p.hint:null,area=G.areaOf(p);
- let to=G.target(s,p,c.a);
+ let to=c.a===3&&relay.remotePeers(s,p).length?area:G.target(s,p,c.a);
  if(c.a===2&&hint?.falseReport)to='deepForest';
  if(c.a===4&&!s.rain&&area==='forest'&&hint?.kind!=='explore'&&R.next(s)<.15)to='deepForest';
  if(G.depart(p,to,c,s.hour))note(s,`MEHS #${p.id}が${G.places[to].name}へ出発。`);else if(c.a===5)aiRoutines.work(s,p,note);else perform(s,p,c,note);
@@ -57,6 +64,9 @@ function step(previous,context={}){
  const arrivals=new Map();for(const p of s.people){const plan=G.advance(p,s.hour);if(plan)arrivals.set(p.id,plan);}
  for(const p of s.people){
   p.hunger=clamp(p.hunger+.9);p.energy=clamp(p.energy-.35);p.social=clamp(p.social+.8);p.curiosity=clamp(p.curiosity+.7);
+ }
+ relay.prepare(s,note);
+ for(const p of s.people){
   const pending=aiRoutines.checkPending(s,p,note);
   if(s.assembly?.builderId===p.id&&s.hour<s.assembly.readyHour)continue;
   const urgent=emergency(s,p),arrived=arrivals.get(p.id);
@@ -72,6 +82,12 @@ function step(previous,context={}){
    if(urgent!==null){dispatch(s,p,{a:urgent,why:'開発より充電・整備を優先します。'},note);continue;}
    if(pending&&aiRoutines.canWork(s,p)&&aiRoutines.work(s,p,note))continue;
   }
+  const job=urgent===null?relay.assigned(s,p):null;
+  if(job){
+   if(p.journey?.plan.a!==relay.ACTION||p.journey.to!==job.to)relay.work(s,p,job,note);
+   continue;
+  }
+  if(p.journey?.plan.a===relay.ACTION){delete p.journey;p.remainingSteps=0;}
   if(p.journey){
    const suggested=programs.recommend(s,p,note),a=urgent??suggested;
    if(a!==null&&a!==p.journey.plan.a){
@@ -80,7 +96,7 @@ function step(previous,context={}){
    }
    continue;
   }
-  if(arrived&&arrived.a!==5){
+  if(arrived&&arrived.a!==5&&arrived.a!==relay.ACTION){
    // Conditions and stock may have changed while travelling.
    if(urgent!==null&&urgent!==arrived.a)dispatch(s,p,{a:urgent,why:'到着時の機体状態から充電・整備を優先します。'},note);
    else perform(s,p,arrived,note);

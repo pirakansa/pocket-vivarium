@@ -20,10 +20,10 @@ function discover(s,p,action,note){
  s.finds.push(find);s.finds=s.finds.slice(-32);p.knowledge.push(id);p.knowledge=p.knowledge.slice(-16);p.nextDiscoveryHour=s.hour+4;
  const text=`MEHS #${p.id}が${find.name}を発見。${rare?'次の組み立てで特別な目の機体へ。':'新しい行動の手がかりを記録。'}`;note(s,text);event(s,p,text,id);
 }
-function communicate(s,p,note){
- const choices=G.peers(s,p).sort((a,b)=>(a.knowledge?.length||0)-(b.knowledge?.length||0)||a.id-b.id);
+function communicate(s,p,note,peers=G.peers(s,p)){
+ const choices=[...peers].sort((a,b)=>(a.knowledge?.length||0)-(b.knowledge?.length||0)||a.id-b.id);
  if(p.informationStyle==='unreliable'&&s.hour>=(p.nextRumorHour||0)){
-  const q=choices.find(q=>!q.hint||q.hint.untilHour<s.hour);
+  const q=choices.find(q=>G.areaOf(q)===G.areaOf(p)&&(!q.hint||q.hint.untilHour<s.hour));
   if(q&&R.next(s)<.2){
    q.hint={kind:'recover',sourceId:p.id,falseReport:true,untilHour:s.hour+2};
    q.informationExperience??={received:0,disproved:0};q.informationExperience.received++;

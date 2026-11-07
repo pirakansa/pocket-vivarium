@@ -24,5 +24,10 @@ setImmediate(async()=>{
  now=Date.parse(responseData.windowEnd)+3600000;v('refresh()');assert(elements.status.textContent.includes('更新待ち'));assert.equal(v('state'),responseData.endState);
  fail=true;await v('loadState()');assert.equal(v('state'),responseData.endState);assert(elements.status.textContent.includes('取得に失敗'));
  fail=false;responseData=JSON.parse(JSON.stringify(responseData));for(const f of [...responseData.frames,{state:responseData.endState}]){f.state.people=[];f.state.logs=['継承設備が自動復旧を開始'];f.state.assembly={id:99,source:'station',parentIds:[1],generation:2,startedHour:f.state.hour,readyHour:f.state.hour+4};f.state.nextResidentId=100;}await v('loadState()');assert(elements.detail.textContent.includes('0機'));assert(elements.population.innerHTML.includes('自動復旧'));assert(elements.log.innerHTML.includes('自動復旧'));
+ responseData.endState.relay={area:'square',condition:23,lastSignal:{from:'square',hour:responseData.endState.hour}};
+ responseData.endState.relayProject={kind:'repair',area:'square',readyHour:responseData.endState.hour+.25};
+ v('renderPopulation()');
+ assert.match(elements.population.innerHTML,/語らいの広場 ↔ 資源の林 · 稼働中（23%）/);
+ assert.match(elements.population.innerHTML,/修理作業中 · 約15分/);
  frame(0);frame(1000);assert.equal(JSON.stringify(data),original);console.log('PASS: live time, rewind, absolute position across refresh, no future selection, stale/error fallback, immutable source');
 });

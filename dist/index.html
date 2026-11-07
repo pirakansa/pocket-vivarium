@@ -37,7 +37,7 @@
 }
 
 @media(prefers-reduced-motion:reduce){.person{transition:none}.person:hover{transform:none}}
-</style></head><body><header><div class="brand"><div class="brand-mark" aria-hidden="true">✦</div><div><div class="eyebrow">POCKET VIVARIUM</div><h1>こもれびの村</h1></div></div><span class="subtitle">今日も、ちいさな発見を。</span><details class="guide"><summary aria-label="遊び方">?</summary><p>MEHSたちは、自分で考えて暮らしています。<br>機体をタップして、いまの気持ちをのぞいてみましょう。<br><br>時計を開くと、過去2時間の出来事を振り返れます。</p></details></header><main><div class="layout"><section><div class="scene"><canvas id="world" width="1000" height="660" aria-label="MEHSたちの小さな村。機体をタップして観察できます"></canvas><div class="map-top"><div class="map-sign"><b>✦ こもれびの小径</b><small>MEHS FIELD / 01</small></div><div class="caption" id="clock">村につないでいます…</div></div><div class="hud" id="hud"></div><span class="map-tip">機体をタップして観察</span><a class="mobile-focus" id="mobile-focus" href="#observation">機体を選んで観察</a></div><div class="watchbar"><span class="watch-label">MEHSたち</span><span class="tag" id="status" role="status">記録を読み込み中</span><button id="live" class="live-button active" disabled>現在に戻る</button></div><div class="people" id="people"></div><details class="time-travel"><summary><span>◷ 時間をさかのぼる</span><span id="elapsed">現在の村</span></summary><div class="timeline"><input id="seek" type="range" min="0" max="120" step="1" value="120" aria-label="過去2時間の再生位置" disabled><div class="timeline-head"><span>2時間前</span><span>1時間前</span><span>現在</span></div></div></details></section><aside class="field-guide" id="observation"><div class="guide-top"><b>観察ノート</b><small>FIELD NOTES</small></div><nav class="tabs" aria-label="観察ノート"><button id="tab-detail" class="active" onclick="showTab('detail')" aria-pressed="true">機体</button><button id="tab-world" onclick="showTab('world')" aria-pressed="false">工房</button><button id="tab-story" onclick="showTab('story')" aria-pressed="false">できごと</button></nav><div id="view-detail" class="tab-content"><div class="panel" id="detail"></div></div><div id="view-world" class="tab-content" hidden><div class="panel" id="population"></div></div><div id="view-story" class="tab-content" hidden><div class="panel" id="finds"></div><div class="section-label">VILLAGE DIARY</div><div id="log" class="log"></div></div></aside></div><p class="world-note">ちいさな機体がつなぐ、ゆっくりとした世界。</p></main><script src="./player.js"></script><script src="./geography.js?v=development-room"></script><script>
+</style></head><body><header><div class="brand"><div class="brand-mark" aria-hidden="true">✦</div><div><div class="eyebrow">POCKET VIVARIUM</div><h1>こもれびの村</h1></div></div><span class="subtitle">今日も、ちいさな発見を。</span><details class="guide"><summary aria-label="遊び方">?</summary><p>MEHSたちは、自分で考えて暮らしています。<br>機体をタップして、いまの気持ちをのぞいてみましょう。<br><br>時計を開くと、過去2時間の出来事を振り返れます。</p></details></header><main><div class="layout"><section><div class="scene"><canvas id="world" width="1000" height="660" aria-label="MEHSたちの小さな村。機体をタップして観察できます"></canvas><div class="map-top"><div class="map-sign"><b>✦ こもれびの小径</b><small>MEHS FIELD / 01</small></div><div class="caption" id="clock">村につないでいます…</div></div><div class="hud" id="hud"></div><span class="map-tip">機体をタップして観察</span><a class="mobile-focus" id="mobile-focus" href="#observation">機体を選んで観察</a></div><div class="watchbar"><span class="watch-label">MEHSたち</span><span class="tag" id="status" role="status">記録を読み込み中</span><button id="live" class="live-button active" disabled>現在に戻る</button></div><div class="people" id="people"></div><details class="time-travel"><summary><span>◷ 時間をさかのぼる</span><span id="elapsed">現在の村</span></summary><div class="timeline"><input id="seek" type="range" min="0" max="120" step="1" value="120" aria-label="過去2時間の再生位置" disabled><div class="timeline-head"><span>2時間前</span><span>1時間前</span><span>現在</span></div></div></details></section><aside class="field-guide" id="observation"><div class="guide-top"><b>観察ノート</b><small>FIELD NOTES</small></div><nav class="tabs" aria-label="観察ノート"><button id="tab-detail" class="active" onclick="showTab('detail')" aria-pressed="true">機体</button><button id="tab-world" onclick="showTab('world')" aria-pressed="false">工房</button><button id="tab-story" onclick="showTab('story')" aria-pressed="false">できごと</button></nav><div id="view-detail" class="tab-content"><div class="panel" id="detail"></div></div><div id="view-world" class="tab-content" hidden><div class="panel" id="population"></div></div><div id="view-story" class="tab-content" hidden><div class="panel" id="finds"></div><div class="section-label">VILLAGE DIARY</div><div id="log" class="log"></div></div></aside></div><p class="world-note">ちいさな機体がつなぐ、ゆっくりとした世界。</p></main><script src="./player.js"></script><script src="./geography.js?v=relay"></script><script>
 const $=id=>document.getElementById(id),canvas=$('world'),ctx=canvas.getContext('2d');
 const G=VillageGeography;
 const places=Object.fromEntries(Object.entries(G.places).map(([key,p])=>[key,[p.x,p.y]]));
@@ -111,10 +111,19 @@ function renderFinds(){
  const finds=(state.finds||[]).slice(-4).reverse();
  $('finds').innerHTML=`<h2>✦ 発見の手帳</h2><span class="tag">場所 ${(state.sites||[]).length}</span> <span class="tag">特別な部品 ${(state.resources?.rarePartFinds||[]).length}</span>${finds.length?finds.map(f=>`<div class="find-card"><b>${f.type==='rare-part'?'⚙':'✦'} ${f.name}</b><small>MEHS #${f.finderId}が発見 · 記録 #${f.id}</small></div>`).join(''):'<div class="empty-card"><span class="big">✧</span>まだ見ぬ発見が、<br>どこかで待っています。</div>'}`;
 }
+function relayCard(){
+ const relay=state.relay,project=state.relayProject;
+ if(!relay&&!project)return '';
+ const work=project&&{build:'設置',repair:'修理',move:'移設'}[project.kind];
+ const progress=project?.designerId?(project.designReadyHour?'開発室で設計中':'開発室へ移動・設計準備'):project?.readyHour?`${work}作業中 · 約${Math.max(0,Math.round((project.readyHour-state.hour)*60))}分`:project?`${G.places[project.area].name}で${work}の準備`:'';
+ const status=relay?`${G.places[relay.area].name} ↔ ${G.places[G.relayLinks[relay.area]].name} · ${relay.condition>0?`稼働中（${Math.ceil(relay.condition)}%）`:'停止中'}`:'';
+ return `<div class="find-card"><b>通信中継器</b><small>${[status,progress].filter(Boolean).join('<br>')}</small></div>`;
+}
 function renderPopulation(){
  const a=state.assembly,parts=Number((state.resources?.parts||0).toFixed(1)),retired=Object.values(state.lineage||{}).filter(r=>r.retiredHour!==undefined).sort((a,b)=>b.retiredHour-a.retiredHour).slice(0,6),progress=a?Math.max(0,Math.min(100,(state.hour-a.startedHour)/(a.readyHour-a.startedHour)*100)):0;
  $('hud').innerHTML=`<div class="hud-chip">◉ ${state.people.length}<span>機体</span></div><div class="hud-chip">ϟ ${Number(state.food.toFixed(1))}<span>セル</span></div><div class="hud-chip">⚙ ${parts}<span>部品</span></div>`;
  $('population').innerHTML=`<h2>⚒ 継承の工房</h2><div class="factory-stats"><div><b>${state.people.length}</b><small>稼働中の機体</small></div><div><b>${parts}</b><small>集めた部品</small></div></div>${a?`<div class="assembly-hero"><span class="big">⚙</span><small>${a.source==='station'?'継承設備が自動復旧中':`#${a.builderId}が組み立て中`}</small><strong>MEHS #${a.id}</strong><span class="tag">第${a.generation}世代</span><p class="footer">設計元 ${a.parentIds.map(id=>'#'+id).join('・')||'標準設計'}${a.inspiration?`<br>✦ 発見 #${a.inspiration.id}の部品`:''}</p><div class="bar"><i style="width:${progress}%"></i></div><small>${Math.floor(progress)}% · 起動まで約${Math.max(0,Math.ceil((a.readyHour-state.hour)*60))}分</small></div>`:'<div class="empty-card" style="margin-top:15px"><span class="big">⚒</span>次の出会いの準備中。<br>部品とセルが集まると、<br>新しい機体の組み立てが始まります。</div>'}${retired.length?'<div class="section-label">LEGACY / 残された設計</div>'+retired.map(r=>`<p class="footer">◈ MEHS #${r.id} · 第${r.generation}世代<br>　${Math.floor((r.retiredHour-r.activatedHour)/24)}日の稼働を、次の機体へ。</p>`).join(''):''}`;
+ $('population').innerHTML+=relayCard();
 }
 function render(){
  renderPopulation();renderFinds();
@@ -195,7 +204,27 @@ function robot(p,t,i){
  ctx.fillStyle='#eff8ec';ctx.font='bold 11px system-ui';ctx.fillText('M',x,y+4);
  ctx.fillStyle='#344537';ctx.font='bold 12px system-ui';ctx.fillText(selectedId===p.id?`MEHS #${p.id}`:`#${p.id}`,x,y-65);if(selectedId===p.id){ctx.font='11px system-ui';ctx.fillText(p.action,x,y+34);}if((p.durability??100)<20){ctx.fillStyle='#bc8150';ctx.font='12px system-ui';ctx.fillText('経年劣化',x,y+49);}
 }
-function draw(timestamp){const elapsed=last===null||document.hidden?0:Math.max(0,(timestamp-last)/1000);last=timestamp;const dt=Math.min(elapsed,.1);if(!document.hidden){animationTime+=dt*1000;if(timestamp-lastUi>=1000){lastUi=timestamp;refresh();}}const t=animationTime;landscape(t);
+function drawRelay(t){
+ const relay=state?.relay;
+ if(!relay)return;
+ const a=G.places[relay.area],b=G.places[G.relayLinks[relay.area]];
+ const x=a.x+(relay.area==='square'?82:54),y=a.y-18;
+ const hour=(displayAt-Date.parse(timeline.worldOrigin))/3600000;
+ const signal=relay.lastSignal,active=relay.condition>0&&signal&&hour>=signal.hour&&hour-signal.hour<1/12;
+ ctx.save();
+ if(active){
+  ctx.strokeStyle='#387b7480';ctx.lineWidth=3;ctx.setLineDash([6,8]);ctx.lineDashOffset=(signal.from===relay.area?-1:1)*t/45;
+  ctx.beginPath();ctx.moveTo(x,y-24);ctx.lineTo(b.x,b.y-12);ctx.stroke();ctx.setLineDash([]);
+ }
+ ellipse(x,y+5,15,5,'#66746144');
+ ctx.fillStyle='#526964';ctx.fillRect(x-9,y-6,18,12);ctx.fillRect(x-3,y-25,6,20);
+ ctx.strokeStyle=relay.condition>0?'#367769':'#78695d';ctx.lineWidth=3;
+ for(const radius of [11,17]){ctx.beginPath();ctx.arc(x,y-25,radius,Math.PI*1.23,Math.PI*1.77);ctx.stroke();}
+ ellipse(x,y-25,4,4,active?'#dfffb2':relay.condition>0?'#89d8b5':'#b4a599');
+ mapLabel(relay.condition>0?'通信中継器':'中継器・停止',x,y+22);
+ ctx.restore();
+}
+function draw(timestamp){const elapsed=last===null||document.hidden?0:Math.max(0,(timestamp-last)/1000);last=timestamp;const dt=Math.min(elapsed,.1);if(!document.hidden){animationTime+=dt*1000;if(timestamp-lastUi>=1000){lastUi=timestamp;refresh();}}const t=animationTime;landscape(t);drawRelay(t);
 if(state?.sites?.length){ctx.fillStyle='#8b7842';ctx.font='12px system-ui';ctx.fillText(`✦ 発見した場所 ${state.sites.length}`,760,565);}
 if(state?.assembly){ctx.fillStyle='#d5a34c';ctx.font='bold 14px system-ui';ctx.fillText(`⚙ #${state.assembly.id} 組み立て中`,235,485);}
 const selected=state?.people.find(p=>p.id===selectedId);

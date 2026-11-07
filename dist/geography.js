@@ -1,6 +1,7 @@
 /* Shared logical map. Only the generator changes positions; the viewer interpolates them. */
 (function(root){
  const places={home:{x:240,y:395,name:'充電の工房',indoors:true},lab:{x:380,y:245,name:'開発室',indoors:true},forest:{x:795,y:245,name:'資源の林',indoors:false},deepForest:{x:920,y:105,name:'林の奥',indoors:false},square:{x:525,y:360,name:'語らいの広場',indoors:false},hill:{x:735,y:475,name:'見晴らしの丘',indoors:false}};
+ const relayLinks={square:'forest',forest:'hill'};
  const actionAreas={charge:'home',maintain:'home',recover:'forest',communicate:'square',explore:'hill'};
  const oldAreas={'充電する':'home','整備する':'home','組み立てる':'home','開発する':'lab','資源を回収する':'forest','通信する':'square','探索する':'hill'};
  const SPEED=1200,STEP=1/12;
@@ -27,5 +28,5 @@
   if(hour+1e-7<j.arriveHour)return null;
   const plan=j.plan;p.position={x:(j.target||places[j.to]).x,y:(j.target||places[j.to]).y,area:j.to};p.activityArea=j.to;delete p.journey;return plan;
  }
- root.VillageGeography={places,actionAreas,SPEED,STEP,areaOf,positionAt,initialize,speed,travelMinutes,peers,target,depart,advance};
+ root.VillageGeography={places,relayLinks,actionAreas,SPEED,STEP,areaOf,positionAt,initialize,speed,travelMinutes,peers,target,depart,advance};
 })(typeof module==='object'?module.exports:window);
