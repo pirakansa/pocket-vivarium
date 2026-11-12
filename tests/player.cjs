@@ -29,5 +29,9 @@ setImmediate(async()=>{
  v('renderPopulation()');
  assert.match(elements.population.innerHTML,/語らいの広場 ↔ 資源の林 · 稼働中（23%）/);
  assert.match(elements.population.innerHTML,/修理作業中 · 約15分/);
+ responseData.endState.incident={stage:'repair',progress:1,crew:[7,8],lostCells:17.5,discardedCells:9,usedParts:2};
+ v('renderPopulation()');assert.match(elements.population.innerHTML,/セル保管庫の漏電/);assert.match(elements.population.innerHTML,/50%/);assert.match(elements.population.innerHTML,/17.5/);assert.match(elements.hud.innerHTML,/漏電・復旧中/);
+ assert.match(v('skillsCard('+JSON.stringify({skills:{diagnosis:{origin:'practice'},repair:{origin:'communication',teacherId:7}},incidentExperience:{repair:2}})+')'),/#7から教わった/);
  frame(0);frame(1000);assert.equal(JSON.stringify(data),original);console.log('PASS: live time, rewind, absolute position across refresh, no future selection, stale/error fallback, immutable source');
 });
+

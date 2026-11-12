@@ -47,7 +47,7 @@ function advance(s){
  for(const p of s.people){
   const age=Math.max(0,s.hour-p.activatedHour);p.wearHours=age+p.rainWearHours+(p.powerWearHours||0);p.durability=clamp(100*(1-p.wearHours/p.serviceLifeHours),0,100);
   if(p.wearHours+1e-7>=p.serviceLifeHours){
-   const record=s.lineage[p.id];record.retiredHour=s.hour;record.wearHours=p.wearHours;record.rainWearHours=p.rainWearHours;record.powerWearHours=p.powerWearHours||0;record.experience={recovery:p.success,exploration:p.discoveries,communication:p.kindness};
+   const record=s.lineage[p.id];record.retiredHour=s.hour;record.wearHours=p.wearHours;record.rainWearHours=p.rainWearHours;record.powerWearHours=p.powerWearHours||0;record.experience={recovery:p.success,exploration:p.discoveries,communication:p.kindness};record.skills=clone(p.skills||{});record.incidentExperience=clone(p.incidentExperience||{});
    s.resources.parts=Math.min(64,s.resources.parts+8);log(s,`MEHS #${p.id}が稼働寿命を迎えて引退。設計を保存し、部品8個を次の機体へ。`);
   }else alive.push(p);
  }
@@ -66,7 +66,7 @@ function advance(s){
   // The installation has a dedicated recovery reserve: no permanent extinction.
   start(s,[{id:source.id,generation:source.generation,...source.design}],true);
  }
- if(!s.assembly&&s.hour>=s.nextAssemblyHour&&s.people.length){
+ if(!s.incident&&!s.assembly&&s.hour>=s.nextAssemblyHour&&s.people.length){
   const n=s.people.length,cost=12+n*4,reserve=12+n*6;
   const candidates=s.people.filter(p=>p.hunger<70&&p.energy>25&&p.durability>5&&G.areaOf(p)==='home');
   if(candidates.length&&s.food>=reserve+6&&s.resources.parts>=cost){
@@ -89,3 +89,4 @@ function admitVisitor(s,options={}){
  G.initialize(p);s.people.push(p);initialize(s);s.lineage[id].origin='outside';log(s,`外界からMEHS #${id}が村へ加わった。`);return p;
 }
 module.exports={admitVisitor,initialize,advance,migrateTimeline,lifeHours,HOURS};
+
