@@ -25,7 +25,7 @@ function use(s,p,q,note){
 }
 
 function eligible(s,p){
- return s.assembly?.builderId!==p.id&&p.hunger<65&&p.energy>40&&(p.durability??100)>5
+ return !s.incident?.crew?.includes(p.id)&&s.assembly?.builderId!==p.id&&p.hunger<65&&p.energy>40&&(p.durability??100)>5
   &&p.pendingRoutine?.readyHour===undefined&&p.journey?.plan.a!==5;
 }
 
@@ -118,3 +118,4 @@ function work(s,p,job,note){
 }
 
 module.exports={ACTION,remotePeers,use,prepare,assigned,work};
+

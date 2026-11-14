@@ -10,7 +10,7 @@
  .map-top{position:static;grid-row:1;align-items:center;padding:7px 9px;gap:6px;background:var(--paper)}
  .map-sign{padding:0;max-width:44%;background:none;box-shadow:none}.map-sign b{font-size:11px;letter-spacing:0}
  .caption{max-width:56%;padding:0;font-size:11px;background:none;box-shadow:none;text-align:right}
- canvas{grid-row:2}.hud{position:static;grid-row:3;padding:7px 9px 0;gap:6px}
+ canvas{grid-row:2}.hud{position:static;flex-wrap:wrap;grid-row:3;padding:7px 9px 0;gap:6px}
  .hud-chip{font-size:12px;padding:3px 7px;gap:4px;box-shadow:none;background:#eeefdb;border:0}.hud-chip span{display:inline;font-size:10px}
  .map-tip{display:block;position:static;grid-row:4;margin:0;padding:5px 9px 0;background:none;color:#657858;font-size:11px;text-align:right}
  .mobile-focus{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:44px;padding:8px 10px;color:var(--ink);font-size:12px;text-decoration:none;font-weight:700;overflow-wrap:anywhere}
@@ -111,6 +111,18 @@ function renderFinds(){
  const finds=(state.finds||[]).slice(-4).reverse();
  $('finds').innerHTML=`<h2>✦ 発見の手帳</h2><span class="tag">場所 ${(state.sites||[]).length}</span> <span class="tag">特別な部品 ${(state.resources?.rarePartFinds||[]).length}</span>${finds.length?finds.map(f=>`<div class="find-card"><b>${f.type==='rare-part'?'⚙':'✦'} ${f.name}</b><small>MEHS #${f.finderId}が発見 · 記録 #${f.id}</small></div>`).join(''):'<div class="empty-card"><span class="big">✧</span>まだ見ぬ発見が、<br>どこかで待っています。</div>'}`;
 }
+const skillNames={diagnosis:'漏電診断',isolation:'応急切り離し',repair:'保管庫修理',cooperation:'共同復旧'};
+function skillsCard(p){
+ const learned=Object.keys(skillNames).filter(k=>p.skills?.[k]);
+ return learned.length?`<details class="details"><summary>⚒ 覚えた復旧技術 · ${learned.length}</summary>${learned.map(k=>`<p class="footer"><b>${skillNames[k]}</b><br>${p.skills[k].origin==='communication'?'#'+p.skills[k].teacherId+'から教わった':'実作業で習得'} · 実践 ${p.incidentExperience?.[k]||0}回</p>`).join('')}</details>`:'';
+}
+function incidentCard(){
+ const e=state.incident||state.lastIncident;if(!e)return '';
+ const active=!!state.incident,labels={diagnosis:'① 故障箇所を診断',isolation:'② 漏電を切り離し',repair:'③ 保管庫を修理',resolved:'復旧完了'};
+ const required={diagnosis:.5,isolation:1/3,repair:2};
+ const percent=active?Math.min(100,Math.floor(e.progress/required[e.stage]*100)):100;
+ return `<div class="find-card"><b>${active?'⚠ セル保管庫の漏電':'✓ 前回の保管庫復旧'}</b><small>${labels[e.stage]}${active?' · '+percent+'%':''}<br>失ったセル ${Number(e.lostCells.toFixed(1))}個 · 使用部品 ${e.usedParts}個<br>保管できなかったセル ${Number((e.discardedCells||0).toFixed(1))}個${active?'<br>'+ (e.waitingForParts?'部品不足 · 仲間が回収へ':e.breakerTripped?'保護遮断中 · 修理が必要':e.stage==='repair'?'毎時セル1個の損失 · 回収受入50%':'毎時セル5個の損失 · 回収受入25%')+'<br>復旧担当 '+(e.crew.map(id=>'#'+id).join('・')||'待機中'):''}</small>${active?'<div class="bar"><i class="amber" style="width:'+percent+'%"></i></div>':''}</div>`;
+}
 function relayCard(){
  const relay=state.relay,project=state.relayProject;
  if(!relay&&!project)return '';
@@ -121,9 +133,9 @@ function relayCard(){
 }
 function renderPopulation(){
  const a=state.assembly,parts=Number((state.resources?.parts||0).toFixed(1)),retired=Object.values(state.lineage||{}).filter(r=>r.retiredHour!==undefined).sort((a,b)=>b.retiredHour-a.retiredHour).slice(0,6),progress=a?Math.max(0,Math.min(100,(state.hour-a.startedHour)/(a.readyHour-a.startedHour)*100)):0;
- $('hud').innerHTML=`<div class="hud-chip">◉ ${state.people.length}<span>機体</span></div><div class="hud-chip">ϟ ${Number(state.food.toFixed(1))}<span>セル</span></div><div class="hud-chip">⚙ ${parts}<span>部品</span></div>`;
+ $('hud').innerHTML=`<div class="hud-chip">◉ ${state.people.length}<span>機体</span></div><div class="hud-chip">ϟ ${Number(state.food.toFixed(1))}<span>セル</span></div><div class="hud-chip">⚙ ${parts}<span>部品</span></div>${state.incident?'<div class="hud-chip" style="color:#9b4932">⚠<span>漏電・復旧中</span></div>':''}`;
  $('population').innerHTML=`<h2>⚒ 継承の工房</h2><div class="factory-stats"><div><b>${state.people.length}</b><small>稼働中の機体</small></div><div><b>${parts}</b><small>集めた部品</small></div></div>${a?`<div class="assembly-hero"><span class="big">⚙</span><small>${a.source==='station'?'継承設備が自動復旧中':`#${a.builderId}が組み立て中`}</small><strong>MEHS #${a.id}</strong><span class="tag">第${a.generation}世代</span><p class="footer">設計元 ${a.parentIds.map(id=>'#'+id).join('・')||'標準設計'}${a.inspiration?`<br>✦ 発見 #${a.inspiration.id}の部品`:''}</p><div class="bar"><i style="width:${progress}%"></i></div><small>${Math.floor(progress)}% · 起動まで約${Math.max(0,Math.ceil((a.readyHour-state.hour)*60))}分</small></div>`:'<div class="empty-card" style="margin-top:15px"><span class="big">⚒</span>次の出会いの準備中。<br>部品とセルが集まると、<br>新しい機体の組み立てが始まります。</div>'}${retired.length?'<div class="section-label">LEGACY / 残された設計</div>'+retired.map(r=>`<p class="footer">◈ MEHS #${r.id} · 第${r.generation}世代<br>　${Math.floor((r.retiredHour-r.activatedHour)/24)}日の稼働を、次の機体へ。</p>`).join(''):''}`;
- $('population').innerHTML+=relayCard();
+ $('population').innerHTML=incidentCard()+$('population').innerHTML+relayCard();
 }
 function render(){
  renderPopulation();renderFinds();
@@ -133,7 +145,7 @@ function render(){
  $('people').innerHTML=state.people.map(p=>`<button class="person ${selectedId===p.id?'active':''}" onclick="select(${p.id})" aria-pressed="${selectedId===p.id}"><span class="gen">G${p.generation||1}</span>${avatar(p)}<strong>MEHS #${p.id}</strong><span class="mini-action">${p.action}</span></button>`).join('');
  const p=state.people.find(p=>p.id===selectedId);
  $('mobile-focus').textContent=`MEHS #${p.id} · ${p.action}`;
- $('detail').innerHTML=`<div class="portrait">${avatar(p)}</div><div class="profile-title"><small>GENERATION ${p.generation||1} / 起動から${Math.floor(Math.max(0,state.hour-(p.activatedHour??state.hour))/24)}日</small><h2>MEHS #${p.id}</h2><span class="tag">${p.trait}</span></div><div class="profile-action">${p.action==='組み立てる'?'⚙':'◈'} ${p.action}</div>${p.position?'<p class="footer" style="text-align:center">⌖ '+escapeHtml(locationLabel(p))+'</p>':''}<div class="speech">${escapeHtml(p.reason)}</div>${[['ϟ 充電量',100-p.hunger,''],['♥ コンディション',p.energy,'amber'],['⌁ 通信したさ',p.social,'blue']].map(([label,value,color])=>`<div class="meter-head"><span>${label}</span><span>${Math.round(value)} / 100</span></div><div class="bar"><i class="${color}" style="width:${value}%"></i></div>`).join('')}<div class="experience"><div><b>${p.success}</b><small>⚙ 回収</small></div><div><b>${p.discoveries}</b><small>✦ 探索</small></div><div><b>${p.kindness}</b><small>⌁ 通信</small></div></div>${p.pendingRoutine?'<p class="footer">⌘ 開発予定：'+escapeHtml(p.pendingRoutine.name)+'</p>':''}${programCard(p)}<details class="details"><summary>◈ 設計と摩耗の記録</summary><p>継承元：${p.parentIds?.length?p.parentIds.map(id=>'#'+id).join('・'):'初期設計'}<br>経年耐久 ${Math.round(p.durability??100)} / 100<br>累積摩耗 ${Number((p.wearHours??0).toFixed(1))}時間相当${p.informationExperience?'<br>受信した回収情報 '+p.informationExperience.received+'件／確かめて空振り '+p.informationExperience.disproved+'回':''}<br>雨による追加 ${Number((p.rainWearHours??0).toFixed(1))}時間<br>仕様：${p.variant||'継承設計'}${p.inspiration?`<br>✦ 発見 #${p.inspiration.id}（#${p.inspiration.finderId}）を継承`:''}</p>${p.scores?.length?'<div class="section-label">行動前の優先度</div>':''}${(p.scores||[]).slice(0,3).map(c=>`<div class="scores"><span>${actions[c.a]}</span><b>${Math.max(0,Math.round(c.s))}</b></div>`).join('')}</details>`;
+ $('detail').innerHTML=`<div class="portrait">${avatar(p)}</div><div class="profile-title"><small>GENERATION ${p.generation||1} / 起動から${Math.floor(Math.max(0,state.hour-(p.activatedHour??state.hour))/24)}日</small><h2>MEHS #${p.id}</h2><span class="tag">${p.trait}</span></div><div class="profile-action">${p.action==='組み立てる'?'⚙':'◈'} ${p.action}</div>${p.position?'<p class="footer" style="text-align:center">⌖ '+escapeHtml(locationLabel(p))+'</p>':''}<div class="speech">${escapeHtml(p.reason)}</div>${[['ϟ 充電量',100-p.hunger,''],['♥ コンディション',p.energy,'amber'],['⌁ 通信したさ',p.social,'blue']].map(([label,value,color])=>`<div class="meter-head"><span>${label}</span><span>${Math.round(value)} / 100</span></div><div class="bar"><i class="${color}" style="width:${value}%"></i></div>`).join('')}<div class="experience"><div><b>${p.success}</b><small>⚙ 回収</small></div><div><b>${p.discoveries}</b><small>✦ 探索</small></div><div><b>${p.kindness}</b><small>⌁ 通信</small></div></div>${p.pendingRoutine?'<p class="footer">⌘ 開発予定：'+escapeHtml(p.pendingRoutine.name)+'</p>':''}${skillsCard(p)}${programCard(p)}<details class="details"><summary>◈ 設計と摩耗の記録</summary><p>継承元：${p.parentIds?.length?p.parentIds.map(id=>'#'+id).join('・'):'初期設計'}<br>経年耐久 ${Math.round(p.durability??100)} / 100<br>累積摩耗 ${Number((p.wearHours??0).toFixed(1))}時間相当${p.informationExperience?'<br>受信した回収情報 '+p.informationExperience.received+'件／確かめて空振り '+p.informationExperience.disproved+'回':''}<br>雨による追加 ${Number((p.rainWearHours??0).toFixed(1))}時間<br>仕様：${p.variant||'継承設計'}${p.inspiration?`<br>✦ 発見 #${p.inspiration.id}（#${p.inspiration.finderId}）を継承`:''}</p>${p.scores?.length?'<div class="section-label">行動前の優先度</div>':''}${(p.scores||[]).slice(0,3).map(c=>`<div class="scores"><span>${actions[c.a]}</span><b>${Math.max(0,Math.round(c.s))}</b></div>`).join('')}</details>`;
 }
 function select(id){selectedId=id;render();showTab('detail');}
 function ellipse(x,y,rx,ry,c){ctx.fillStyle=c;ctx.beginPath();ctx.ellipse(x,y,rx,ry,0,0,Math.PI*2);ctx.fill()}
@@ -225,6 +237,7 @@ function drawRelay(t){
  ctx.restore();
 }
 function draw(timestamp){const elapsed=last===null||document.hidden?0:Math.max(0,(timestamp-last)/1000);last=timestamp;const dt=Math.min(elapsed,.1);if(!document.hidden){animationTime+=dt*1000;if(timestamp-lastUi>=1000){lastUi=timestamp;refresh();}}const t=animationTime;landscape(t);drawRelay(t);
+if(state?.incident){ctx.fillStyle='#a94e32';ctx.font='bold 14px system-ui';ctx.fillText('⚠ 保管庫・復旧中',235,510);}
 if(state?.sites?.length){ctx.fillStyle='#8b7842';ctx.font='12px system-ui';ctx.fillText(`✦ 発見した場所 ${state.sites.length}`,760,565);}
 if(state?.assembly){ctx.fillStyle='#d5a34c';ctx.font='bold 14px system-ui';ctx.fillText(`⚙ #${state.assembly.id} 組み立て中`,235,485);}
 const selected=state?.people.find(p=>p.id===selectedId);
@@ -243,4 +256,5 @@ canvas.onclick=e=>{if(!state)return;const r=canvas.getBoundingClientRect(),x=(e.
 document.addEventListener('visibilitychange',()=>{last=null;if(!document.hidden){refresh();loadState();}});
 loadState();setInterval(()=>{if(!document.hidden)loadState()},60000);requestAnimationFrame(draw);
 </script></body></html>
+
 

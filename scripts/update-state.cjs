@@ -5,6 +5,7 @@ const {translate,convertTimeline}=require('../dist/mehs.js');
 const lifecycle=require('./lifecycle.cjs');
 const {VillageGeography:G}=require('../dist/geography.js');
 const relay=require('./relay.cjs');
+const incidents=require('./incidents.cjs');
 const powerWear=require('./power-wear.cjs');
 const R=require('./random.cjs'),discoveries=require('./discoveries.cjs'),weather=require('./weather.cjs');
 const aiRoutines=require('./ai-routines.cjs');
@@ -31,13 +32,13 @@ function perform(s,p,c,note){
   p.lastEvent={text:p.reason,findId:null,hour:s.hour,untilHour:s.hour+.5};return;
  }
  if(c.a===2&&p.activityArea==='deepForest'){p.reason='回収情報の期限が切れたため、林の奥での回収を見送りました。';p.remainingSteps=0;note(s,`MEHS #${p.id}：林の奥の回収情報が期限切れ。`);return;}
- if(c.a===2){if(s.sites.some(site=>site.id==='cell-grove')&&R.next(s)<.25)s.food+=1;s.resources.parts+=.35;s.food+=s.rain?1:2;p.energy=clamp(p.energy-4);p.success++;}
+ if(c.a===2){const found=(s.rain?1:2)+(s.sites.some(site=>site.id==='cell-grove')&&R.next(s)<.25?1:0);const stored=found*(s.incident?(s.incident.stage==='repair'?.5:.25):1);s.food+=stored;if(s.incident)s.incident.discardedCells=(s.incident.discardedCells||0)+found-stored;s.resources.parts+=.35;p.energy=clamp(p.energy-4);p.success++;}
  if(c.a===3){
   const local=G.peers(s,p),remote=local.length?[]:relay.remotePeers(s,p);
   const peers=local.length?local:remote;
   if(peers.length){
    p.social=clamp(p.social-45);p.kindness++;
-   discoveries.communicate(s,p,note,peers);programs.share(s,p,note,peers);
+   discoveries.communicate(s,p,note,peers);programs.share(s,p,note,peers);incidents.share(s,p,peers,note);
    if(remote.length){p.reason='中継器を使って離れた場所の仲間と通信しました。';relay.use(s,p,remote[0],note);}
   }
   else p.reason='仲間の到着を待ちながら、通信できる相手を探しています。';
@@ -65,11 +66,14 @@ function step(previous,context={}){
  for(const p of s.people){
   p.hunger=clamp(p.hunger+.9);p.energy=clamp(p.energy-.35);p.social=clamp(p.social+.8);p.curiosity=clamp(p.curiosity+.7);
  }
+ incidents.prepare(s,note);
  relay.prepare(s,note);
  for(const p of s.people){
   const pending=aiRoutines.checkPending(s,p,note);
   if(s.assembly?.builderId===p.id&&s.hour<s.assembly.readyHour)continue;
   const urgent=emergency(s,p),arrived=arrivals.get(p.id);
+  if(urgent===null&&incidents.assigned(s,p)){incidents.work(s,p,note);continue;}
+  if(p.journey?.plan.a===incidents.ACTION){delete p.journey;p.remainingSteps=0;}
   if(pending&&p.pendingRoutine.readyHour!==undefined){
    if(urgent===null&&aiRoutines.work(s,p,note))continue;
    delete p.pendingRoutine.readyHour;
@@ -96,7 +100,7 @@ function step(previous,context={}){
    }
    continue;
   }
-  if(arrived&&arrived.a!==5&&arrived.a!==relay.ACTION){
+  if(arrived&&arrived.a!==5&&arrived.a!==relay.ACTION&&arrived.a!==incidents.ACTION){
    // Conditions and stock may have changed while travelling.
    if(urgent!==null&&urgent!==arrived.a)dispatch(s,p,{a:urgent,why:'到着時の機体状態から充電・整備を優先します。'},note);
    else perform(s,p,arrived,note);
@@ -108,7 +112,7 @@ function step(previous,context={}){
   const choices=[
    {a:0,s:s.food>=1?p.hunger*1.3:-1,why:'充電の工房で電力を補給しよう。'},
    {a:1,s:tired*1.2,why:'充電の工房で機体を整備しよう。'},
-   {a:2,s:Math.max(0,9-s.food)*7*(p.safe||1)+12+Math.min(8,p.success)*2-tired*.3-(s.rain?22:0),why:'村の備蓄を確かめて、林で資源を回収しよう。'},
+   {a:2,s:Math.max(0,9-s.food)*7*(p.safe||1)+12+(s.incident?.waitingForParts?45:0)+Math.min(8,p.success)*2-tired*.3-(s.rain?22:0),why:'村の備蓄を確かめて、林で資源を回収しよう。'},
    {a:3,s:p.social*(p.care||1)*.65,why:'仲間と通信して、情報を交換したい。'},
    {a:4,s:p.curiosity*(p.adventure||1)*.45-tired*.5-(s.rain?35:0),why:'丘へ向かい、新しい発見を探そう。'}
   ].sort((a,b)=>b.s-a.s);
@@ -119,6 +123,7 @@ function step(previous,context={}){
   const plan={a:c.a,why:c.why+(c!==choices[0]?' 優先度が近い選択肢から、今回はこれを選びました。':''),scores:choices,programRevision:suggested===c.a?aiRoutines.revision(p):null};
   p.scores=choices;dispatch(s,p,plan,note);
  }
+ incidents.finishStep(s,note);
  lifecycle.advance(s);
  for(const result of s.routineUpdates?.results||[]){
   if(result.status==='queued'&&!s.people.some(p=>p.id===result.residentId)){
@@ -162,3 +167,4 @@ function update(root,now=new Date(),options={}){
 }
 if(require.main===module){let plugin=null;try{if(process.env.EXTERNAL_PLUGIN_PATH)plugin=require('./daily-package.cjs').validate(JSON.parse(fs.readFileSync(process.env.EXTERNAL_PLUGIN_PATH,'utf8')));}catch{console.warn('External plugin unavailable.');}console.log(JSON.stringify(update(path.resolve(__dirname,'..'),new Date(),{plugin})));}
 module.exports={step,makeBatch,update,SLOT_MS};
+
